@@ -1,0 +1,6 @@
+00:54:22 **** Auto Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+
+00:54:22 Build Finished (took 64ms)
+

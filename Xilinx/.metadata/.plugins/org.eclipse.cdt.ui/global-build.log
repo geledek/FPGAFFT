@@ -1,0 +1,2032 @@
+22:38:49 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+zsh:1: command not found: gmake
+ERROR:EDK:368 -  make failed for target "include" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+22:43:45 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+22:43:45 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+"EXTRA_COMPILER_FLAGS=-g"'.
+gmake[1]: *** [libs] Error 127
+Compiling common
+Compiling xadc
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling standalone
+gmake[1]: arm-xilinx-eabi-gcc: Command not found
+gmake[1]: *** [standalone_libs] Error 127
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling devcfg
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling dmaps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling emacps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling gpiops
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling qspips
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scugic
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scutimer
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scuwdt
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling ttcps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling uartps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling usbps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+22:46:49 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+22:46:49 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+"EXTRA_COMPILER_FLAGS=-g"'.
+gmake[1]: *** [libs] Error 127
+Compiling common
+Compiling xadc
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling standalone
+gmake[1]: arm-xilinx-eabi-gcc: Command not found
+gmake[1]: *** [standalone_libs] Error 127
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling devcfg
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling dmaps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling emacps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling gpiops
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling qspips
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scugic
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scutimer
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scuwdt
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling ttcps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling uartps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling usbps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+22:54:47 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+22:54:47 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling xadc
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling standalone
+gmake[1]: arm-xilinx-eabi-gcc: Command not found
+gmake[1]: *** [standalone_libs] Error 127
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling devcfg
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling dmaps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling emacps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling gpiops
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling qspips
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scugic
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scutimer
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling scuwdt
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling ttcps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling uartps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling usbps
+/bin/sh: 1: arm-xilinx-eabi-gcc: not found
+gmake[1]: *** [libs] Error 127
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+22:57:09 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+22:57:09 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling xadc
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling devcfg
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling dmaps
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling emacps
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling gpiops
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling qspips
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling scugic
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling scutimer
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling scuwdt
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling ttcps
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling uartps
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling usbps
+/bin/sh: 1: arm-xilinx-eabi-ar: not found
+gmake[1]: *** [libs] Error 127
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+22:58:46 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+22:58:46 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+23:29:47 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+23:30:09 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+23:30:27 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+23:30:27 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+make: *** Deleting file `ps7_cortexa9_0/lib/libxil.a'
+gmake[1]: *** [libs] Terminated
+make: *** [ps7_cortexa9_0/lib/libxil.a] Terminated
+Command canceled
+23:31:11 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+23:34:56 **** Build of project test_bsp ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+23:35:10 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/usr/lib/gcc/arm-linux-gnueabi/4.6/../../../../arm-linux-gnueabi/bin/ld: cannot find -lxil
+collect2: ld returned 1 exit status
+make: *** [test.elf] Error 1
+23:36:59 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+23:45:11 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+23:45:11 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+23:47:29 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+errno.c:47:19: fatal error: reent.h: No such file or directory
+compilation terminated.
+_sbrk.c: In function ‘_sbrk’:
+_sbrk.c:55:32: error: ‘NULL’ undeclared (first use in this function)
+_sbrk.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [standalone_libs] Error 1
+gmake[1]: Target `libs' not remade because of errors.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+00:20:01 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+00:20:47 **** Build of configuration Debug for project helloworld ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: helloworld.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: helloworld.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22056	   1096	  29780	  52932	   cec4	helloworld.elf
+Finished building: helloworld.elf.size
+ 
+00:21:46 **** Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22056	   1096	  29780	  52932	   cec4	FFT.elf
+Finished building: FFT.elf.size
+ 
+00:24:49 **** Build of project FFT_bsp ****
+make -k all 
+libgen -hw /home/bill/workspace/Xilinx/EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw /home/bill/workspace/Xilinx/EDK_hw_platform/system.xml
+-pe ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+00:25:05 **** Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.c"
+In file included from ../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c:21:0:
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.c
+../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_timer_hw.h:75:21: fatal error: xintc_l.h: No such file or directory
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.c"
+compilation terminated.
+make: *** [FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o] Error 1
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.c"
+Finished building: ../FFT_bsp/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.c
+ 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c"
+00:25:11 **** Auto Build of project FFT_bsp ****
+make -k all 
+Finished building libraries
+00:26:19 **** Auto Build of project FFT_bsp ****
+make -k all 
+Finished building libraries
+00:26:19 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c"
+In file included from ../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c:21:0:
+../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_timer_hw.h:76:19: fatal error: xintc.h: No such file or directory
+compilation terminated.
+make: *** [FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o] Error 1
+00:26:26 **** Auto Build of project FFT_bsp ****
+make -k all 
+Finished building libraries
+00:26:26 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c"
+In file included from ../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c:21:0:
+../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_timer_hw.h:80:23: fatal error: xtmrctr_l.h: No such file or directory
+compilation terminated.
+make: *** [FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o] Error 1
+00:26:32 **** Auto Build of project FFT_bsp ****
+make -k all 
+Finished building libraries
+00:26:33 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -MT"FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -o "FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o" "../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c"
+In file included from ../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c:21:0:
+../FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_timer_hw.h:75:21: fatal error: xintc_l.h: No such file or directory
+compilation terminated.
+make: *** [FFT_bsp/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o] Error 1
+00:27:06 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+make: *** Deleting file `ps7_cortexa9_0/lib/libxil.a'
+gmake[1]: *** [standalone_libs] Terminated
+make: *** [ps7_cortexa9_0/lib/libxil.a] Terminated
+Command canceled
+00:27:54 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw /home/bill/workspace/Xilinx/EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw /home/bill/workspace/Xilinx/EDK_hw_platform/system.xml
+-pe ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+00:28:54 **** Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.d" -MT"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.d" -o "BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.o" "../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.d" -MT"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.d" -o "BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.o" "../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_g.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.d" -MT"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.d" -o "BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.o" "../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_intr.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.d" -MT"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.d" -o "BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.o" "../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_selftest.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.d" -MT"BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.d" -o "BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.o" "../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/xadcps_v1_01_a/src/xadcps_sinit.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.d" -MT"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.d" -o "BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.o" "../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.d" -MT"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.d" -o "BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.o" "../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_endpoint.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.d" -MT"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.d" -o "BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.o" "../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_g.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.d" -MT"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.d" -o "BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.o" "../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_intr.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.d" -MT"BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.d" -o "BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.o" "../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/usbps_v1_04_a/src/xusbps_sinit.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.d" -MT"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.d" -o "BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.o" "../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.d" -MT"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.d" -o "BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.o" "../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_g.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.d" -MT"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.d" -o "BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.o" "../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_hw.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.d" -MT"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.d" -o "BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.o" "../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_intr.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.d" -MT"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.d" -o "BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.o" "../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_options.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.d" -MT"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.d" -o "BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.o" "../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.c"
+In file included from ../BSP/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c:21:0:
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_selftest.c
+../BSP/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_timer_hw.h:75:21: fatal error: xintc_l.h: No such file or directory
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.c
+compilation terminated.
+make: *** [BSP/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o] Error 1
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.d" -MT"BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.d" -o "BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.o" "../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/uartps_v1_03_a/src/xuartps_sinit.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.d" -MT"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.d" -o "BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.o" "../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.d" -MT"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.d" -o "BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.o" "../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_g.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.d" -MT"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.d" -o "BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.o" "../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_options.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.d" -MT"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.d" -o "BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.o" "../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_selftest.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.d" -MT"BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.d" -o "BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.o" "../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.c"
+Finished building: ../BSP/ps7_cortexa9_0/libsrc/ttcps_v1_01_a/src/xttcps_sinit.c
+ 
+Building file: ../BSP/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/EDK/project/BSP/ps7_cortexa9_0/include -MMD -MP -MF"BSP/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -MT"BSP/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.d" -o "BSP/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.o" "../BSP/ps7_cortexa9_0/libsrc/standalone_v3_09_a/src/profile/_profile_clean.c"
+00:30:34 **** Build of project FFT_bsp ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+00:30:50 **** Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22056	   1096	  29780	  52932	   cec4	FFT.elf
+Finished building: FFT.elf.size
+ 
+00:31:44 **** Auto Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:32:37 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/kiss_fft130/tools/fftutil.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/fftutil.d" -MT"src/kiss_fft130/tools/fftutil.d" -o "src/kiss_fft130/tools/fftutil.o" "../src/kiss_fft130/tools/fftutil.c"
+../src/kiss_fft130/tools/fftutil.c:21:22: fatal error: kiss_fft.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/fftutil.o] Error 1
+00:32:56 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/fftutil.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/fftutil.d" -MT"src/kiss_fft130/tools/fftutil.d" -o "src/kiss_fft130/tools/fftutil.o" "../src/kiss_fft130/tools/fftutil.c"
+In file included from ../src/kiss_fft130/tools/fftutil.c:22:0:
+../src/kiss_fft130/tools/kiss_fftndr.h:4:22: fatal error: kiss_fft.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/fftutil.o] Error 1
+00:33:05 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/fftutil.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/fftutil.d" -MT"src/kiss_fft130/tools/fftutil.d" -o "src/kiss_fft130/tools/fftutil.o" "../src/kiss_fft130/tools/fftutil.c"
+In file included from ../src/kiss_fft130/tools/kiss_fftndr.h:5:0,
+                 from ../src/kiss_fft130/tools/fftutil.c:22:
+../src/kiss_fft130/tools/kiss_fftr.h:4:22: fatal error: kiss_fft.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/fftutil.o] Error 1
+00:33:11 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/fftutil.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/fftutil.d" -MT"src/kiss_fft130/tools/fftutil.d" -o "src/kiss_fft130/tools/fftutil.o" "../src/kiss_fft130/tools/fftutil.c"
+In file included from ../src/kiss_fft130/tools/kiss_fftndr.h:6:0,
+                 from ../src/kiss_fft130/tools/fftutil.c:22:
+../src/kiss_fft130/tools/kiss_fftnd.h:4:22: fatal error: kiss_fft.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/fftutil.o] Error 1
+00:33:17 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/fftutil.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/fftutil.d" -MT"src/kiss_fft130/tools/fftutil.d" -o "src/kiss_fft130/tools/fftutil.o" "../src/kiss_fft130/tools/fftutil.c"
+Finished building: ../src/kiss_fft130/tools/fftutil.c
+ 
+Building file: ../src/kiss_fft130/tools/kfc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kfc.d" -MT"src/kiss_fft130/tools/kfc.d" -o "src/kiss_fft130/tools/kfc.o" "../src/kiss_fft130/tools/kfc.c"
+In file included from ../src/kiss_fft130/tools/kfc.c:1:0:
+../src/kiss_fft130/tools/kfc.h:3:22: fatal error: kiss_fft.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/kfc.o] Error 1
+00:33:23 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/kfc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kfc.d" -MT"src/kiss_fft130/tools/kfc.d" -o "src/kiss_fft130/tools/kfc.o" "../src/kiss_fft130/tools/kfc.c"
+Finished building: ../src/kiss_fft130/tools/kfc.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:15:28: fatal error: _kiss_fft_guts.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/kiss_fastfir.o] Error 1
+00:33:30 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:50:12: warning: 'verbose' defined but not used [-Wunused-variable]
+Finished building: ../src/kiss_fft130/tools/kiss_fastfir.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fftnd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kiss_fftnd.d" -MT"src/kiss_fft130/tools/kiss_fftnd.d" -o "src/kiss_fft130/tools/kiss_fftnd.o" "../src/kiss_fft130/tools/kiss_fftnd.c"
+../src/kiss_fft130/tools/kiss_fftnd.c:18:28: fatal error: _kiss_fft_guts.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/kiss_fftnd.o] Error 1
+00:33:33 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:15:28: fatal error: _kiss_fft_guts.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/kiss_fastfir.o] Error 1
+00:33:35 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:15:28: fatal error: _kiss_fft_guts.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/kiss_fastfir.o] Error 1
+00:33:37 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:15:28: fatal error: _kiss_fft_guts.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/kiss_fastfir.o] Error 1
+00:33:38 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:15:28: fatal error: _kiss_fft_guts.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/kiss_fastfir.o] Error 1
+00:33:40 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:15:28: fatal error: _kiss_fft_guts.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/kiss_fastfir.o] Error 1
+00:33:42 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/fftutil.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/tools/fftutil.d" -MT"src/kiss_fft130/tools/fftutil.d" -o "src/kiss_fft130/tools/fftutil.o" "../src/kiss_fft130/tools/fftutil.c"
+../src/kiss_fft130/tools/fftutil.c:21:22: fatal error: kiss_fft.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/fftutil.o] Error 1
+00:34:57 **** Clean-only build of configuration Debug for project FFT ****
+make clean 
+rm -rf  ./src/kiss_fft130/tools/fftutil.o ./src/kiss_fft130/tools/kfc.o ./src/kiss_fft130/tools/kiss_fastfir.o ./src/kiss_fft130/tools/kiss_fftnd.o ./src/kiss_fft130/tools/kiss_fftndr.o ./src/kiss_fft130/tools/kiss_fftr.o ./src/kiss_fft130/tools/psdpng.o  ./src/kiss_fft130/test/benchfftw.o ./src/kiss_fft130/test/benchkiss.o ./src/kiss_fft130/test/doit.o ./src/kiss_fft130/test/pstats.o ./src/kiss_fft130/test/test_real.o ./src/kiss_fft130/test/test_vs_dft.o ./src/kiss_fft130/test/twotonetest.o  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o  ./src/kiss_fft130/tools/fftutil.d ./src/kiss_fft130/tools/kfc.d ./src/kiss_fft130/tools/kiss_fastfir.d ./src/kiss_fft130/tools/kiss_fftnd.d ./src/kiss_fft130/tools/kiss_fftndr.d ./src/kiss_fft130/tools/kiss_fftr.d ./src/kiss_fft130/tools/psdpng.d  ./src/kiss_fft130/test/benchfftw.d ./src/kiss_fft130/test/benchkiss.d ./src/kiss_fft130/test/doit.d ./src/kiss_fft130/test/pstats.d ./src/kiss_fft130/test/test_real.d ./src/kiss_fft130/test/test_vs_dft.d ./src/kiss_fft130/test/twotonetest.d  ./src/kiss_fft130/kiss_fft.d  ./src/helloworld.d ./src/platform.d  FFT.elf.size  FFT.elf
+ 
+00:34:57 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/fftutil.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/fftutil.d" -MT"src/kiss_fft130/tools/fftutil.d" -o "src/kiss_fft130/tools/fftutil.o" "../src/kiss_fft130/tools/fftutil.c"
+Finished building: ../src/kiss_fft130/tools/fftutil.c
+ 
+Building file: ../src/kiss_fft130/tools/kfc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kfc.d" -MT"src/kiss_fft130/tools/kfc.d" -o "src/kiss_fft130/tools/kfc.o" "../src/kiss_fft130/tools/kfc.c"
+Finished building: ../src/kiss_fft130/tools/kfc.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:50:12: warning: 'verbose' defined but not used [-Wunused-variable]
+Finished building: ../src/kiss_fft130/tools/kiss_fastfir.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fftnd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kiss_fftnd.d" -MT"src/kiss_fft130/tools/kiss_fftnd.d" -o "src/kiss_fft130/tools/kiss_fftnd.o" "../src/kiss_fft130/tools/kiss_fftnd.c"
+Finished building: ../src/kiss_fft130/tools/kiss_fftnd.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fftndr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kiss_fftndr.d" -MT"src/kiss_fft130/tools/kiss_fftndr.d" -o "src/kiss_fft130/tools/kiss_fftndr.o" "../src/kiss_fft130/tools/kiss_fftndr.c"
+Finished building: ../src/kiss_fft130/tools/kiss_fftndr.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fftr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kiss_fftr.d" -MT"src/kiss_fft130/tools/kiss_fftr.d" -o "src/kiss_fft130/tools/kiss_fftr.o" "../src/kiss_fft130/tools/kiss_fftr.c"
+Finished building: ../src/kiss_fft130/tools/kiss_fftr.c
+ 
+Building file: ../src/kiss_fft130/tools/psdpng.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/psdpng.d" -MT"src/kiss_fft130/tools/psdpng.d" -o "src/kiss_fft130/tools/psdpng.o" "../src/kiss_fft130/tools/psdpng.c"
+../src/kiss_fft130/tools/psdpng.c:20:17: fatal error: png.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/psdpng.o] Error 1
+00:35:13 **** Clean-only build of configuration Debug for project FFT ****
+make clean 
+rm -rf  ./src/kiss_fft130/tools/fftutil.o ./src/kiss_fft130/tools/kfc.o ./src/kiss_fft130/tools/kiss_fastfir.o ./src/kiss_fft130/tools/kiss_fftnd.o ./src/kiss_fft130/tools/kiss_fftndr.o ./src/kiss_fft130/tools/kiss_fftr.o ./src/kiss_fft130/tools/psdpng.o  ./src/kiss_fft130/test/benchfftw.o ./src/kiss_fft130/test/benchkiss.o ./src/kiss_fft130/test/doit.o ./src/kiss_fft130/test/pstats.o ./src/kiss_fft130/test/test_real.o ./src/kiss_fft130/test/test_vs_dft.o ./src/kiss_fft130/test/twotonetest.o  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o  ./src/kiss_fft130/tools/fftutil.d ./src/kiss_fft130/tools/kfc.d ./src/kiss_fft130/tools/kiss_fastfir.d ./src/kiss_fft130/tools/kiss_fftnd.d ./src/kiss_fft130/tools/kiss_fftndr.d ./src/kiss_fft130/tools/kiss_fftr.d ./src/kiss_fft130/tools/psdpng.d  ./src/kiss_fft130/test/benchfftw.d ./src/kiss_fft130/test/benchkiss.d ./src/kiss_fft130/test/doit.d ./src/kiss_fft130/test/pstats.d ./src/kiss_fft130/test/test_real.d ./src/kiss_fft130/test/test_vs_dft.d ./src/kiss_fft130/test/twotonetest.d  ./src/kiss_fft130/kiss_fft.d  ./src/helloworld.d ./src/platform.d  FFT.elf.size  FFT.elf
+ 
+00:35:13 **** Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/tools/fftutil.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/fftutil.d" -MT"src/kiss_fft130/tools/fftutil.d" -o "src/kiss_fft130/tools/fftutil.o" "../src/kiss_fft130/tools/fftutil.c"
+Finished building: ../src/kiss_fft130/tools/fftutil.c
+ 
+Building file: ../src/kiss_fft130/tools/kfc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kfc.d" -MT"src/kiss_fft130/tools/kfc.d" -o "src/kiss_fft130/tools/kfc.o" "../src/kiss_fft130/tools/kfc.c"
+Finished building: ../src/kiss_fft130/tools/kfc.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fastfir.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kiss_fastfir.d" -MT"src/kiss_fft130/tools/kiss_fastfir.d" -o "src/kiss_fft130/tools/kiss_fastfir.o" "../src/kiss_fft130/tools/kiss_fastfir.c"
+../src/kiss_fft130/tools/kiss_fastfir.c:50:12: warning: 'verbose' defined but not used [-Wunused-variable]
+Finished building: ../src/kiss_fft130/tools/kiss_fastfir.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fftnd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kiss_fftnd.d" -MT"src/kiss_fft130/tools/kiss_fftnd.d" -o "src/kiss_fft130/tools/kiss_fftnd.o" "../src/kiss_fft130/tools/kiss_fftnd.c"
+Finished building: ../src/kiss_fft130/tools/kiss_fftnd.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fftndr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kiss_fftndr.d" -MT"src/kiss_fft130/tools/kiss_fftndr.d" -o "src/kiss_fft130/tools/kiss_fftndr.o" "../src/kiss_fft130/tools/kiss_fftndr.c"
+Finished building: ../src/kiss_fft130/tools/kiss_fftndr.c
+ 
+Building file: ../src/kiss_fft130/tools/kiss_fftr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/kiss_fftr.d" -MT"src/kiss_fft130/tools/kiss_fftr.d" -o "src/kiss_fft130/tools/kiss_fftr.o" "../src/kiss_fft130/tools/kiss_fftr.c"
+Finished building: ../src/kiss_fft130/tools/kiss_fftr.c
+ 
+Building file: ../src/kiss_fft130/tools/psdpng.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/tools/psdpng.d" -MT"src/kiss_fft130/tools/psdpng.d" -o "src/kiss_fft130/tools/psdpng.o" "../src/kiss_fft130/tools/psdpng.c"
+../src/kiss_fft130/tools/psdpng.c:20:17: fatal error: png.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/tools/psdpng.o] Error 1
+00:36:00 **** Clean-only build of configuration Debug for project FFT ****
+make clean 
+rm -rf  ./src/kiss_fft130/tools/fftutil.o ./src/kiss_fft130/tools/kfc.o ./src/kiss_fft130/tools/kiss_fastfir.o ./src/kiss_fft130/tools/kiss_fftnd.o ./src/kiss_fft130/tools/kiss_fftndr.o ./src/kiss_fft130/tools/kiss_fftr.o ./src/kiss_fft130/tools/psdpng.o  ./src/kiss_fft130/test/benchfftw.o ./src/kiss_fft130/test/benchkiss.o ./src/kiss_fft130/test/doit.o ./src/kiss_fft130/test/pstats.o ./src/kiss_fft130/test/test_real.o ./src/kiss_fft130/test/test_vs_dft.o ./src/kiss_fft130/test/twotonetest.o  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o  ./src/kiss_fft130/tools/fftutil.d ./src/kiss_fft130/tools/kfc.d ./src/kiss_fft130/tools/kiss_fastfir.d ./src/kiss_fft130/tools/kiss_fftnd.d ./src/kiss_fft130/tools/kiss_fftndr.d ./src/kiss_fft130/tools/kiss_fftr.d ./src/kiss_fft130/tools/psdpng.d  ./src/kiss_fft130/test/benchfftw.d ./src/kiss_fft130/test/benchkiss.d ./src/kiss_fft130/test/doit.d ./src/kiss_fft130/test/pstats.d ./src/kiss_fft130/test/test_real.d ./src/kiss_fft130/test/test_vs_dft.d ./src/kiss_fft130/test/twotonetest.d  ./src/kiss_fft130/kiss_fft.d  ./src/helloworld.d ./src/platform.d  FFT.elf.size  FFT.elf
+ 
+00:36:00 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/test/benchfftw.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/test/benchfftw.d" -MT"src/kiss_fft130/test/benchfftw.d" -o "src/kiss_fft130/test/benchfftw.o" "../src/kiss_fft130/test/benchfftw.c"
+../src/kiss_fft130/test/benchfftw.c:3:19: fatal error: fftw3.h: No such file or directory
+compilation terminated.
+make: *** [src/kiss_fft130/test/benchfftw.o] Error 1
+00:36:09 **** Clean-only build of configuration Debug for project FFT ****
+make clean 
+rm -rf  ./src/kiss_fft130/test/benchfftw.o ./src/kiss_fft130/test/benchkiss.o ./src/kiss_fft130/test/doit.o ./src/kiss_fft130/test/pstats.o ./src/kiss_fft130/test/test_real.o ./src/kiss_fft130/test/test_vs_dft.o ./src/kiss_fft130/test/twotonetest.o  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o  ./src/kiss_fft130/test/benchfftw.d ./src/kiss_fft130/test/benchkiss.d ./src/kiss_fft130/test/doit.d ./src/kiss_fft130/test/pstats.d ./src/kiss_fft130/test/test_real.d ./src/kiss_fft130/test/test_vs_dft.d ./src/kiss_fft130/test/twotonetest.d  ./src/kiss_fft130/kiss_fft.d  ./src/helloworld.d ./src/platform.d  FFT.elf.size  FFT.elf
+ 
+00:36:09 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/kiss_fft.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/kiss_fft.d" -MT"src/kiss_fft130/kiss_fft.d" -o "src/kiss_fft130/kiss_fft.o" "../src/kiss_fft130/kiss_fft.c"
+Finished building: ../src/kiss_fft130/kiss_fft.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/kiss_fft130/kiss_fft.o: In function `kf_factor':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:313: undefined reference to `sqrt'
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:313: undefined reference to `floor'
+./src/kiss_fft130/kiss_fft.o: In function `kiss_fft_alloc':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:362: undefined reference to `cos'
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:362: undefined reference to `sin'
+./src/helloworld.o: In function `main':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/helloworld.c:90: undefined reference to `cos'
+collect2: error: ld returned 1 exit status
+make: *** [FFT.elf] Error 1
+00:36:49 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/kiss_fft.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/kiss_fft.d" -MT"src/kiss_fft130/kiss_fft.d" -o "src/kiss_fft130/kiss_fft.o" "../src/kiss_fft130/kiss_fft.c"
+Finished building: ../src/kiss_fft130/kiss_fft.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/kiss_fft130/kiss_fft.o: In function `kf_factor':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:313: undefined reference to `sqrt'
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:313: undefined reference to `floor'
+./src/kiss_fft130/kiss_fft.o: In function `kiss_fft_alloc':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:362: undefined reference to `cos'
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:362: undefined reference to `sin'
+./src/helloworld.o: In function `main':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/helloworld.c:90: undefined reference to `cos'
+collect2: error: ld returned 1 exit status
+make: *** [FFT.elf] Error 1
+00:38:26 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/kiss_fft.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/kiss_fft.d" -MT"src/kiss_fft130/kiss_fft.d" -o "src/kiss_fft130/kiss_fft.o" "../src/kiss_fft130/kiss_fft.c"
+Finished building: ../src/kiss_fft130/kiss_fft.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/kiss_fft130/kiss_fft.o: In function `kf_factor':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:313: undefined reference to `sqrt'
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:313: undefined reference to `floor'
+./src/kiss_fft130/kiss_fft.o: In function `kiss_fft_alloc':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:362: undefined reference to `cos'
+/home/bill/workspace/Xilinx/FFT/Debug/../src/kiss_fft130/kiss_fft.c:362: undefined reference to `sin'
+./src/helloworld.o: In function `main':
+/home/bill/workspace/Xilinx/FFT/Debug/../src/helloworld.c:90: undefined reference to `cos'
+collect2: error: ld returned 1 exit status
+make: *** [FFT.elf] Error 1
+00:39:41 **** Clean-only build of configuration Debug for project FFT ****
+make clean 
+rm -rf  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o  ./src/kiss_fft130/kiss_fft.d  ./src/helloworld.d ./src/platform.d  FFT.elf.size  FFT.elf
+ 
+00:39:41 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/kiss_fft.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/kiss_fft.d" -MT"src/kiss_fft130/kiss_fft.d" -o "src/kiss_fft130/kiss_fft.o" "../src/kiss_fft130/kiss_fft.c"
+Finished building: ../src/kiss_fft130/kiss_fft.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75716	   2264	  29852	 107832	  1a538	FFT.elf
+Finished building: FFT.elf.size
+ 
+00:39:54 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/kiss_fft.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/kiss_fft.d" -MT"src/kiss_fft130/kiss_fft.d" -o "src/kiss_fft130/kiss_fft.o" "../src/kiss_fft130/kiss_fft.c"
+Finished building: ../src/kiss_fft130/kiss_fft.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75716	   2264	  29852	 107832	  1a538	FFT.elf
+Finished building: FFT.elf.size
+ 
+00:40:10 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:40:31 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:40:47 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:42:29 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TestFft':
+../src/helloworld.c:54:5: error: too many arguments to function 'print'
+../src/helloworld.c:37:6: note: declared here
+../src/helloworld.c:67:21: error: too many arguments to function 'print'
+../src/helloworld.c:37:6: note: declared here
+make: *** [src/helloworld.o] Error 1
+00:42:41 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75716	   2264	  29852	 107832	  1a538	FFT.elf
+Finished building: FFT.elf.size
+ 
+00:42:51 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75784	   2264	  29852	 107900	  1a57c	FFT.elf
+Finished building: FFT.elf.size
+ 
+00:42:53 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:42:58 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:45:05 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:45:11 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:51:06 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:52:02 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:52:04 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:52:05 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:52:06 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:52:11 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:53:04 **** Clean-only build of project FFT_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+00:53:04 **** Build of project FFT_bsp ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+00:53:20 **** Auto Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:53:34 **** Clean-only build of configuration Debug for project FFT ****
+make clean 
+rm -rf  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o  ./src/kiss_fft130/kiss_fft.d  ./src/helloworld.d ./src/platform.d  FFT.elf.size  FFT.elf
+ 
+00:53:35 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/kiss_fft130/kiss_fft.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kiss_fft130/kiss_fft.d" -MT"src/kiss_fft130/kiss_fft.d" -o "src/kiss_fft130/kiss_fft.o" "../src/kiss_fft130/kiss_fft.c"
+Finished building: ../src/kiss_fft130/kiss_fft.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75356	   2264	  29852	 107472	  1a3d0	FFT.elf
+Finished building: FFT.elf.size
+ 
+00:53:42 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+00:54:06 **** Clean-only build of project FFT_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+00:54:06 **** Build of project FFT_bsp ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+00:54:22 **** Auto Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
