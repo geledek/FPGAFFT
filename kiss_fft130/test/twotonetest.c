@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#define FIXED_POINT 16
 #include "kiss_fft.h"
 #include "kiss_fftr.h"
 #include <limits.h>
-
 
 static
 double two_tone_test( int nfft, int bin1,int bin2)
@@ -40,6 +40,10 @@ double two_tone_test( int nfft, int bin1,int bin2)
     }
 
     kiss_fftr(cfg, tbuf, kout);
+    for(i=0;i<nfft;++i)
+    {
+        printf("out[%d]= %f \n",i, kout[i].r);
+    }
 
     for (i=0;i < (nfft/2+1);++i) {
 #ifdef USE_SIMD        

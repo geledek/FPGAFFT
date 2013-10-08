@@ -1,6 +1,6 @@
-17:51:10 **** Incremental Build of configuration Debug for project hello_oled ****
+23:19:24 **** Incremental Build of configuration Debug for project hello_oled ****
 make all 
 make: Nothing to be done for `all'.
 
-17:51:10 Build Finished (took 61ms)
+23:19:24 Build Finished (took 65ms)
 

@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#define FIXED_POINT 32 
 #include "kiss_fft.h"
 
 #ifndef M_PI
-#define M_PI 3.14159265358979324
+//#define M_PI 3.14159265358979324
 #endif
 
 #define N 128
@@ -18,7 +19,7 @@ void TestFft(const char* title, const kiss_fft_cpx in[N], kiss_fft_cpx out[N])
 
     if ((cfg = kiss_fft_alloc(N, 0/*is_inverse_fft*/, NULL, NULL)) != NULL)
     {
-        size_t i;
+        int i;
 
         kiss_fft(cfg, in, out);
         free(cfg);
@@ -28,9 +29,9 @@ void TestFft(const char* title, const kiss_fft_cpx in[N], kiss_fft_cpx out[N])
          
             conj_pdt_out[i]=(out[i].r*out[i].r) + (out[i].i*out[i].i); //product of conjugate-multiplication
             acc_conj_pdt_out+=conj_pdt_out[i]; 
-            printf(" in[%2zu] = %+f , %+f    "
-                    "out[%2zu] = %+f , %+f   "
-                    "conj_pdt_out[%2zu] = %+f\n",
+            printf(" in[%d] = %f , %f    "
+                    "out[%d] = %f , %f   "
+                    "conj_pdt_out[%d] = %f\n",
                     i, in[i].r, in[i].i,
                     i, out[i].r, out[i].i,
                     i, conj_pdt_out[i]);
@@ -51,18 +52,9 @@ void TestFft(const char* title, const kiss_fft_cpx in[N], kiss_fft_cpx out[N])
 int main(void)
 {
     kiss_fft_cpx in[N], out[N];
-    size_t i;
-
+    int i;
     for (i = 0; i < N; i++)
-        in[i].r = in[i].i = 0;
-    TestFft("Zeroes (complex)", in, out);
-
-    for (i = 0; i < N; i++)
-        in[i].r = 1, in[i].i = 0;
-    TestFft("Ones (complex)", in, out);
-
-    for (i = 0; i < N; i++)
-        in[i].r = cos(2 * M_PI * 4 * i / N), in[i].i = 0;
+        in[i].r =((short)(cos(2 * M_PI * 4 * i / N)*(1<<8))), in[i].i = 0;
     TestFft("SineWave (complex)", in, out);
 
     return 0;

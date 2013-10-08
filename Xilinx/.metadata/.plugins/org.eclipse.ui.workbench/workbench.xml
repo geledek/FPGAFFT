@@ -35,32 +35,25 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="/home/bill/workspace/Xilinx/FFT/src/helloworld.c" title="helloworld.c" tooltip="FFT/src/helloworld.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FFT/src/helloworld.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1897" selectionTopPixel="635"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/main.c" title="main.c" tooltip="FFT/src/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FFT/src/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="427" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="oled.h" partName="oled.h" path="/home/bill/workspace/Xilinx/FFT/src/oled.h" title="oled.h" tooltip="FFT/src/oled.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FFT/src/oled.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1843" selectionTopPixel="547"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="oled.c" partName="oled.c" path="/home/bill/workspace/Xilinx/FFT/src/oled.c" title="oled.c" tooltip="FFT/src/oled.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FFT/src/oled.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1588" selectionTopPixel="4634"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="/home/bill/workspace/EmbeddedSystemDesign/zed_mic_oled/sdk_proj/hello_oled/src/helloworld.c" title="helloworld.c" tooltip="hello_oled/src/helloworld.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_oled/src/helloworld.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="969" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="kiss_fft.h" partName="kiss_fft.h" path="/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130/kiss_fft.h" title="kiss_fft.h" tooltip="FFT/src/kiss_fft130/kiss_fft.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FFT/src/kiss_fft130/kiss_fft.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="115" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
@@ -68,29 +61,16 @@
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal 1">
 <viewState ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" Title="Terminal 1" _keys_="ConnectionType,Title,connectionManageractive,connectionManagerconnection0ConnectionType,connectionManagerconnection0Encoding,connectionManagerconnection0HasCommandInputField,connectionManagerconnection0PartName,connectionManagerconnection0Summary,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.NetworkPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.Timeout,connectionManagersize,org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits" connectionManageractive="connection0" connectionManagerconnection0ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection0Encoding="ISO-8859-1" connectionManagerconnection0HasCommandInputField="false" connectionManagerconnection0PartName="Terminal 1" connectionManagerconnection0Summary="/dev/ttySACM0, 115200, 8, 1, None, None" connectionManagersize="1">
-<connectionManagerconnection0org>
-<eclipse>
-<tm>
-<internal>
-<terminal>
-<serial>
-<SerialConnector BaudRate="115200" DataBits="8" FlowControl="None" Parity="None" SerialPort="/dev/ttySACM0" StopBits="1"/>
+<connectionManagerconnection0org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="115200" DataBits="8" FlowControl="None" Parity="None" SerialPort="/dev/ttySACM0" StopBits="1"/>
 </serial>
-<telnet>
-<TelnetConnector NetworkPort="23" Timeout="10"/>
+<telnet>&#x0A;<TelnetConnector NetworkPort="23" Timeout="10"/>
 </telnet>
 </terminal>
 </internal>
 </tm>
 </eclipse>
 </connectionManagerconnection0org>
-<org>
-<eclipse>
-<tm>
-<internal>
-<terminal>
-<serial>
-<SerialConnector BaudRate="115200" DataBits="8" FlowControl="None" Parity="None" SerialPort="/dev/ttySACM0" StopBits="1"/>
+<org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="115200" DataBits="8" FlowControl="None" Parity="None" SerialPort="/dev/ttySACM0" StopBits="1"/>
 </serial>
 </terminal>
 </internal>
@@ -101,11 +81,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (2 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="415" org.eclipse.ui.ide.pathField="207" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="267"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -191,6 +166,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.tm.terminal.view.TerminalView"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
 <fastViewBars/>
@@ -223,6 +199,7 @@
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal 1"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
 <page content="com.xilinx.sdk.targetmanager.ui.XmdConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
@@ -230,6 +207,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -250,160 +228,163 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_oled/src/helloworld.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/src/helloworld.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/src/oled.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/src/oled.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_oled/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/src/kiss_fft130/kiss_fft.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/zed_audio_oled/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/zed_audio_oled/src/adau1761.c"/>
 </editors>
-<item historyLabel="oled.c" index="3">
-<position info="not_deleted" x="3692" y="9"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="1255" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2632" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2461" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="984" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2632" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="984" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2345" y="0"/>
-</item>
-<item historyLabel="oled.c" index="3">
-<position info="not_deleted" x="2657" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2345" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2291" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="oled.c" index="3">
-<position info="not_deleted" x="2687" y="4"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2291" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="oled.c" index="3">
-<position info="not_deleted" x="2687" y="4"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2291" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2133" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="969" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2230" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="oled.c" index="3">
-<position info="not_deleted" x="2687" y="4"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="969" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2230" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2330" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="1836" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2330" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2793" y="0"/>
-</item>
-<item historyLabel="oled.c" index="3">
-<position info="not_deleted" x="2125" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="1836" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2751" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="1836" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="1864" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="1836" y="0"/>
-</item>
-<item historyLabel="oled.c" index="3">
-<position info="not_deleted" x="1670" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2301" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
+<item historyLabel="oled.h" index="0">
 <position info="not_deleted" x="1843" y="10"/>
 </item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2301" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2659" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="1843" y="10"/>
-</item>
-<item historyLabel="oled.c" index="3">
-<position info="not_deleted" x="1702" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2136" y="0"/>
-</item>
-<item historyLabel="oled.h" index="2">
-<position info="not_deleted" x="1843" y="10"/>
-</item>
-<item historyLabel="oled.c" index="3">
+<item historyLabel="oled.c" index="1">
 <position info="not_deleted" x="1588" y="0"/>
 </item>
-<item active="true" historyLabel="helloworld.c" index="1">
-<position info="not_deleted" x="2136" y="0"/>
+<item historyLabel="helloworld.c" index="2">
+<position/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1232" y="0"/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="1045" y="15"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="1045" y="15"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="1045" y="15"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="1045" y="15"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="919" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="5">
+<position/>
+</item>
+<item historyLabel="adau1761.c" index="6">
+<position info="not_deleted" x="9359" y="21"/>
+</item>
+<item historyLabel="adau1761.c" index="6">
+<position info="not_deleted" x="9509" y="0"/>
+</item>
+<item historyLabel="adau1761.c" index="6">
+<position info="not_deleted" x="8876" y="18"/>
+</item>
+<item historyLabel="helloworld.c" index="5">
+<position/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="919" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1641" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="5">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="5">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="5">
+<position/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1506" y="0"/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="765" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1506" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1911" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2163" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2948" y="1"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2946" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1581" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2528" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2623" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="5">
+<position info="not_deleted" x="1334" y="6"/>
+</item>
+<item historyLabel="helloworld.c" index="5">
+<position info="not_deleted" x="1241" y="18"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2623" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2148" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="735" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="982" y="0"/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="765" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="735" y="0"/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="194" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="982" y="0"/>
+</item>
+<item historyLabel="kiss_fft.h" index="4">
+<position info="not_deleted" x="115" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="982" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="3">
+<position info="not_deleted" x="735" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -425,6 +406,18 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="hello_oled/src/helloworld.c">
 <persistable path="/hello_oled/src/helloworld.c"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="zed_audio_oled/src/helloworld.c">
+<persistable path="/zed_audio_oled/src/helloworld.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="adau1761.c" tooltip="zed_audio_oled/src/adau1761.c">
+<persistable path="/zed_audio_oled/src/adau1761.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kiss_fft.h" tooltip="FFT/src/kiss_fft130/kiss_fft.h">
+<persistable path="/FFT/src/kiss_fft130/kiss_fft.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="FFT/src/main.c">
+<persistable path="/FFT/src/main.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="oled.c" tooltip="FFT/src/oled.c">
 <persistable path="/FFT/src/oled.c"/>
 </file>
@@ -440,9 +433,6 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="oled.c" tooltip="hello_oled/src/oled.c">
 <persistable path="/hello_oled/src/oled.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="zed_audio_oled/src/helloworld.c">
-<persistable path="/zed_audio_oled/src/helloworld.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kiss_fft.c" tooltip="FFT/src/kiss_fft130/kiss_fft.c">
 <persistable path="/FFT/src/kiss_fft130/kiss_fft.c"/>
 </file>
@@ -457,15 +447,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kiss_fftnd.h" tooltip="FFT/src/kiss_fft130/tools/kiss_fftnd.h">
 <persistable path="/FFT/src/kiss_fft130/tools/kiss_fftnd.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kiss_fftr.h" tooltip="FFT/src/kiss_fft130/tools/kiss_fftr.h">
-<persistable path="/FFT/src/kiss_fft130/tools/kiss_fftr.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kiss_fftndr.h" tooltip="FFT/src/kiss_fft130/tools/kiss_fftndr.h">
-<persistable path="/FFT/src/kiss_fft130/tools/kiss_fftndr.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fftutil.c" tooltip="FFT/src/kiss_fft130/tools/fftutil.c">
-<persistable path="/FFT/src/kiss_fft130/tools/fftutil.c"/>
 </file>
 </mruList>
 </workbench>
