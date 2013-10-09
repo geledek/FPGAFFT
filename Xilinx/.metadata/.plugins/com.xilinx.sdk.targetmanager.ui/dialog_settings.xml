@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item value="/home/bill/workspace/EmbeddedSystemDesign/zed_mic_oled/sdk_proj/zed_mic_oled_hw_platform/system.bit" key="zed_mic_oled_hw_platform-bitFile"/>
-	<item value="/home/bill/workspace/Xilinx/EDK_hw_platform/system.bit" key="EDK_hw_platform-bitFile"/>
-	<item value="" key="zed_mic_oled_hw_platform-bmmFile"/>
-	<item value="" key="EDK_hw_platform-bmmFile"/>
-</section>
