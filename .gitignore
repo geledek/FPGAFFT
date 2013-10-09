@@ -2,3 +2,8 @@ Xilinx/.metadata/
 *.o
 *.elf
 tags
+Xilinx/FFT/Debug/
+kiss_fft130/test/_impact.cmd
+kiss_fft130/test/_impact.log
+kiss_fft130/test/test
+test
