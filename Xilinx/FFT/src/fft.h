@@ -20,13 +20,21 @@
 	Email: simon.inns@gmail.com
 
 ************************************************************************/
-
+//Modified By Shipeng Xu
+//Email:      sxu008@e.ntu.edu.sg
+//float version from
+//http://www-ee.uta.edu/eeweb/ip/Courses/DSP_new/Programs/fft.cpp
 #ifndef _FIXED_FFT_H
 #define _FIXED_FFT_H
 
+#ifndef M_PI
+#define M_PI 3.14159265358979324
+#endif
 
+#define PI	M_PI	/* pi to machine precision, defined in math.h */
+#define TWOPI	(2.0*PI)
 
 // Function prototypes
 void fix_fft(short fr[], short fi[], short m);
-
+void fft(float data[], int nn, int isign);
 #endif 
