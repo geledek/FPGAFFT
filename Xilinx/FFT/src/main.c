@@ -1,3 +1,35 @@
+/*
+ * Copyright (c) 2009-2012 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+/*
+ * helloworld.c: simple test application
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
 #include <stdint.h>
 #include <stdio.h>
 #include "platform.h"
@@ -5,11 +37,15 @@
 #include <sys/time.h>
 #include <stdlib.h>
 #include <math.h>
-#include "kiss_fft130/kiss_fft.h"
+#include "fft.h"
 #include "oled.h"
 #ifndef M_PI
 #define M_PI 3.14159265358979324
 #endif
+
+#define N 128
+#define POW_N 7
+#define WINDOW 4
 
 #define timer_base 0xf8f00000
 /***********************************************************
@@ -18,9 +54,7 @@ Timer Registers
 static volatile int *timer_counter_l=(volatile int *)(timer_base+0x200);
 static volatile int *timer_counter_h=(volatile int *)(timer_base+0x204);
 static volatile int *timer_ctrl=(volatile int *)(timer_base+0x208);
-/***********************************************************
-Performance Measurement Functions definitions
-************************************************************/
+
 void init_timer(volatile int *timer_ctrl, volatile int *timer_counter_l, volatile int *timer_counter_h){
 	*timer_ctrl=0x0;
 	*timer_counter_l=0x1;
@@ -38,88 +72,70 @@ void stop_timer(volatile int *timer_ctrl){
 	DATA_SYNC;
 }
 
-#define N 128
-#define WINDOW 4
-void FFT(const kiss_fft_cpx in[N], kiss_fft_cpx out[N])
-{
-    kiss_fft_cfg cfg;
+#define PI	M_PI	/* pi to machine precision, defined in math.h */
+#define TWOPI	(2.0*PI)
 
-    if ((cfg = kiss_fft_alloc(N, 0/*is_inverse_fft*/, NULL, NULL)) != NULL)
-    {
-        kiss_fft(cfg, in, out);
-        free(cfg);
-    }
-    else
-    {
-        printf("not enough memory?\n");
-        exit(-1);
-    }
-}
+
 
 int main(void)
 {
-    kiss_fft_cpx in[N], out[N];
+    short real[N], image[N];
     int outLED[N];
-    size_t i, j, window;
-    int timerL=0;
-    print("start");
+    int i,j,window;
+    int timeL;
+    print("FFT start\n");
 
     Xil_Out32(OLED_BASE_ADDR,0xff);
 	OLED_Init();
-	//OLED_ShowString(0,0, "Hello FFT!");
+	OLED_ShowString(0,0, "Hello FFT!");
 	OLED_Refresh_Gram();
+	//srand(time(0));
 	while(1){
 		OLED_Clear();
-		init_timer(timer_ctrl, timer_counter_l, timer_counter_h);
-		start_timer(timer_ctrl);
-
-		for(window = 0; window < WINDOW; ++window)
+		for (i = 0; i < N; i++) outLED[i] = 0;
+		for(window = 0; window<WINDOW; ++window)
 		{
-			//Generating result
-			for (i = 0; i < N; i++)
-				in[i].r = ((float)(rand()%128))/128.0f, in[i].i = 0;
-
-			//FFT
-			timerL = *timer_counter_l;
-			FFT(in, out);
-			printf("FFT timer_counter_l change:%d\n",*timer_counter_l-timerL);
-
-			outLED[i] = 0;
-
-			//get absolute value and sum
-			timerL = *timer_counter_l;
+			init_timer(timer_ctrl, timer_counter_l, timer_counter_h);
+			start_timer(timer_ctrl);
+			//Generate input data
 			for (i = 0; i < N; i++)
 			{
-				int conj_out =sqrt((out[i].r*out[i].r) + (out[i].i*out[i].i));
-				outLED[i]+=conj_out;
+				real[i] = ((rand()%128-64)/128.0f)*(1<<14);
+				image[i] = 0;
 			}
-			printf("Step2 timer_counter_l change:%d\n",*timer_counter_l-timerL);
-		}
+			timeL = *timer_counter_l;
+			//FFT
+			fix_fft(real, image, POW_N);
+			printf("FFT: %d us\n",(*timer_counter_l - timeL)/333);
 
+			timeL = *timer_counter_l;
+			//Conj
+			for (i = 0; i < N; i++)
+			{
+				//printf("real[%d]= %d image[%d]= %d\n",i,real[i],i,image[i]);
+				int conj_pdt_out =sqrt((real[i]*real[i]) + (image[i]*image[i]));
+				//conj_pdt_out=conj_pdt_out/2;
+				outLED[i]+=conj_pdt_out;
+			}
+			printf("Conj: %d us\n",(*timer_counter_l - timeL)/333);
+		}
+		timeL = *timer_counter_l;
 		//Averaging
-		timerL = *timer_counter_l;
-		for(i=0; i<N; ++i)
+		for(i=0;i<N;++i)
 		{
-			outLED[i]=outLED[i]>>2;
+			outLED[i]=outLED[i]>>10;
 		}
-		printf("Averaging timer_counter_l change:%d\n",*timer_counter_l-timerL);
-
-		//print
-		for(i=0; i<N; ++i)
-		{
-			printf("out[%d]= %d\n",i,outLED[i]);
-		}
+		printf("Averaging: %d us\n",(*timer_counter_l - timeL)/333);
+		stop_timer(timer_ctrl);
 
 		//Display
-		timerL = *timer_counter_l;
-		for(i=0; i<N; ++i)
+		for(i=0;i<N;++i)
 		{
+			//printf("real[%d]= %d image[%d]= %d\n",i,real[i],i,image[i]);
 			for(j=0; j< outLED[i]; ++j)
 				OLED_DrawPoint(i,63-j,1);
 		}
 		OLED_Refresh_Gram();
-		printf("Display timer_counter_l change:%d\n",*timer_counter_l-timerL);
-		stop_timer(timer_ctrl);
 	}
     return 0;
 }

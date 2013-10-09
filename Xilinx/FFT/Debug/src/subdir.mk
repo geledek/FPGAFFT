@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/fft.c \
 ../src/main.c \
 ../src/oled.c \
 ../src/platform.c 
@@ -12,11 +13,13 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 OBJS += \
+./src/fft.o \
 ./src/main.o \
 ./src/oled.o \
 ./src/platform.o 
 
 C_DEPS += \
+./src/fft.d \
 ./src/main.d \
 ./src/oled.d \
 ./src/platform.d 

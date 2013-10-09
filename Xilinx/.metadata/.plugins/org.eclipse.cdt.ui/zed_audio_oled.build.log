@@ -1,6 +1,6 @@
-23:19:23 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+21:21:35 **** Incremental Build of configuration Debug for project zed_audio_oled ****
 make all 
 make: Nothing to be done for `all'.
 
-23:19:23 Build Finished (took 61ms)
+21:21:35 Build Finished (took 66ms)
 

@@ -1,5 +1,5 @@
 src/main.d: ../src/main.c ../src/platform.h ../src/platform_config.h \
- ../src/kiss_fft130/kiss_fft.h ../src/oled.h \
+ ../src/fft.h ../src/oled.h \
  ../../FFT_bsp/ps7_cortexa9_0/include/xil_types.h \
  ../../FFT_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../FFT_bsp/ps7_cortexa9_0/include/xil_types.h \
@@ -14,7 +14,7 @@ src/main.d: ../src/main.c ../src/platform.h ../src/platform_config.h \
 
 ../src/platform_config.h:
 
-../src/kiss_fft130/kiss_fft.h:
+../src/fft.h:
 
 ../src/oled.h:
 

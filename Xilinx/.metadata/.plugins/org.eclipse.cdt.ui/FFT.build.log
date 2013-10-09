@@ -1,6 +1,25 @@
-23:19:22 **** Incremental Build of configuration Debug for project FFT ****
+21:23:59 **** Auto Build of configuration Debug for project FFT ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:90:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
+Finished building: ../src/main.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84744	   2280	  30876	 117900	  1cc8c	FFT.elf
+Finished building: FFT.elf.size
+ 
 
-23:19:22 Build Finished (took 73ms)
+21:23:59 Build Finished (took 212ms)
 

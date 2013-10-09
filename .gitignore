@@ -1,0 +1,4 @@
+Xilinx/.metadata/
+*.o
+*.elf
+tags

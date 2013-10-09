@@ -1,686 +1,76 @@
-17:27:05 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-/opt/Xilinx/14.5/ISE_DS/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.7.2/../../../../arm-xilinx-eabi/lib/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
-gettimeofdayr.c:(.text+0x20): undefined reference to `_gettimeofday'
-collect2: error: ld returned 1 exit status
-make: *** [FFT.elf] Error 1
-17:27:39 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:89:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
-In file included from ../src/helloworld.c:41:0:
-../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
-../src/helloworld.c:91:2: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-/opt/Xilinx/14.5/ISE_DS/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.7.2/../../../../arm-xilinx-eabi/lib/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
-gettimeofdayr.c:(.text+0x20): undefined reference to `_gettimeofday'
-collect2: error: ld returned 1 exit status
-make: *** [FFT.elf] Error 1
-17:28:13 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:89:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
-In file included from ../src/helloworld.c:41:0:
-../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81504	   2264	  30876	 114644	  1bfd4	FFT.elf
-Finished building: FFT.elf.size
- 
-17:28:22 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:28:22 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:28:23 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:28:38 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81480	   2264	  30876	 114620	  1bfbc	FFT.elf
-Finished building: FFT.elf.size
- 
-17:29:01 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81464	   2264	  30876	 114604	  1bfac	FFT.elf
-Finished building: FFT.elf.size
- 
-17:29:04 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:29:05 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:29:06 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:29:17 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:29:17 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:29:18 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:29:35 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81456	   2264	  30876	 114596	  1bfa4	FFT.elf
-Finished building: FFT.elf.size
- 
-17:29:46 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:29:46 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:29:47 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:30:16 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54304	   2136	  30868	  87308	  1550c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:30:18 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:30:19 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:30:19 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:31:31 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54304	   2136	  30868	  87308	  1550c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:31:33 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:31:33 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:31:34 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:32:12 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54304	   2136	  30868	  87308	  1550c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:32:36 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54312	   2136	  30868	  87316	  15514	FFT.elf
-Finished building: FFT.elf.size
- 
-17:32:38 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:32:38 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:32:39 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:33:31 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54320	   2136	  30868	  87324	  1551c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:33:33 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:33:34 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:33:35 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:33:55 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:33:56 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:33:56 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:34:35 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54312	   2136	  30868	  87316	  15514	FFT.elf
-Finished building: FFT.elf.size
- 
-17:35:13 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:35:13 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:35:14 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:35:33 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81464	   2264	  30876	 114604	  1bfac	FFT.elf
-Finished building: FFT.elf.size
- 
-17:36:23 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81456	   2264	  30876	 114596	  1bfa4	FFT.elf
-Finished building: FFT.elf.size
- 
-17:36:27 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:36:27 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:36:28 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:37:37 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81448	   2264	  30876	 114588	  1bf9c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:37:41 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:37:42 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:37:42 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:37:57 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81448	   2264	  30876	 114588	  1bf9c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:38:55 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/oled.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/oled.d" -MT"src/oled.d" -o "src/oled.o" "../src/oled.c"
-Finished building: ../src/oled.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81448	   2264	  30876	 114588	  1bf9c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:39:21 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81448	   2264	  30876	 114588	  1bf9c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:39:23 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:39:24 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:39:25 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:49:10 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54296	   2136	  30868	  87300	  15504	FFT.elf
-Finished building: FFT.elf.size
- 
-17:49:13 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:49:13 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:49:14 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:49:56 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54304	   2136	  30868	  87308	  1550c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:50:00 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:50:00 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:50:01 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:50:22 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54304	   2136	  30868	  87308	  1550c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:51:00 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54304	   2136	  30868	  87308	  1550c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:51:05 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54304	   2136	  30868	  87308	  1550c	FFT.elf
-Finished building: FFT.elf.size
- 
-17:51:09 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-17:51:09 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-17:51:10 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-15:28:22 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:37:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/helloworld.c:38:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/helloworld.c:39:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54304	   2152	  30868	  87324	  1551c	FFT.elf
-Finished building: FFT.elf.size
- 
-15:31:17 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-In file included from ../src/helloworld.c:48:0:
-../src/kiss_fft130/kiss_fft.h:52:5: error: unknown type name 'int16_t'
-../src/kiss_fft130/kiss_fft.h:53:5: error: unknown type name 'int16_t'
-../src/helloworld.c:38:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/helloworld.c:39:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/helloworld.c:40:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/helloworld.o] Error 1
-15:32:09 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:38:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/helloworld.c:39:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/helloworld.c:40:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54344	   2152	  30868	  87364	  15544	FFT.elf
-Finished building: FFT.elf.size
- 
-15:32:28 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/helloworld.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:38:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/helloworld.c:39:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/helloworld.c:40:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/helloworld.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54264	   2152	  30868	  87284	  154f4	FFT.elf
-Finished building: FFT.elf.size
- 
-15:34:13 **** Clean-only build of configuration Debug for project FFT ****
+21:09:09 **** Clean-only build of configuration Debug for project FFT ****
 make clean 
-rm -rf  ./src/kiss_fft130/kiss_fft.o  ./src/helloworld.o ./src/oled.o ./src/platform.o  ./src/kiss_fft130/kiss_fft.d  ./src/helloworld.d ./src/oled.d ./src/platform.d  FFT.elf.size  FFT.elf
+rm -rf  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o  ./src/kiss_fft130/kiss_fft.d  ./src/fft.d ./src/main.d ./src/oled.d ./src/platform.d  FFT.elf.size  FFT.elf
  
-15:34:13 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/kiss_fft130/kiss_fft.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/kiss_fft.d" -MT"src/kiss_fft130/kiss_fft.d" -o "src/kiss_fft130/kiss_fft.o" "../src/kiss_fft130/kiss_fft.c"
-Finished building: ../src/kiss_fft130/kiss_fft.c
- 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:38:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:39:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:40:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building file: ../src/oled.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/oled.d" -MT"src/oled.d" -o "src/oled.o" "../src/oled.c"
-Finished building: ../src/oled.c
- 
-Building file: ../src/platform.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54264	   2152	  30868	  87284	  154f4	FFT.elf
-Finished building: FFT.elf.size
- 
-15:37:36 **** Clean-only build of configuration Debug for project FFT ****
-make clean 
-rm -rf  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o  ./src/kiss_fft130/kiss_fft.d  ./src/main.d ./src/oled.d ./src/platform.d  FFT.elf.size  FFT.elf
- 
-15:37:38 **** Auto Build of configuration Debug for project FFT ****
+21:09:09 **** Clean-only build of project FFT_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+21:09:09 **** Build of project FFT_bsp ****
+make -k all 
+libgen -hw ../EDK_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../EDK_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+21:09:25 **** Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/kiss_fft130/kiss_fft.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/kiss_fft130/kiss_fft.d" -MT"src/kiss_fft130/kiss_fft.d" -o "src/kiss_fft130/kiss_fft.o" "../src/kiss_fft130/kiss_fft.c"
 Finished building: ../src/kiss_fft130/kiss_fft.c
  
+Building file: ../src/fft.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/fft.d" -MT"src/fft.d" -o "src/fft.o" "../src/fft.c"
+../src/fft.c: In function 'fix_fft':
+../src/fft.c:53:45: warning: unused variable 'shift' [-Wunused-variable]
+Finished building: ../src/fft.c
+ 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building file: ../src/oled.c
@@ -691,980 +81,538 @@ Finished building: ../src/oled.c
 Building file: ../src/platform.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
-../src/main.c:38:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
 Finished building: ../src/platform.c
-../src/main.c:39:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:40:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54264	   2152	  30868	  87284	  154f4	FFT.elf
-Finished building: FFT.elf.size
- 
-15:40:17 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:76:3: warning: implicit declaration of function 'TestFft' [-Wimplicit-function-declaration]
-../src/main.c: At top level:
-../src/main.c:15:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
-../src/main.c:16:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:17:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-./src/main.o: In function `main':
-/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/Debug/../src/main.c:76: undefined reference to `TestFft'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o:(.rodata+0x0): multiple definition of `Sinewave'
+./src/fft.o:(.rodata+0x0): first defined here
 collect2: error: ld returned 1 exit status
 make: *** [FFT.elf] Error 1
-15:40:27 **** Auto Build of configuration Debug for project FFT ****
+21:09:54 **** Auto Build of configuration Debug for project FFT ****
 make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:15:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:16:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:17:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54224	   2152	  30868	  87244	  154cc	FFT.elf
-Finished building: FFT.elf.size
- 
-15:41:10 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'FFT':
-../src/main.c:46:38: error: invalid operands to binary >> (have 'float' and 'int')
-../src/main.c: At top level:
-../src/main.c:15:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:16:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:17:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-15:42:49 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'FFT':
-../src/main.c:44:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat]
-../src/main.c:44:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat]
-../src/main.c:44:21: warning: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Wformat]
-../src/main.c:44:21: warning: format '%d' expects argument of type 'int', but argument 7 has type 'double' [-Wformat]
-../src/main.c:44:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat]
-../src/main.c:44:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat]
-../src/main.c:44:21: warning: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Wformat]
-../src/main.c:44:21: warning: format '%d' expects argument of type 'int', but argument 7 has type 'double' [-Wformat]
-../src/main.c:46:38: error: invalid operands to binary >> (have 'float' and 'int')
-../src/main.c: At top level:
-../src/main.c:15:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:16:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:17:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-15:44:06 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'FFT':
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 7 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 7 has type 'double' [-Wformat]
-../src/main.c:47:38: error: invalid operands to binary >> (have 'float' and 'int')
-../src/main.c:38:25: warning: unused variable 'conj_pdt_out' [-Wunused-variable]
-../src/main.c: At top level:
-../src/main.c:15:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:16:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:17:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-15:44:15 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'FFT':
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 7 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat]
-Finished building: ../src/main.c
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat]
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Wformat]
- 
-Building target: FFT.elf
-../src/main.c:45:21: warning: format '%d' expects argument of type 'int', but argument 7 has type 'double' [-Wformat]
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-../src/main.c: At top level:
-../src/main.c:15:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:16:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:17:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81376	   2280	  30876	 114532	  1bf64	FFT.elf
-Finished building: FFT.elf.size
- 
-20:22:23 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:38:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:39:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:40:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54264	   2152	  30868	  87284	  154f4	FFT.elf
-Finished building: FFT.elf.size
- 
-20:25:24 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-20:25:25 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-20:25:26 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-20:26:15 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-20:26:16 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-20:26:17 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-20:27:04 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-20:27:05 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-20:27:05 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-20:27:45 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-20:27:46 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-20:27:46 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-22:36:09 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:38:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:39:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:40:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54256	   2152	  30868	  87276	  154ec	FFT.elf
-Finished building: FFT.elf.size
- 
-22:36:55 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54256	   2152	  30868	  87276	  154ec	FFT.elf
-Finished building: FFT.elf.size
- 
-22:37:13 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:75:3: warning: implicit declaration of function 'TestFft' [-Wimplicit-function-declaration]
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-./src/main.o: In function `main':
-/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/Debug/../src/main.c:75: undefined reference to `TestFft'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o:(.rodata+0x0): multiple definition of `Sinewave'
+./src/fft.o:(.rodata+0x0): first defined here
 collect2: error: ld returned 1 exit status
 make: *** [FFT.elf] Error 1
-22:37:20 **** Auto Build of configuration Debug for project FFT ****
+21:10:39 **** Auto Build of configuration Debug for project FFT ****
 make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:73:3: warning: implicit declaration of function 'TestFft' [-Wimplicit-function-declaration]
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-./src/main.o: In function `main':
-/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/Debug/../src/main.c:73: undefined reference to `TestFft'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o:(.rodata+0x0): multiple definition of `Sinewave'
+./src/fft.o:(.rodata+0x0): first defined here
 collect2: error: ld returned 1 exit status
 make: *** [FFT.elf] Error 1
-22:37:46 **** Auto Build of configuration Debug for project FFT ****
+21:10:51 **** Auto Build of configuration Debug for project FFT ****
 make all 
-Building file: ../src/main.c
+Building file: ../src/fft.c
 Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/fft.d" -MT"src/fft.d" -o "src/fft.o" "../src/fft.c"
+../src/fft.c: In function 'fix_fft':
+Finished building: ../src/fft.c
+../src/fft.c:157:45: warning: unused variable 'shift' [-Wunused-variable]
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o:(.rodata+0x0): multiple definition of `Sinewave'
+./src/fft.o:(.rodata+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [FFT.elf] Error 1
+21:11:06 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/fft.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/fft.d" -MT"src/fft.d" -o "src/fft.o" "../src/fft.c"
+../src/fft.c: In function 'fix_fft':
+../src/fft.c:155:45: warning: unused variable 'shift' [-Wunused-variable]
+Finished building: ../src/fft.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o:(.rodata+0x0): multiple definition of `Sinewave'
+./src/fft.o:(.rodata+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [FFT.elf] Error 1
+21:11:42 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/fft.c
+../src/fft.c: In function 'fix_fft':
+Invoking: ARM gcc compiler
+../src/fft.c:155:45: warning: unused variable 'shift' [-Wunused-variable]
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/fft.d" -MT"src/fft.d" -o "src/fft.o" "../src/fft.c"
+Finished building: ../src/fft.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54224	   2152	  30868	  87244	  154cc	FFT.elf
+  86296	   2280	  30876	 119452	  1d29c	FFT.elf
 Finished building: FFT.elf.size
  
-22:38:03 **** Auto Build of configuration Debug for project FFT ****
+21:11:50 **** Incremental Build of configuration Debug for project FFT ****
 make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54224	   2152	  30868	  87244	  154cc	FFT.elf
-Finished building: FFT.elf.size
- 
-22:38:20 **** Auto Build of configuration Debug for project FFT ****
+make: Nothing to be done for `all'.
+21:11:50 **** Incremental Build of configuration Debug for project zed_audio_oled ****
 make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54224	   2152	  30868	  87244	  154cc	FFT.elf
-Finished building: FFT.elf.size
- 
-22:38:35 **** Auto Build of configuration Debug for project FFT ****
+make: Nothing to be done for `all'.
+21:11:51 **** Incremental Build of configuration Debug for project hello_oled ****
 make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'FFT':
-../src/main.c:31:18: warning: unused variable 'j' [-Wunused-variable]
-../src/main.c:31:16: warning: unused variable 'i' [-Wunused-variable]
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  53976	   2152	  30868	  86996	  153d4	FFT.elf
-Finished building: FFT.elf.size
- 
-22:38:42 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-Finished building: ../src/main.c
- 
-Building target: FFT.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: FFT.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  53976	   2152	  30868	  86996	  153d4	FFT.elf
-Finished building: FFT.elf.size
- 
-22:39:36 **** Auto Build of configuration Debug for project FFT ****
+make: Nothing to be done for `all'.
+21:12:19 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:66:7: error: 'j' undeclared (first use in this function)
-../src/main.c:66:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:66:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:40:00 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:67:7: error: 'j' undeclared (first use in this function)
-../src/main.c:67:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:67:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c:44:9: warning: unused variable 'outLED' [-Wunused-variable]
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:42:18 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:73:7: error: 'j' undeclared (first use in this function)
-../src/main.c:73:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:73:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:42:33 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:56:28: error: invalid operands to binary % (have 'float' and 'int')
-../src/main.c:56:40: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-../src/main.c:73:7: error: 'j' undeclared (first use in this function)
-../src/main.c:73:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:73:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:42:41 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:56:34: warning: value computed is not used [-Wunused-value]
-../src/main.c:56:54: error: expected ')' before ';' token
-../src/main.c:76:2: error: expected ';' before '}' token
-../src/main.c:45:15: warning: unused variable 'window' [-Wunused-variable]
-../src/main.c:44:9: warning: unused variable 'outLED' [-Wunused-variable]
-../src/main.c:43:25: warning: unused variable 'out' [-Wunused-variable]
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:43:04 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:73:7: error: 'j' undeclared (first use in this function)
-../src/main.c:73:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:73:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:43:19 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:73:7: error: 'j' undeclared (first use in this function)
-../src/main.c:73:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:73:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:43:51 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:72:7: error: 'j' undeclared (first use in this function)
-../src/main.c:72:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:72:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:44:25 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:72:7: error: 'j' undeclared (first use in this function)
-../src/main.c:72:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:72:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:44:33 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:72:7: error: 'j' undeclared (first use in this function)
-../src/main.c:72:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:72:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:45:01 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:75:3: error: expected '(' before 'for'
-../src/main.c:75:7: error: 'j' undeclared (first use in this function)
-../src/main.c:75:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:45:55 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:78:7: error: 'j' undeclared (first use in this function)
-../src/main.c:78:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:78:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:46:17 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:81:7: error: 'j' undeclared (first use in this function)
-../src/main.c:81:7: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:81:15: error: 'conj_pdt_out' undeclared (first use in this function)
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:46:59 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:83:8: error: 'j' undeclared (first use in this function)
-../src/main.c:83:8: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c: At top level:
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
-make: *** [src/main.o] Error 1
-22:47:09 **** Auto Build of configuration Debug for project FFT ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54576	   2152	  30868	  87596	  1562c	FFT.elf
+  84760	   2280	  30876	 117916	  1cc9c	FFT.elf
 Finished building: FFT.elf.size
  
-22:48:29 **** Auto Build of configuration Debug for project FFT ****
+21:12:22 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:12:22 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:12:23 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:13:52 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54576	   2152	  30868	  87596	  1562c	FFT.elf
+  84760	   2280	  30876	 117916	  1cc9c	FFT.elf
 Finished building: FFT.elf.size
  
-22:48:44 **** Auto Build of configuration Debug for project FFT ****
+21:13:54 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:13:54 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:13:55 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:14:48 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:18:22: warning: 'timer_counter_l' defined but not used [-Wunused-variable]
-../src/main.c:19:22: warning: 'timer_counter_h' defined but not used [-Wunused-variable]
-../src/main.c:20:22: warning: 'timer_ctrl' defined but not used [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54752	   2152	  30868	  87772	  156dc	FFT.elf
+  84800	   2280	  30876	 117956	  1ccc4	FFT.elf
 Finished building: FFT.elf.size
  
-22:49:46 **** Auto Build of configuration Debug for project FFT ****
+21:15:13 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54824	   2152	  30868	  87844	  15724	FFT.elf
+  84872	   2280	  30876	 118028	  1cd0c	FFT.elf
 Finished building: FFT.elf.size
  
-22:50:00 **** Auto Build of configuration Debug for project FFT ****
+21:15:14 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:15:14 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:15:15 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:15:41 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54824	   2152	  30868	  87844	  15724	FFT.elf
+  84752	   2280	  30876	 117908	  1cc94	FFT.elf
 Finished building: FFT.elf.size
  
-22:50:12 **** Auto Build of configuration Debug for project FFT ****
+21:15:42 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:15:43 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:15:44 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:16:17 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54848	   2152	  30868	  87868	  1573c	FFT.elf
+  84720	   2280	  30876	 117876	  1cc74	FFT.elf
 Finished building: FFT.elf.size
  
-22:50:59 **** Auto Build of configuration Debug for project FFT ****
+21:16:20 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:16:20 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:16:21 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:17:00 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  81920	   2280	  30876	 115076	  1c184	FFT.elf
+  84648	   2280	  30876	 117804	  1cc2c	FFT.elf
 Finished building: FFT.elf.size
  
-22:54:46 **** Auto Build of configuration Debug for project FFT ****
+21:17:02 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:17:02 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:17:03 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:19:00 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  82032	   2280	  30876	 115188	  1c1f4	FFT.elf
+  84648	   2280	  30876	 117804	  1cc2c	FFT.elf
 Finished building: FFT.elf.size
  
-22:55:08 **** Auto Build of configuration Debug for project FFT ****
+21:19:02 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:19:02 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:19:03 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:19:20 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  82088	   2280	  30876	 115244	  1c22c	FFT.elf
+  84648	   2280	  30876	 117804	  1cc2c	FFT.elf
 Finished building: FFT.elf.size
  
-22:55:43 **** Auto Build of configuration Debug for project FFT ****
+21:19:23 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:19:24 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:19:24 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:19:42 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  82232	   2280	  30876	 115388	  1c2bc	FFT.elf
+  84648	   2280	  30876	 117804	  1cc2c	FFT.elf
 Finished building: FFT.elf.size
  
-22:56:17 **** Auto Build of configuration Debug for project FFT ****
+21:19:44 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Nothing to be done for `all'.
+21:19:45 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:19:45 **** Incremental Build of configuration Debug for project hello_oled ****
+make all 
+make: Nothing to be done for `all'.
+21:20:03 **** Auto Build of configuration Debug for project FFT ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
 Finished building: ../src/main.c
  
 Building target: FFT.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: FFT.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  82320	   2280	  30876	 115476	  1c314	FFT.elf
+  84648	   2280	  30876	 117804	  1cc2c	FFT.elf
 Finished building: FFT.elf.size
  
-22:59:36 **** Incremental Build of configuration Debug for project FFT ****
+21:20:05 **** Incremental Build of configuration Debug for project FFT ****
 make all 
 make: Nothing to be done for `all'.
-22:59:37 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+21:20:06 **** Incremental Build of configuration Debug for project zed_audio_oled ****
 make all 
 make: Nothing to be done for `all'.
-22:59:38 **** Incremental Build of configuration Debug for project hello_oled ****
+21:20:06 **** Incremental Build of configuration Debug for project hello_oled ****
 make all 
 make: Nothing to be done for `all'.
-23:00:23 **** Incremental Build of configuration Debug for project FFT ****
+21:20:17 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
+Finished building: ../src/main.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84648	   2280	  30876	 117804	  1cc2c	FFT.elf
+Finished building: FFT.elf.size
+ 
+21:20:20 **** Incremental Build of configuration Debug for project FFT ****
 make all 
 make: Nothing to be done for `all'.
-23:00:23 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+21:20:21 **** Incremental Build of configuration Debug for project zed_audio_oled ****
 make all 
 make: Nothing to be done for `all'.
-23:00:24 **** Incremental Build of configuration Debug for project hello_oled ****
+21:20:21 **** Incremental Build of configuration Debug for project hello_oled ****
 make all 
 make: Nothing to be done for `all'.
-23:00:48 **** Incremental Build of configuration Debug for project FFT ****
+21:21:10 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
+Finished building: ../src/main.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84744	   2280	  30876	 117900	  1cc8c	FFT.elf
+Finished building: FFT.elf.size
+ 
+21:21:10 **** Incremental Build of configuration Debug for project FFT ****
 make all 
 make: Nothing to be done for `all'.
-23:00:58 **** Incremental Build of configuration Debug for project FFT ****
+21:21:11 **** Incremental Build of configuration Debug for project zed_audio_oled ****
 make all 
 make: Nothing to be done for `all'.
-23:00:59 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+21:21:11 **** Incremental Build of configuration Debug for project hello_oled ****
 make all 
 make: Nothing to be done for `all'.
-23:00:59 **** Incremental Build of configuration Debug for project hello_oled ****
+21:21:30 **** Auto Build of configuration Debug for project FFT ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:86:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
+Finished building: ../src/main.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84744	   2280	  30876	 117900	  1cc8c	FFT.elf
+Finished building: FFT.elf.size
+ 
+21:21:34 **** Incremental Build of configuration Debug for project FFT ****
 make all 
 make: Nothing to be done for `all'.
-23:01:26 **** Incremental Build of configuration Debug for project FFT ****
+21:21:35 **** Incremental Build of configuration Debug for project zed_audio_oled ****
 make all 
 make: Nothing to be done for `all'.
-23:01:27 **** Incremental Build of configuration Debug for project zed_audio_oled ****
+21:21:35 **** Incremental Build of configuration Debug for project hello_oled ****
 make all 
 make: Nothing to be done for `all'.
-23:01:27 **** Incremental Build of configuration Debug for project hello_oled ****
+21:23:59 **** Auto Build of configuration Debug for project FFT ****
 make all 
-make: Nothing to be done for `all'.
-23:02:02 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:02:03 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:02:03 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:02:09 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:02:19 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:02:25 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:02:25 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:02:26 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:03:52 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:03:53 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:03:54 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:04:20 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:04:20 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:04:21 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:05:57 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:05:58 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:05:58 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:06:03 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:06:04 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:06:05 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:06:12 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:06:13 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:06:13 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:06:48 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:06:49 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:06:50 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:07:54 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:07:55 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:07:55 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:08:42 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:08:43 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:08:44 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:09:35 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:09:36 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:09:36 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:15:54 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:15:55 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:15:56 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:16:14 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:16:15 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:16:16 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:16:26 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:16:26 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:16:27 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:19:22 **** Incremental Build of configuration Debug for project FFT ****
-make all 
-make: Nothing to be done for `all'.
-23:19:23 **** Incremental Build of configuration Debug for project zed_audio_oled ****
-make all 
-make: Nothing to be done for `all'.
-23:19:24 **** Incremental Build of configuration Debug for project hello_oled ****
-make all 
-make: Nothing to be done for `all'.
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../FFT_bsp/ps7_cortexa9_0/include -I"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/Xilinx/FFT/src/kiss_fft130" -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:90:2: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+In file included from ../src/main.c:41:0:
+../src/oled.h:60:6: note: expected 'const u8 *' but argument is of type 'char *'
+Finished building: ../src/main.c
+ 
+Building target: FFT.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT.elf"  ./src/kiss_fft130/kiss_fft.o  ./src/fft.o ./src/main.o ./src/oled.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FFT.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size FFT.elf  |tee "FFT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84744	   2280	  30876	 117900	  1cc8c	FFT.elf
+Finished building: FFT.elf.size
+ 
