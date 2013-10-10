@@ -7,3 +7,5 @@ kiss_fft130/test/_impact.cmd
 kiss_fft130/test/_impact.log
 kiss_fft130/test/test
 test
+SDK_Export_withAudio/.metadata/
+SDK_Export_withAudio/zynq_audio/Debug/

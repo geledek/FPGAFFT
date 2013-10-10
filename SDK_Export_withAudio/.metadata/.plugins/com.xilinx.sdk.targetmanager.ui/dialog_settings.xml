@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item value="/home/bill/workspace/EmbeddedSystemDesign/zynq_audio/implementation/system.bit" key="zynq_audio_hw_platform-bitFile"/>
-	<item value="" key="zynq_audio_hw_platform-bmmFile"/>
-</section>

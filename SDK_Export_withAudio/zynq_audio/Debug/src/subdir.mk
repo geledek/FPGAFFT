@@ -5,21 +5,24 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/audio.c \
+../src/fft.c \
 ../src/oled.c \
-../src/zynq_audio.c 
+../src/zynq_audio_fft.c 
 
 LD_SRCS += \
 ../src/lscript.ld 
 
 OBJS += \
 ./src/audio.o \
+./src/fft.o \
 ./src/oled.o \
-./src/zynq_audio.o 
+./src/zynq_audio_fft.o 
 
 C_DEPS += \
 ./src/audio.d \
+./src/fft.d \
 ./src/oled.d \
-./src/zynq_audio.d 
+./src/zynq_audio_fft.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
