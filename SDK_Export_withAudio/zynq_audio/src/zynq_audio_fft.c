@@ -40,36 +40,13 @@
 #include "audio.h"
 #include "oled.h"
 #include "sleep.h"
-
+#include "xtime_l.h"
+#include "xpm_counter.h"
+#include "xparameters.h"
 
 #define N 128
 #define POW_N 7
 #define WINDOW 8
-
-#define timer_base 0xf8f00000
-/***********************************************************
-Timer Registers
-************************************************************/
-static volatile int *timer_counter_l=(volatile int *)(timer_base+0x200);
-static volatile int *timer_counter_h=(volatile int *)(timer_base+0x204);
-static volatile int *timer_ctrl=(volatile int *)(timer_base+0x208);
-
-void init_timer(volatile int *timer_ctrl, volatile int *timer_counter_l, volatile int *timer_counter_h){
-	*timer_ctrl=0x0;
-	*timer_counter_l=0x1;
-	*timer_counter_h=0x0;
-	DATA_SYNC;
-}
-
-void start_timer(volatile int *timer_ctrl){
-	*timer_ctrl=*timer_ctrl | 0x00000001;
-	DATA_SYNC;
-}
-
-void stop_timer(volatile int *timer_ctrl){
-	*timer_ctrl=*timer_ctrl & 0xFFFFFFFE;
-	DATA_SYNC;
-}
 
 #define FIX_POINT
 
@@ -81,7 +58,9 @@ int main(void)
     int outLED[N];
     Xint16 audio_data[128];
     int i,j,window;
-    int timeL;
+    XTime tEnd, tCur;
+    u32 tUsed;
+    int cycle=0;
     print("FFT start\n");
 
 
@@ -97,13 +76,14 @@ int main(void)
 	//srand(time(0));
 	while(1){
 		OLED_Clear();
+		printf("Cycle %d##############################\n",++cycle);
 		for (i = 0; i < N; i++) outLED[i] = 0;
 		for(window = 0; window<WINDOW; ++window)
 		{
-			init_timer(timer_ctrl, timer_counter_l, timer_counter_h);
-			start_timer(timer_ctrl);
 			//Generate input data
+			XTime_GetTime(&tCur);
 			get_audio(audio_data);
+
 			for (i = 0; i < N; i++)
 			{
 #ifdef FIX_POINT
@@ -116,17 +96,24 @@ int main(void)
 				datacpx[2*i+1] = 0;
 #endif
 			}
-			timeL = *timer_counter_l;
+
+			XTime_GetTime(&tEnd);
+			tUsed = ((tEnd-tCur)*1000000)/(COUNTS_PER_SECOND);
+			printf("get input %d us\r\n",tUsed);
+
 			//FFT
+			XTime_GetTime(&tCur);
 #ifdef FIX_POINT
 			fix_fft(real, image, POW_N);
 #else
 			fft(datacpx,N,1);
 #endif
-			printf("FFT: %d us\n",(*timer_counter_l - timeL)/333);
+			XTime_GetTime(&tEnd);
+			tUsed = ((tEnd-tCur)*1000000)/(COUNTS_PER_SECOND);
+			printf("FFT %d us\r\n",tUsed);
 
-			timeL = *timer_counter_l;
 			//Conj
+			XTime_GetTime(&tCur);
 			for (i = 0; i < N; i++)
 			{
 #ifdef FIX_POINT
@@ -138,10 +125,13 @@ int main(void)
 				//conj_pdt_out=conj_pdt_out/2;
 				outLED[i]+=conj_pdt_out;
 			}
-			printf("Conj: %d us\n",(*timer_counter_l - timeL)/333);
+			XTime_GetTime(&tEnd);
+			tUsed = ((tEnd-tCur)*1000000)/(COUNTS_PER_SECOND);
+			printf("Conj %d us\r\n",tUsed);
 		}
-		timeL = *timer_counter_l;
+
 		//Averaging
+		XTime_GetTime(&tCur);
 		for(i=0;i<N;++i)
 		{
 #ifdef FIX_POINT
@@ -150,12 +140,17 @@ int main(void)
 			oled_equalizer_buf[i]=outLED[i]/8;
 #endif
 		}
-		printf("Averaging: %d us\n",(*timer_counter_l - timeL)/333);
-		stop_timer(timer_ctrl);
+		XTime_GetTime(&tEnd);
+		tUsed = ((tEnd-tCur)*1000000)/(COUNTS_PER_SECOND);
+		printf("Averaging %d us\r\n",tUsed);
 
 		//Display
+		XTime_GetTime(&tCur);
 		OLED_Equalizer_128(oled_equalizer_buf);
 		OLED_Refresh_Gram();
+		XTime_GetTime(&tEnd);
+		tUsed = ((tEnd-tCur)*1000000)/(COUNTS_PER_SECOND);
+		printf("Display %d us\r\n",tUsed);
 	}
     return 0;
 }
