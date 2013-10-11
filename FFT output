@@ -1,0 +1,392 @@
+//floating point
+Cycle 104##############################
+get input 2606 us
+FFT 97 us
+Conj 149 us
+get input 2596 us
+FFT 97 us
+Conj 150 us
+get input 2597 us
+FFT 97 us
+Conj 148 us
+get input 2598 us
+FFT 97 us
+Conj 148 us
+get input 2598 us
+FFT 97 us
+Conj 149 us
+get input 2599 us
+FFT 97 us
+Conj 147 us
+get input 2600 us
+FFT 97 us
+Conj 149 us
+get input 2601 us
+FFT 97 us
+Conj 149 us
+Averaging 4 us
+Display 15554 us
+Cycle 105##############################
+get input 2596 us
+FFT 97 us
+Conj 148 us
+get input 2607 us
+FFT 97 us
+Conj 148 us
+get input 2608 us
+FFT 97 us
+Conj 150 us
+get input 2608 us
+FFT 97 us
+Conj 148 us
+get input 2589 us
+FFT 97 us
+Conj 149 us
+get input 2590 us
+FFT 97 us
+Conj 149 us
+get input 2590 us
+FFT 97 us
+Conj 148 us
+get input 2591 us
+FFT 97 us
+Conj 150 us
+Averaging 4 us
+Display 15554 us
+Cycle 106##############################
+get input 2607 us
+FFT 97 us
+Conj 149 us
+get input 2597 us
+FFT 97 us
+Conj 148 us
+get input 2598 us
+FFT 97 us
+Conj 148 us
+get input 2599 us
+FFT 97 us
+Conj 149 us
+get input 2600 us
+FFT 97 us
+Conj 147 us
+get input 2601 us
+FFT 97 us
+Conj 148 us
+get input 2601 us
+FFT 97 us
+Conj 148 us
+get input 2602 us
+FFT 97 us
+Conj 148 us
+Averaging 4 us
+Display 15554 us
+Cycle 107##############################
+get input 2597 us
+FFT 97 us
+Conj 148 us
+get input 2608 us
+FFT 97 us
+Conj 149 us
+get input 2609 us
+FFT 97 us
+Conj 148 us
+get input 2589 us
+FFT 97 us
+Conj 149 us
+get input 2590 us
+FFT 97 us
+Conj 148 us
+get input 2591 us
+FFT 97 us
+Conj 149 us
+get input 2592 us
+FFT 97 us
+Conj 150 us
+get input 2592 us
+FFT 97 us
+Conj 147 us
+Averaging 4 us
+Display 15553 us
+Cycle 108##############################
+get input 2608 us
+FFT 97 us
+Conj 148 us
+get input 2598 us
+FFT 97 us
+Conj 148 us
+get input 2599 us
+FFT 97 us
+Conj 147 us
+get input 2600 us
+FFT 97 us
+Conj 149 us
+get input 2601 us
+FFT 97 us
+Conj 148 us
+get input 2602 us
+FFT 97 us
+Conj 150 us
+get input 2602 us
+FFT 97 us
+Conj 149 us
+get input 2603 us
+FFT 97 us
+Conj 148 us
+Averaging 4 us
+Display 15554 us
+Cycle 109##############################
+get input 2598 us
+FFT 97 us
+Conj 150 us
+get input 2589 us
+FFT 97 us
+Conj 149 us
+get input 2590 us
+FFT 97 us
+Conj 148 us
+get input 2590 us
+FFT 97 us
+Conj 148 us
+get input 2591 us
+FFT 97 us
+Conj 149 us
+get input 2592 us
+FFT 97 us
+Conj 149 us
+get input 2593 us
+FFT 97 us
+Conj 148 us
+get input 2593 us
+FFT 97 us
+Conj 149 us
+Averaging 4 us
+Display 15554 us
+Cycle 110##############################
+get input 2609 us
+FFT 97 us
+Conj 149 us
+get input 2600 us
+FFT 97 us
+Conj 149 us
+get input 2600 us
+FFT 97 us
+Conj 148 us
+get input 2601 us
+FFT 97 us
+Conj 147 us
+get input 2602 us
+FFT 97 us
+Conj 149 us
+get input 2603 us
+FFT 97 us
+Conj 148 us
+get input 2604 us
+FFT 97 us
+Conj 149 us
+get input 2604 us
+FFT 97 us
+Conj 147 us
+Averaging 4 us
+Display 15554 us
+Cycle 111##############################
+
+
+
+
+////////////////////////////////////////
+
+
+//FIXED POINT
+
+Cycle 73##############################
+get input 2597 us
+FFT 165 us
+Conj 30 us
+get input 2592 us
+FFT 164 us
+Conj 55 us
+get input 2593 us
+FFT 164 us
+Conj 27 us
+get input 2594 us
+FFT 165 us
+Conj 85 us
+get input 2595 us
+FFT 164 us
+Conj 23 us
+get input 2596 us
+FFT 165 us
+Conj 36 us
+get input 2596 us
+FFT 164 us
+Conj 52 us
+get input 2597 us
+FFT 165 us
+Conj 27 us
+Averaging 4 us
+Display 15558 us
+Cycle 74##############################
+get input 2589 us
+FFT 165 us
+Conj 52 us
+get input 2599 us
+FFT 165 us
+Conj 27 us
+get input 2600 us
+FFT 164 us
+Conj 40 us
+get input 2601 us
+FFT 164 us
+Conj 58 us
+get input 2602 us
+FFT 164 us
+Conj 23 us
+get input 2603 us
+FFT 164 us
+Conj 70 us
+get input 2603 us
+FFT 165 us
+Conj 75 us
+get input 2604 us
+FFT 164 us
+Conj 88 us
+Averaging 4 us
+Display 15561 us
+Cycle 75##############################
+get input 2593 us
+FFT 165 us
+Conj 81 us
+get input 2606 us
+FFT 165 us
+Conj 56 us
+get input 2607 us
+FFT 165 us
+Conj 43 us
+get input 2588 us
+FFT 165 us
+Conj 36 us
+get input 2588 us
+FFT 164 us
+Conj 52 us
+get input 2589 us
+FFT 164 us
+Conj 45 us
+get input 2590 us
+FFT 164 us
+Conj 54 us
+get input 2591 us
+FFT 164 us
+Conj 76 us
+Averaging 4 us
+Display 15561 us
+Cycle 76##############################
+get input 2600 us
+FFT 164 us
+Conj 50 us
+get input 2593 us
+FFT 165 us
+Conj 23 us
+get input 2594 us
+FFT 164 us
+Conj 52 us
+get input 2595 us
+FFT 164 us
+Conj 23 us
+get input 2595 us
+FFT 164 us
+Conj 66 us
+get input 2596 us
+FFT 164 us
+Conj 86 us
+get input 2597 us
+FFT 164 us
+Conj 34 us
+get input 2598 us
+FFT 164 us
+Conj 50 us
+Averaging 4 us
+Display 15560 us
+Cycle 77##############################
+get input 2608 us
+FFT 165 us
+Conj 23 us
+get input 2600 us
+FFT 165 us
+Conj 54 us
+get input 2601 us
+FFT 164 us
+Conj 25 us
+get input 2602 us
+FFT 164 us
+Conj 40 us
+get input 2602 us
+FFT 164 us
+Conj 23 us
+get input 2603 us
+FFT 164 us
+Conj 58 us
+get input 2604 us
+FFT 165 us
+Conj 34 us
+get input 2605 us
+FFT 164 us
+Conj 43 us
+Averaging 4 us
+Display 15555 us
+Cycle 78##############################
+get input 2600 us
+FFT 164 us
+Conj 25 us
+get input 2595 us
+FFT 164 us
+Conj 37 us
+get input 2596 us
+FFT 165 us
+Conj 56 us
+get input 2597 us
+FFT 164 us
+Conj 24 us
+get input 2598 us
+FFT 165 us
+Conj 78 us
+get input 2598 us
+FFT 165 us
+Conj 23 us
+get input 2599 us
+FFT 164 us
+Conj 32 us
+get input 2600 us
+FFT 164 us
+Conj 37 us
+Averaging 4 us
+Display 15557 us
+Cycle 79##############################
+get input 2593 us
+FFT 164 us
+Conj 23 us
+get input 2591 us
+FFT 164 us
+Conj 78 us
+get input 2591 us
+FFT 164 us
+Conj 78 us
+get input 2592 us
+FFT 165 us
+Conj 43 us
+get input 2593 us
+FFT 164 us
+Conj 27 us
+get input 2594 us
+FFT 164 us
+Conj 27 us
+get input 2595 us
+FFT 164 us
+Conj 48 us
+get input 2595 us
+FFT 164 us
+Conj 40 us
+Averaging 4 us
+Display 15560 us
+Cycle 80##############################
+
+

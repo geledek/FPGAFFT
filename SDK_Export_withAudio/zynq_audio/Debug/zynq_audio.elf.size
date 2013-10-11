@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  84640	   2288	  30940	 117868	  1cc6c	zynq_audio.elf
+  86384	   3088	  30940	 120412	  1d65c	zynq_audio.elf
