@@ -87,13 +87,14 @@ int main(void)
 	OLED_ShowString(0,0, "Hello FFT!");
 	OLED_Refresh_Gram();
 	//srand(time(0));
+	
 	while(1){
+		init_timer(timer_ctrl, timer_counter_l, timer_counter_h);
+		start_timer(timer_ctrl);
 		OLED_Clear();
 		for (i = 0; i < N; i++) outLED[i] = 0;
 		for(window = 0; window<WINDOW; ++window)
 		{
-			init_timer(timer_ctrl, timer_counter_l, timer_counter_h);
-			start_timer(timer_ctrl);
 			//Generate input data
 			for (i = 0; i < N; i++)
 			{
