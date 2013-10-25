@@ -1,0 +1,44 @@
+Running: /opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/bill/workspace/Xilinx/FFT_HW/FFTHW/top_isim_beh.exe -prj /home/bill/workspace/Xilinx/FFT_HW/FFTHW/top_beh.prj top work.glbl 
+ISim P.58f (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+WARNING:Simulator:1010 - One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/ipcore_dir/xfft_v8_0.v" into library work
+Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v" into library work
+Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/multiplier.v" into library work
+Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v" Line 96: Instantiating <fifo> from unknown module <fifo_generator_v9_3>
+WARNING:HDLCompiler:189 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" Line 22: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 968: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 972: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 976: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 980: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1047: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1048: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1049: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1050: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1112: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1113: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1114: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1115: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1250: Element index 39 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1251: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1256: Element index 47 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1257: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1262: Element index 55 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1263: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1268: Element index 63 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1269: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1410: Element index 39 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1411: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1416: Element index 47 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1417: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1422: Element index 55 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1423: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index 63 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1429: Element index 7 into memp is out of bounds
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed
