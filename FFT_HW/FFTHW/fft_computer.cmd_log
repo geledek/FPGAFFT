@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/fft_computer.xst" -ofn "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/fft_computer.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7z020-clg484-3 fft_computer.ngc fft_computer.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fft_computer_map.ncd fft_computer.ngd fft_computer.pcf 
+par -w -intstyle ise -ol high -mt off fft_computer_map.ncd fft_computer.ncd fft_computer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fft_computer.twx fft_computer.ncd -o fft_computer.twr fft_computer.pcf 

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: top.prj
@@ -102,21 +102,24 @@ DSP48 Utilization Ratio            : 100
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/ipcore_dir/fifo_generator_v9_3.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/ipcore_dir/fifo_generator_v9_3.v" into library work
 Parsing module <fifo_generator_v9_3>.
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/output_ctrl.v" into library work
 Parsing module <output_ctrl>.
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/multiplier.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/multiplier.v" into library work
 Parsing module <multiplier>.
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/ipcore_dir/xfft_v8_0.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/ipcore_dir/xfft_v8_0.v" into library work
 Parsing module <xfft_v8_0>.
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" into library work
 Parsing module <top>.
 
 =========================================================================
@@ -126,36 +129,36 @@ Parsing module <top>.
 Elaborating module <top>.
 
 Elaborating module <xfft_v8_0>.
-WARNING:HDLCompiler:189 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" Line 22: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" Line 22: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
 
 Elaborating module <multiplier>.
 
 Elaborating module <output_ctrl>.
-WARNING:HDLCompiler:413 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v" Line 64: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/output_ctrl.v" Line 64: Result of 2-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <fifo_generator_v9_3>.
-WARNING:HDLCompiler:1499 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/ipcore_dir/fifo_generator_v9_3.v" Line 39: Empty module <fifo_generator_v9_3> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/ipcore_dir/fifo_generator_v9_3.v" Line 39: Empty module <fifo_generator_v9_3> remains a black box.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v".
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" line 19: Output port <s_axis_config_tready> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" line 19: Output port <m_axis_data_tlast> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" line 19: Output port <event_frame_started> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" line 19: Output port <event_tlast_unexpected> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" line 19: Output port <event_tlast_missing> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" line 19: Output port <event_status_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" line 19: Output port <event_data_in_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" line 19: Output port <event_data_out_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
+    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v".
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" line 19: Output port <s_axis_config_tready> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" line 19: Output port <m_axis_data_tlast> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" line 19: Output port <event_frame_started> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" line 19: Output port <event_tlast_unexpected> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" line 19: Output port <event_tlast_missing> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" line 19: Output port <event_status_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" line 19: Output port <event_data_in_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" line 19: Output port <event_data_out_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <top> synthesized.
 
 Synthesizing Unit <multiplier>.
-    Related source file is "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/multiplier.v".
+    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/multiplier.v".
     Found 32-bit register for signal <o_data>.
     Found 1-bit register for signal <o_data_valid>.
     Found 16x32-bit multiplier for signal <n0009> created at line 21.
@@ -165,8 +168,8 @@ Synthesizing Unit <multiplier>.
 Unit <multiplier> synthesized.
 
 Synthesizing Unit <output_ctrl>.
-    Related source file is "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v".
-INFO:Xst:3210 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v" line 96: Output port <m_axis_tvalid> of the instance <fifo> is unconnected or connected to loadless signal.
+    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/output_ctrl.v".
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/output_ctrl.v" line 96: Output port <m_axis_tvalid> of the instance <fifo> is unconnected or connected to loadless signal.
     Found 8-bit register for signal <read_cnt>.
     Found 1-bit register for signal <window_cnt>.
     Found 1-bit register for signal <o_data_valid>.
@@ -207,6 +210,12 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <ipcore_dir/xfft_v8_0.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/fifo_generator_v9_3.ngc>.
+Loading core <xfft_v8_0> for timing and area information for instance <fft>.
+Loading core <fifo_generator_v9_3> for timing and area information for instance <fifo>.
+INFO:Xst:1901 - Instance blk0000040d in unit blk0000040d of type RAMB18SDP has been replaced by RAMB18E1
 
 Synthesizing (advanced) Unit <multiplier>.
 	Found pipelined multiplier on signal <n0009>:
@@ -249,41 +258,14 @@ Optimizing unit <top> ...
 Optimizing unit <output_ctrl> ...
 
 Mapping all equations...
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<31>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<30>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<29>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<28>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<27>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<26>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<25>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<24>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<23>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<22>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<21>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<20>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<19>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<18>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<17>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<16>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<15>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<14>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<13>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<12>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<11>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<10>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<9>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<8>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<7>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<6>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<5>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<4>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<3>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<2>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<1>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data<0>> driven by black box <fifo_generator_v9_3>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <o_data_ready> driven by black box <xfft_v8_0>. Possible simulation mismatch.
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <ctrl/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <ctrl/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <ctrl/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <ctrl/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <ctrl/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <ctrl/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 
 Final Macro Processing ...
 
@@ -315,22 +297,28 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 187
-#      GND                         : 1
-#      INV                         : 4
+# BELS                             : 234
+#      GND                         : 3
+#      INV                         : 9
 #      LUT1                        : 14
-#      LUT2                        : 35
-#      LUT3                        : 32
-#      LUT4                        : 1
-#      LUT5                        : 1
-#      LUT6                        : 5
+#      LUT2                        : 42
+#      LUT3                        : 39
+#      LUT4                        : 9
+#      LUT5                        : 6
+#      LUT6                        : 18
 #      MUXCY                       : 45
 #      VCC                         : 1
 #      XORCY                       : 48
-# FlipFlops/Latches                : 69
-#      FDE                         : 49
+# FlipFlops/Latches                : 151
+#      FD                          : 4
+#      FDC                         : 3
+#      FDCE                        : 30
+#      FDE                         : 81
+#      FDP                         : 13
 #      FDR                         : 4
 #      FDRE                        : 16
+# RAMS                             : 1
+#      RAMB18E1                    : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 69
@@ -338,9 +326,6 @@ Primitive and Black Box Usage:
 #      OBUF                        : 34
 # DSPs                             : 2
 #      DSP48E1                     : 2
-# Others                           : 2
-#      fifo_generator_v9_3         : 1
-#      xfft_v8_0                   : 1
 
 Device utilization summary:
 ---------------------------
@@ -349,22 +334,24 @@ Selected Device : 7z020clg484-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              69  out of  106400     0%  
- Number of Slice LUTs:                   92  out of  53200     0%  
-    Number used as Logic:                92  out of  53200     0%  
+ Number of Slice Registers:             151  out of  106400     0%  
+ Number of Slice LUTs:                  137  out of  53200     0%  
+    Number used as Logic:               137  out of  53200     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    111
-   Number with an unused Flip Flop:      42  out of    111    37%  
-   Number with an unused LUT:            19  out of    111    17%  
-   Number of fully used LUT-FF pairs:    50  out of    111    45%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    288
+   Number with an unused Flip Flop:     137  out of    288    47%  
+   Number with an unused LUT:           151  out of    288    52%  
+   Number of fully used LUT-FF pairs:     0  out of    288     0%  
+   Number of unique control sets:        15
 
 IO Utilization: 
  Number of IOs:                          70
  Number of bonded IOBs:                  70  out of    200    35%  
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    140     0%  
+    Number using Block RAM only:          1
  Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    104     0%  
  Number of DSP48E1s:                      2  out of    220     0%  
 
@@ -389,21 +376,26 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-i_clk                              | BUFGP                  | 70    |
+i_clk                              | BUFGP                  | 3903  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-No asynchronous control signals found in this design
+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                               | Buffer(FF name)                                                                  | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+fft/blk00000001/blk0000016a/blk0000016b/blk000003e8/blk0000040d/N0(fft/blk00000001/blk0000016a/blk0000016b/blk000003e8/blk0000040d/XST_GND:G)| NONE(fft/blk00000001/blk0000016a/blk0000016b/blk000003e8/blk0000040d/blk0000040d)| 6     |
+fft/blk00000001/blk0000016a/blk0000016b/blk000003e8/blk0000040d/N1(fft/blk00000001/blk0000016a/blk0000016b/blk000003e8/blk0000040d/XST_VCC:P)| NONE(fft/blk00000001/blk0000016a/blk0000016b/blk000003e8/blk0000040d/blk0000040d)| 4     |
+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 1.757ns (Maximum Frequency: 569.217MHz)
-   Minimum input arrival time before clock: 4.279ns
-   Maximum output required time after clock: 0.925ns
-   Maximum combinational path delay: 0.475ns
+   Minimum period: 4.510ns (Maximum Frequency: 221.705MHz)
+   Minimum input arrival time before clock: 1.763ns
+   Maximum output required time after clock: 0.525ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -411,117 +403,70 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'i_clk'
-  Clock period: 1.757ns (frequency: 569.217MHz)
-  Total number of paths / destination ports: 1239 / 99
+  Clock period: 4.510ns (frequency: 221.705MHz)
+  Total number of paths / destination ports: 33817 / 9069
 -------------------------------------------------------------------------
-Delay:               1.757ns (Levels of Logic = 34)
-  Source:            mult/Mmult_n00092_16 (FF)
-  Destination:       ctrl/fifo_wr_data_31 (FF)
+Delay:               4.510ns (Levels of Logic = 3)
+  Source:            sec_inst (FF)
+  Destination:       mult/Mmult_n00091 (DSP)
   Source Clock:      i_clk rising
   Destination Clock: i_clk rising
 
-  Data Path: mult/Mmult_n00092_16 to ctrl/fifo_wr_data_31
+  Data Path: sec_inst to mult/Mmult_n00091
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.232   0.293  mult/Mmult_n00092_16 (mult/Mmult_n00092_16)
-     LUT2:I1->O            1   0.043   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_lut<0> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_lut<0>)
-     MUXCY:S->O            1   0.230   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<0> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<0>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<1> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<1>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<2> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<2>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<3> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<3>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<4> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<4>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<5> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<5>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<6> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<6>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<7> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<7>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<8> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<8>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<9> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<9>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<10> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<10>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<11> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<11>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<12> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<12>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<13> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<13>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<14> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<14>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<15> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<15>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<16> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<16>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<17> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<17>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<18> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<18>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<19> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<19>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<20> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<20>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<21> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<21>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<22> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<22>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<23> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<23>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<24> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<24>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<25> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<25>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<26> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<26>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<27> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<27>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<28> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<28>)
-     MUXCY:CI->O           1   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<29> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<29>)
-     MUXCY:CI->O           0   0.012   0.000  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<30> (ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_cy<30>)
-     XORCY:CI->O           1   0.251   0.289  ctrl/Madd_i_data[31]_fifo_rd_data[31]_add_21_OUT_xor<31> (ctrl/i_data[31]_fifo_rd_data[31]_add_21_OUT<31>)
-     LUT3:I2->O            1   0.043   0.000  ctrl/Mmux_i_data[31]_i_data[31]_mux_22_OUT251 (ctrl/i_data[31]_i_data[31]_mux_22_OUT<31>)
-     FDE:D                    -0.001          ctrl/fifo_wr_data_31
-    ----------------------------------------
-    Total                      1.757ns (1.174ns logic, 0.583ns route)
-                                       (66.8% logic, 33.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
-  Total number of paths / destination ports: 2794 / 217
--------------------------------------------------------------------------
-Offset:              4.279ns (Levels of Logic = 1)
-  Source:            fft:m_axis_data_tdata<15> (PAD)
-  Destination:       mult/Mmult_n00091 (DSP)
-  Destination Clock: i_clk rising
-
-  Data Path: fft:m_axis_data_tdata<15> to mult/Mmult_n00091
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-    xfft_v8_0:m_axis_data_tdata<15>    2   0.000   0.284  fft (fft_data<15>)
+     SEC:C->out            2   0.232   0.284  sec_inst (sec_net)
+     end scope: 'fft/blk00000001:m_axis_data_tdata<15>'
+     end scope: 'fft:m_axis_data_tdata<15>'
      DSP48E1:A15->PCOUT47    1   2.970   0.000  mult/Mmult_n0009 (mult/Mmult_n0009_PCOUT_to_mult/Mmult_n00091_PCIN_47)
      DSP48E1:PCIN47            1.025          mult/Mmult_n00091
     ----------------------------------------
-    Total                      4.279ns (3.995ns logic, 0.284ns route)
-                                       (93.4% logic, 6.6% route)
+    Total                      4.510ns (4.227ns logic, 0.284ns route)
+                                       (93.7% logic, 6.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
-  Total number of paths / destination ports: 37 / 35
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
+  Total number of paths / destination ports: 148 / 148
 -------------------------------------------------------------------------
-Offset:              0.925ns (Levels of Logic = 1)
-  Source:            ctrl/window_cnt (FF)
-  Destination:       ctrl/fifo:m_axis_tready (PAD)
-  Source Clock:      i_clk rising
-
-  Data Path: ctrl/window_cnt to ctrl/fifo:m_axis_tready
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q             35   0.232   0.650  ctrl/window_cnt (ctrl/window_cnt)
-     LUT5:I0->O            0   0.043   0.000  ctrl/Mmux_fifo_rd_en11 (ctrl/fifo_rd_en)
-    fifo_generator_v9_3:m_axis_tready        0.000          ctrl/fifo
-    ----------------------------------------
-    Total                      0.925ns (0.275ns logic, 0.650ns route)
-                                       (29.7% logic, 70.3% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 73 / 72
--------------------------------------------------------------------------
-Delay:               0.475ns (Levels of Logic = 2)
+Offset:              1.763ns (Levels of Logic = 6)
   Source:            i_data_ready (PAD)
-  Destination:       ctrl/fifo:m_axis_tready (PAD)
+  Destination:       ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i (FF)
+  Destination Clock: i_clk rising
 
-  Data Path: i_data_ready to ctrl/fifo:m_axis_tready
+  Data Path: i_data_ready to ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   0.000   0.433  i_data_ready_IBUF (i_data_ready_IBUF)
-     LUT5:I2->O            0   0.043   0.000  ctrl/Mmux_fifo_rd_en11 (ctrl/fifo_rd_en)
-    fifo_generator_v9_3:m_axis_tready        0.000          ctrl/fifo
+     LUT5:I2->O            5   0.043   0.308  ctrl/Mmux_fifo_rd_en11 (ctrl/fifo_rd_en)
+     begin scope: 'ctrl/fifo:m_axis_tready'
+     LUT4:I3->O           18   0.043   0.507  U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/Mmux_RAM_RD_EN_FWFT11 (U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en)
+     LUT6:I3->O            1   0.043   0.343  U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/going_empty_leaving_empty_OR_6_o4 (U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/going_empty_leaving_empty_OR_6_o4)
+     LUT5:I3->O            1   0.043   0.000  U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/going_empty_leaving_empty_OR_6_o5 (U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/going_empty_leaving_empty_OR_6_o)
+     FDP:D                    -0.001          U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i
     ----------------------------------------
-    Total                      0.475ns (0.043ns logic, 0.433ns route)
-                                       (9.0% logic, 91.0% route)
+    Total                      1.763ns (0.172ns logic, 1.591ns route)
+                                       (9.8% logic, 90.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              0.525ns (Levels of Logic = 1)
+  Source:            ctrl/o_data_valid (FF)
+  Destination:       o_data_valid (PAD)
+  Source Clock:      i_clk rising
+
+  Data Path: ctrl/o_data_valid to o_data_valid
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.232   0.293  ctrl/o_data_valid (ctrl/o_data_valid)
+     OBUF:I->O                 0.000          o_data_valid_OBUF (o_data_valid)
+    ----------------------------------------
+    Total                      0.525ns (0.232ns logic, 0.293ns route)
+                                       (44.2% logic, 55.8% route)
 
 =========================================================================
 
@@ -533,21 +478,21 @@ Clock to Setup on destination clock i_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-i_clk          |    1.757|         |         |         |
+i_clk          |    4.510|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.41 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 21.72 secs
  
 --> 
 
 
-Total memory usage is 515044 kilobytes
+Total memory usage is 534348 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   36 (   0 filtered)
-Number of infos    :   10 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
 

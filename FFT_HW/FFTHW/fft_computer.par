@@ -1,0 +1,145 @@
+Release 14.5 par P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+bill::  Fri Oct 25 15:10:51 2013
+
+par -w -intstyle ise -ol high -mt off fft_computer_map.ncd fft_computer.ncd
+fft_computer.pcf 
+
+
+Constraints file: fft_computer.pcf.
+Loading device for application Rf_Device from file '7z020.nph' in environment /opt/Xilinx/14.5/ISE_DS/ISE/.
+   "fft_computer" is an NCD, version 3.2, device xc7z020, package clg484, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRELIMINARY 1.06 2013-03-26".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           1 out of 32      3%
+   Number of DSP48E1s                       11 out of 220     5%
+   Number of External IOBs                  70 out of 200    35%
+      Number of LOCed IOBs                   0 out of 70      0%
+
+   Number of RAMB18E1s                       2 out of 280     1%
+   Number of Slices                        857 out of 13300   6%
+   Number of Slice Registers              2892 out of 106400  2%
+      Number used as Flip Flops           2892
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                   2035 out of 53200   3%
+   Number of Slice LUT-Flip Flop pairs    2371 out of 53200   4%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 21 secs 
+Finished initial Timing Analysis.  REAL time: 21 secs 
+
+Starting Router
+
+
+Phase  1  : 13902 unrouted;      REAL time: 22 secs 
+
+Phase  2  : 8811 unrouted;      REAL time: 23 secs 
+
+Phase  3  : 2127 unrouted;      REAL time: 29 secs 
+
+Phase  4  : 2127 unrouted; (Par is working to improve performance)     REAL time: 34 secs 
+
+Updating file: fft_computer.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 40 secs 
+Total REAL time to Router completion: 40 secs 
+Total CPU time to Router completion: 40 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|         i_clk_BUFGP | BUFGCTRL_X0Y0| No   |  804 |  0.348     |  1.593      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net i_c | SETUP       |         N/A|     4.941ns|     N/A|           0
+  lk_BUFGP                                  | HOLD        |     0.000ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 42 secs 
+Total CPU time to PAR completion: 42 secs 
+
+Peak Memory Usage:  1047 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file fft_computer.ncd
+
+
+
+PAR done!

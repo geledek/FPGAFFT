@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-10-25T13:08:26</DateModified>
+  <DateModified>2013-10-27T10:06:01</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/bill/workspace/Xilinx/FFT_HW/FFTHW/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/bill/workspace/Xilinx/FFT_HW/FFTHW/</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2013-10-27T10:04:51</SummaryTimeStamp>
+  <SavedFilePath>/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/iseconfig/top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/</ImplementationReportsDirectory>
   <DateInitialized>2013-10-25T10:40:23</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

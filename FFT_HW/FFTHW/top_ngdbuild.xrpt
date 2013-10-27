@@ -5,24 +5,20 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Fri Oct 25 10:59:43 2013">
+  <application stringID="NgdBuild" timeStamp="Sun Oct 27 10:08:00 2013">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="/opt/Xilinx/14.5/ISE_DS/EDK"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.5/ISE_DS/ISE//bin/lin64:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/bill/Software/Bluespec-2013.05.beta2/lib/bin:/usr/java/bin:/home/bill/Software/adt-bundle-linux-x86_64-20130729/sdk/platform-tools:/home/bill/Software/adt-bundle-linux-x86_64-20130729/sdk/tools:/opt/Xilinx/Vivado/2013.1/bin:/opt/Xilinx/Vivado_HLS/2013.1/bin:/opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.5/ISE_DS/EDK/bin/lin64:/usr/local/texlive/2013/bin/x86_64-linux:/home/bill/Software/Bluespec-2012.01.A/lib/bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="XILINX"/>
           <item stringID="value" value="/opt/Xilinx/14.5/ISE_DS/ISE/"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.5/ISE_DS/ISE//bin/lin64:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/bill/Software/Bluespec-2013.05.beta2/lib/bin:/usr/java/bin:/home/bill/Software/adt-bundle-linux-x86_64-20130729/sdk/platform-tools:/home/bill/Software/adt-bundle-linux-x86_64-20130729/sdk/tools:/opt/Xilinx/Vivado/2013.1/bin:/opt/Xilinx/Vivado_HLS/2013.1/bin:/opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.5/ISE_DS/EDK/bin/lin64:/usr/local/texlive/2013/bin/x86_64-linux:/home/bill/Software/Bluespec-2012.01.A/lib/bin"/>
-        </row>
-        <row stringID="row" value="3">
           <item stringID="variable" value="LD_LIBRARY_PATH"/>
           <item stringID="value" value="/opt/Xilinx/14.5/ISE_DS/ISE//lib/lin64"/>
         </row>
@@ -74,10 +70,10 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="104"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="81"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="401"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="787"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="216"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="788"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="217"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="48"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="264"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="263"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="707"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="34"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB18E1" value="1"/>
@@ -105,10 +101,10 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="104"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="81"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="401"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="787"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="216"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="788"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="217"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="48"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="264"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="263"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="707"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="34"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB18E1" value="2"/>
@@ -119,7 +115,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="696"/>
       </section>
       <section stringID="NGDBUILD_CORE_SUMMARY">
-        <item COUNT="1" stringID="NGDBUILD_CORE" value="fifo_generator_v9_3, Xilinx CORE Generator 14.5"/>
+        <item COUNT="1" stringID="NGDBUILD_CORE" value="xfft_v8_0, Xilinx CORE Generator 14.5"/>
         <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
           <section stringID="NGDBUILD_CORE_INSTANCES">
             <scope stringID="NGDBUILD_CORE_INSTANCE" value="fifo_generator_v9_3">

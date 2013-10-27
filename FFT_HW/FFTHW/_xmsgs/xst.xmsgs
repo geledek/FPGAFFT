@@ -5,142 +5,64 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" Line 22: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_config_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" Line 22: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_config_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v" Line 64: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/output_ctrl.v" Line 64: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/bill/workspace/Xilinx/FFT_HW/FFTHW/ipcore_dir/fifo_generator_v9_3.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_generator_v9_3</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/ipcore_dir/fifo_generator_v9_3.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_generator_v9_3</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_config_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_config_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_data_tlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_data_tlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_frame_started</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_frame_started</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_unexpected</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_unexpected</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_missing</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_missing</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_status_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_status_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_in_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_in_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_out_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v</arg>&quot; line <arg fmt="%s" index="2">19</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_out_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">96</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/output_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">96</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk0000040d</arg> in unit <arg fmt="%s" index="2">blk0000040d</arg> of type <arg fmt="%s" index="3">RAMB18SDP</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
 </msg>
 
 <msg type="info" file="Xst" num="2385" delta="new" >HDL ADVISOR - You can improve the performance of the multiplier <arg fmt="%s" index="1">Mmult_n0009</arg> by adding <arg fmt="%d" index="2">2</arg> register level(s).
 </msg>
 
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;31&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ctrl/fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;30&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ctrl/fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;29&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ctrl/fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;28&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ctrl/fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;27&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ctrl/fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;26&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;25&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;24&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;23&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;22&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;21&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;20&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;19&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;18&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;17&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;16&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;15&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;14&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;13&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;12&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;11&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;10&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;9&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;8&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;7&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;6&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;5&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;4&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;3&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;2&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;1&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data&lt;0&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">fifo_generator_v9_3</arg>&gt;. Possible simulation mismatch.
-</msg>
-
-<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">o_data_ready</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">xfft_v8_0</arg>&gt;. Possible simulation mismatch.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ctrl/fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i&gt; </arg>
 </msg>
 
 </messages>

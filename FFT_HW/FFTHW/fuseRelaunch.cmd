@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top_isim_beh.exe" -prj "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top_beh.prj" "top" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/tb_isim_beh.exe" -prj "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/tb_beh.prj" "work.tb" "work.glbl" 

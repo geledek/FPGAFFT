@@ -1,18 +1,18 @@
-Running: /opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/bill/workspace/Xilinx/FFT_HW/FFTHW/top_isim_beh.exe -prj /home/bill/workspace/Xilinx/FFT_HW/FFTHW/top_beh.prj top work.glbl 
+Running: /opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/tb_isim_beh.exe -prj /home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/tb_beh.prj work.tb work.glbl 
 ISim P.58f (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-WARNING:Simulator:1010 - One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/ipcore_dir/xfft_v8_0.v" into library work
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v" into library work
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/multiplier.v" into library work
-Analyzing Verilog file "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/ipcore_dir/fifo_generator_v9_3.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/output_ctrl.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/multiplier.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/ipcore_dir/xfft_v8_0.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/tb.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
 WARNING:HDLCompiler:687 - "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
 Starting static elaboration
-ERROR:HDLCompiler:1654 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/output_ctrl.v" Line 96: Instantiating <fifo> from unknown module <fifo_generator_v9_3>
-WARNING:HDLCompiler:189 - "/home/bill/workspace/Xilinx/FFT_HW/FFTHW/top.v" Line 22: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/top.v" Line 22: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 968: Element index 4 into memp is out of bounds
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 972: Element index 5 into memp is out of bounds
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 976: Element index 6 into memp is out of bounds
@@ -41,4 +41,48 @@ WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB3
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1423: Element index 6 into memp is out of bounds
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index 63 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1429: Element index 7 into memp is out of bounds
-ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed
+Completed static elaboration
+Fuse Memory Usage: 123180 KB
+Fuse CPU Usage: 1880 ms
+Compiling module INV
+Compiling module FDS(INIT=1'b0)
+Compiling module FDR
+Compiling module LUT6(INIT=64'b111111111111111111...
+Compiling module LUT5(INIT=32'b111111111111111110...
+Compiling module LUT3(INIT=8'b01000000)
+Compiling module LUT4(INIT=16'b1011101000010000)
+Compiling module FD
+Compiling module LUT2(INIT=4'b1110)
+Compiling module FDRE
+Compiling module FDSE
+Compiling module GND
+Compiling module SRLC16E
+Compiling module XORCY
+Compiling module MUXCY
+Compiling module FDE
+Compiling module SRL16E
+Compiling module DSP48E1(ALUMODEREG=0,BCASCREG=2,...
+Compiling module DSP48E1(ALUMODEREG=0,BCASCREG=2,...
+Compiling module VCC
+Compiling module LUT1(INIT=2'b10)
+Compiling module ARAMB36_INTERNAL(DOA_REG=1,DOB_R...
+Compiling module RAMB18SDP(DO_REG=1,SIM_COLLISION...
+Compiling module SRLC32E
+Compiling module xfft_v8_0
+Compiling module multiplier
+Compiling module fifo_generator_v9_3_bhv_ver_ss(C...
+Compiling module fifo_generator_v9_3_bhv_ver_prel...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_COMMON_CLO...
+Compiling module fifo_generator_v9_3
+Compiling module output_ctrl
+Compiling module top
+Compiling module tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 148 Verilog Units
+Built simulation executable /home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/tb_isim_beh.exe
+Fuse Memory Usage: 718328 KB
+Fuse CPU Usage: 3570 ms
+GCC CPU Usage: 23330 ms
