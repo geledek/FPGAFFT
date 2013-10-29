@@ -1,0 +1,49 @@
+Running: /opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft_isim_beh.exe -prj /home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft_beh.prj work.tb_fft work.glbl 
+ISim P.58f (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+WARNING:Simulator:1010 - One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/ipcore_dir/fft_core.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft.v" Line 72: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft.v" Line 74: Size mismatch in connection of port <m_axis_data_tdata>. Formal port size is 48-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 118368 KB
+Fuse CPU Usage: 1710 ms
+Compiling module INV
+Compiling module FDS(INIT=1'b0)
+Compiling module FDR
+Compiling module LUT6(INIT=64'b111111111111111111...
+Compiling module LUT5(INIT=32'b111111111111111110...
+Compiling module LUT3(INIT=8'b01000000)
+Compiling module LUT4(INIT=16'b1011101000010000)
+Compiling module FD
+Compiling module LUT2(INIT=4'b1110)
+Compiling module FDRE
+Compiling module FDSE
+Compiling module GND
+Compiling module XORCY
+Compiling module MUXCY
+Compiling module SRLC16E
+Compiling module FDE
+Compiling module SRL16E
+Compiling module DSP48E1(ALUMODEREG=0,BCASCREG=2,...
+Compiling module DSP48E1(ACASCREG=2,ADREG=0,ALUMO...
+Compiling module DSP48E1(ALUMODEREG=0,BCASCREG=2,...
+Compiling module VCC
+Compiling module LUT1(INIT=2'b10)
+Compiling module SRLC32E
+Compiling module fft_core
+Compiling module tb_fft
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 138 Verilog Units
+Built simulation executable /home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft_isim_beh.exe
+Fuse Memory Usage: 684624 KB
+Fuse CPU Usage: 2760 ms
+GCC CPU Usage: 13380 ms

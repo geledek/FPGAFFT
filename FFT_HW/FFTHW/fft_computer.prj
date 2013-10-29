@@ -1,5 +1,0 @@
-verilog work "ipcore_dir/fifo_generator_v9_3.v"
-verilog work "output_ctrl.v"
-verilog work "multiplier.v"
-verilog work "ipcore_dir/xfft_v8_0.v"
-verilog work "fft_computer.v"

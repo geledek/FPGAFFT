@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="fft_peripheral.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="fft_computer.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="fft_computer.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="fft_computer.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="fft_computer.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="fft_computer.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="fft_computer.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="fft_computer.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="fft_computer.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="fft_computer.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="fft_computer.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="fft_computer.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fft_computer.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="fft_computer.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="fft_computer.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="fft_computer.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="fft_computer.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="fft_computer.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="fft_computer.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="fft_computer.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="fft_computer.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="fft_computer.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="fft_computer_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="fft_computer_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="fft_computer_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="fft_computer_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="fft_computer_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fft_computer_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fft_computer_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="fft_computer_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="fft_computer_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fft_computer_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="fft_computer_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="fft_computer_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="fft_computer_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fft_computer_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mulitiplier_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_dataCtrl_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_fft_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_fft_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_fft_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_fft_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1382948280" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1382948280">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1383033960" xil_pn:in_ck="-2265691273896351906" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1383033960">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="dataCtrl.v"/>
+      <outfile xil_pn:name="fft_computer.v"/>
+      <outfile xil_pn:name="multiplier.v"/>
+      <outfile xil_pn:name="output_ctrl.v"/>
+      <outfile xil_pn:name="tb_dataCtrl.v"/>
+      <outfile xil_pn:name="tb_fft.v"/>
+      <outfile xil_pn:name="testbench.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1383035299" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7960490408530857004" xil_pn:start_ts="1383035299">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1383035299" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6217782220928144080" xil_pn:start_ts="1383035299">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1383020995" xil_pn:in_ck="2120093721370049898" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1169204743202341086" xil_pn:start_ts="1383020995">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/fft_core.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/fft_core.v"/>
+      <outfile xil_pn:name="ipcore_dir/output_fifo.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/output_fifo.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1383033961" xil_pn:in_ck="-2265691273896351906" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1383033960">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="dataCtrl.v"/>
+      <outfile xil_pn:name="fft_computer.v"/>
+      <outfile xil_pn:name="multiplier.v"/>
+      <outfile xil_pn:name="output_ctrl.v"/>
+      <outfile xil_pn:name="tb_dataCtrl.v"/>
+      <outfile xil_pn:name="tb_fft.v"/>
+      <outfile xil_pn:name="testbench.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1383035306" xil_pn:in_ck="8221957061556506496" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2410968789181030202" xil_pn:start_ts="1383035299">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_fft_beh.prj"/>
+      <outfile xil_pn:name="tb_fft_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1383035514" xil_pn:in_ck="-6447896734463944891" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3020284658180881053" xil_pn:start_ts="1383035514">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_fft_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678707" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1382678707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678707" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7347904475578308777" xil_pn:start_ts="1382678707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678707" xil_pn:in_ck="2120093721370049898" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1169204743202341086" xil_pn:start_ts="1382678707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ipcore_dir/fft_core.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/fft_core.v"/>
+      <outfile xil_pn:name="ipcore_dir/output_fifo.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/output_fifo.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678707" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1382678707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678707" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2789094733278599899" xil_pn:start_ts="1382678707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678707" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8962985228163542118" xil_pn:start_ts="1382678707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678707" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="7833556568750072556" xil_pn:start_ts="1382678707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678734" xil_pn:in_ck="-4601668293240677752" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-9044257343985267374" xil_pn:start_ts="1382678707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="fft_computer.lso"/>
+      <outfile xil_pn:name="fft_computer.ngc"/>
+      <outfile xil_pn:name="fft_computer.ngr"/>
+      <outfile xil_pn:name="fft_computer.prj"/>
+      <outfile xil_pn:name="fft_computer.stx"/>
+      <outfile xil_pn:name="fft_computer.syr"/>
+      <outfile xil_pn:name="fft_computer.xst"/>
+      <outfile xil_pn:name="fft_computer_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678734" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7793229155680273328" xil_pn:start_ts="1382678734">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678759" xil_pn:in_ck="5160295393413430554" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3437366386779051866" xil_pn:start_ts="1382678734">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="fft_computer.bld"/>
+      <outfile xil_pn:name="fft_computer.ngd"/>
+      <outfile xil_pn:name="fft_computer_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678925" xil_pn:in_ck="-8604595211735186475" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="6343818628637911857" xil_pn:start_ts="1382678759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="fft_computer.pcf"/>
+      <outfile xil_pn:name="fft_computer_map.map"/>
+      <outfile xil_pn:name="fft_computer_map.mrp"/>
+      <outfile xil_pn:name="fft_computer_map.ncd"/>
+      <outfile xil_pn:name="fft_computer_map.ngm"/>
+      <outfile xil_pn:name="fft_computer_map.xrpt"/>
+      <outfile xil_pn:name="fft_computer_summary.xml"/>
+      <outfile xil_pn:name="fft_computer_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678993" xil_pn:in_ck="-271399467523246738" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="378965794422880756" xil_pn:start_ts="1382678925">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="fft_computer.ncd"/>
+      <outfile xil_pn:name="fft_computer.pad"/>
+      <outfile xil_pn:name="fft_computer.par"/>
+      <outfile xil_pn:name="fft_computer.ptwx"/>
+      <outfile xil_pn:name="fft_computer.unroutes"/>
+      <outfile xil_pn:name="fft_computer.xpi"/>
+      <outfile xil_pn:name="fft_computer_pad.csv"/>
+      <outfile xil_pn:name="fft_computer_pad.txt"/>
+      <outfile xil_pn:name="fft_computer_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1382679006" xil_pn:in_ck="-8604595211735186607" xil_pn:name="TRANEXT_bitFile_zynq" xil_pn:prop_ck="-8808622799194500101" xil_pn:start_ts="1382678993">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="fft_computer.bgn"/>
+      <outfile xil_pn:name="fft_computer.ut"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1382678993" xil_pn:in_ck="-8604595211735186607" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1382678972">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="fft_computer.twr"/>
+      <outfile xil_pn:name="fft_computer.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

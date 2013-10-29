@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/fft_core.v"
+verilog work "tb_fft.v"
+verilog work "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

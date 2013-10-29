@@ -1,0 +1,2399 @@
+Release 14.5 Map P.58f (lin64)
+Xilinx Mapping Report File for Design 'fft_computer'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o fft_computer_map.ncd fft_computer.ngd fft_computer.pcf 
+Target Device  : xc7z020
+Target Package : clg484
+Target Speed   : -1
+Mapper Version : zynq -- $Revision: 1.55 $
+Mapped Date    : Fri Oct 25 13:26:02 2013
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   74
+Slice Logic Utilization:
+  Number of Slice Registers:                 3,239 out of 106,400    3%
+    Number used as Flip Flops:               3,239
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      2,356 out of  53,200    4%
+    Number used as logic:                    1,617 out of  53,200    3%
+      Number using O6 output only:             819
+      Number using O5 output only:              28
+      Number using O5 and O6:                  770
+      Number used as ROM:                        0
+    Number used as Memory:                     649 out of  17,400    3%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:           32
+        Number using O6 output only:            32
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:           617
+        Number using O6 output only:           247
+        Number using O5 output only:             0
+        Number using O5 and O6:                370
+    Number used exclusively as route-thrus:     90
+      Number with same-slice register load:     58
+      Number with same-slice carry load:        32
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   989 out of  13,300    7%
+  Number of LUT Flip Flop pairs used:        2,766
+    Number with an unused Flip Flop:           316 out of   2,766   11%
+    Number with an unused LUT:                 410 out of   2,766   14%
+    Number of fully used LUT-FF pairs:       2,040 out of   2,766   73%
+    Number of unique control sets:              53
+    Number of slice register sites lost
+      to control set restrictions:             206 out of 106,400    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        70 out of     200   35%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     140    0%
+  Number of RAMB18E1/FIFO18E1s:                  2 out of     280    1%
+    Number using RAMB18E1 only:                  2
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+    Number used as BUFGCTRLs:                    0
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     200    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     200    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     200    0%
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      16    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      16    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      72    0%
+  Number of BUFRs:                               0 out of      16    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                           11 out of     220    5%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       4    0%
+  Number of IN_FIFOs:                            0 out of      16    0%
+  Number of MMCME2_ADVs:                         0 out of       4    0%
+  Number of OUT_FIFOs:                           0 out of      16    0%
+  Number of PHASER_REFs:                         0 out of       4    0%
+  Number of PHY_CONTROLs:                        0 out of       4    0%
+  Number of PLLE2_ADVs:                          0 out of       4    0%
+  Number of PS7s:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                2.99
+
+Peak Memory Usage:  1295 MB
+Total REAL time to MAP completion:  2 mins 43 secs 
+Total CPU time to MAP completion:   2 mins 38 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:701 - PAD symbol "i_clk" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "i_clk" is not constrained (LOC) to a specific
+   location.
+WARNING:Pack:2238 - Function generator symbol
+   "fft/blk00000001/blk0000017a/blk0000017b/blk00000578" (Output Signal =
+   fft/blk00000001/blk0000017a/blk0000017b/sig0000075d) has an invalid use of
+   the LUTNM constraint. There are no other function generator symbols with a
+   matching LUTNM constraint value
+   (LUTNM=fft/blk00000001/blk0000017a/blk0000017b/hlutnm00000049). The
+   constraint will be ignored.
+WARNING:PhysDesignRules:2500 - This design does not have a PS7 block.
+   Instantiate the PS7 block in order to ensure proper fabric tie-offs and
+   correct operation of the processing_system7.
+WARNING:PhysDesignRules:2452 - The IOB o_data<19> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<10> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<13> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<14> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<11> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<12> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<30> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<2> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<1> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<31> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<4> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<3> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<0> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<9> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<6> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<5> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<8> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<7> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_rst_n is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_clk is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<27> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<28> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<25> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<26> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<29> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<20> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<23> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<24> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<21> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<22> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<17> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<18> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<15> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<16> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<19> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<10> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<13> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<14> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<11> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<12> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data_ready is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data_valid is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<30> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data<31> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data_ready is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB i_data_valid is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<2> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<1> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<4> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<3> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<0> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<9> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<6> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<5> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<8> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<7> is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<27> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<28> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<25> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<26> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<29> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<20> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<23> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<24> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<21> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<22> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<17> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<18> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<15> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o_data<16> is either not constrained
+   (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network fft/m_axis_data_tlast has no load.
+INFO:LIT:395 - The above info message is repeated 170 more times for the
+   following (max. 5 shown):
+   fft/event_frame_started,
+   fft/event_tlast_unexpected,
+   fft/event_tlast_missing,
+   fft/event_data_in_channel_halt,
+   fft/event_data_out_channel_halt
+   To see the details of these info messages, please use the -detail switch.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk00000b2d>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk00000b34>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk00000b29>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk00000a4c>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk00000a50>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk00000a45>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk0000126b>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk00001260>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft/blk00000001/blk0000017a/blk0000017b/blk00001264>:<DSP48E1_DSP48E1>
+   .  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is
+   preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 366 block(s) removed
+ 118 block(s) optimized away
+ 404 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000001d4" (SFF)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000001e7" (SFF)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000001fe" (SFF)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000229" (SFF)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000023b" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004fc" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001c00" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004b9" is loadless and
+has been removed.
+    Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000023c" (SFF)
+removed.
+     The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004fb" is loadless and
+has been removed.
+      Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001c01" (ROM)
+removed.
+       The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004fe" is loadless and
+has been removed.
+        Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000023e" (SFF)
+removed.
+         The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004f9" is loadless and
+has been removed.
+          Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000243"
+(XOR) removed.
+           The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/sig00001d15" is
+loadless and has been removed.
+            Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000247"
+(MUX) removed.
+             The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/sig00001d13" is
+loadless and has been removed.
+              Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000242"
+(ZERO) removed.
+             The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/sig00001d12" is
+loadless and has been removed.
+              Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000241"
+(ONE) removed.
+             The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/sig00001d16" is
+loadless and has been removed.
+              Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000249"
+(BUF) removed.
+               The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004fd" is loadless and
+has been removed.
+                Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000023d" (SFF)
+removed.
+                 The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004f8" is loadless and
+has been removed.
+                  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000246"
+(XOR) removed.
+           The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/sig00001d17" is
+loadless and has been removed.
+            Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000248"
+(ROM) removed.
+       The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004ff" is loadless and
+has been removed.
+        Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000023f" (SFF)
+removed.
+         The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000004fa" is loadless and
+has been removed.
+          Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000245"
+(XOR) removed.
+           The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/sig00001d14" is
+loadless and has been removed.
+            Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000240/blk00000244"
+(MUX) removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000057e" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000075b" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000057f" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000075c" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c3" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000776" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c4" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000777" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c5" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000778" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c6" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000779" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c7" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000077a" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c8" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000077b" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c9" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000077c" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005ca" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000077d" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000006c0" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000008cd" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000006c1" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000008ce" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000006c2" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000008cf" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000006c3" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000008d0" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000006c4" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000008d1" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000006c5" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000008d2" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000738" (MUX)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000076f" (MUX)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a6c" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b9f" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a51" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000552" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a6d" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ba0" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a52" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000553" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a6e" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ba1" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a53" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000554" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a6f" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ba2" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a54" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000555" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a70" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ba3" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a55" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000556" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a71" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ba4" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a56" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a72" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ba5" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a57" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a73" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ba6" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a58" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a84" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bb7" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a69" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a85" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bb8" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a6a" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a86" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bb9" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a6b" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa2" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bba" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a87" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000053a" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa3" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bbb" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a88" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000053b" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa4" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bbc" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a89" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000053c" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa5" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bbd" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a8a" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000053d" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa6" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bbe" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a8b" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000053e" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa7" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bbf" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a8c" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa8" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bc0" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a8d" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa9" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bc1" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a8e" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aba" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bd2" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000a9f" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000abb" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bd3" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa0" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000abc" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bd4" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aa1" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000abd" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bd5" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad8" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000abe" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bd6" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad9" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000abf" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bd7" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ada" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad0" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000be8" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aeb" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c27" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad1" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000be9" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aec" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c28" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad2" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bea" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aed" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c29" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad3" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000beb" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aee" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c2a" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad4" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bec" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000aef" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c2b" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad5" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bed" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000af0" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad6" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bee" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000af1" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ad7" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bef" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000af2" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000af3" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bf0" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b0e" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000af4" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bf1" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b0f" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000af5" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000bf2" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b10" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b06" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c03" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b21" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cd3" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b07" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c04" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b22" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cd4" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b08" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c05" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b23" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cd5" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b09" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c06" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b24" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cd6" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b0a" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c07" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b25" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cd7" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b0b" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c08" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b26" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b0c" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c09" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b27" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b0d" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c0a" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000b28" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e4b" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000104d" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e4c" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000104e" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e4d" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000104f" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e4e" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001050" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e4f" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001051" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ec2" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001054" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ec3" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001055" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ec4" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001056" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ec5" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001057" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ec6" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001058" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ec7" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001059" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ed0" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000105c" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ed1" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000105d" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ed2" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000105e" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ed3" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000105f" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000f08" (MUX)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000f3f" (MUX)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000011f4" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001259" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000120f" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000011f5" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000125a" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001210" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk000011f6" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000125b" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001211" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001207" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000126c" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001222" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012ab" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001208" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000126d" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001223" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012ac" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001209" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000126e" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001224" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012ad" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000120a" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000126f" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001225" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012ae" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000120b" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001270" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001226" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012af" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000120c" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001271" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001227" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000120d" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001272" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001228" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000120e" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001273" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001229" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000122a" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001274" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001245" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000122b" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001275" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001246" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000122c" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001276" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001247" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000123d" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001287" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001258" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001357" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000123e" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001288" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001259" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001358" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000123f" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001289" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000125a" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001359" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001240" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000128a" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000125b" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000135a" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001241" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000128b" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000125c" (ROM)
+removed.
+   The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000135b" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001242" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000128c" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000125d" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001243" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000128d" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000125e" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001244" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000128e" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000125f" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000152b" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000016b7" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000152c" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000016b8" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000152d" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000016b9" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000152e" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000016ba" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001535" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000016bd" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001536" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000016be" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001607" (MUX)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk0000163e" (MUX)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001991" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001a18" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001992" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001a19" is loadless and
+has been removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001a63" (MUX)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001a9a" (MUX)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001b8e" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001b9d" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001b79" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001b8f" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001b9e" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001b7a" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001b90" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001b9f" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001b7b" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001ba1" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bb0" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001b8c" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001ba2" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bb1" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001b8d" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bb8" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bb2" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001ba3" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bb9" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bb3" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001ba4" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bba" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bb4" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001ba5" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bcb" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bc5" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bb6" (ROM)
+removed.
+Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bcc" (SFF)
+removed.
+ The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bc6" is loadless and
+has been removed.
+  Loadless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bb7" (ROM)
+removed.
+The signal "fft/s_axis_config_tready" is sourceless and has been removed.
+The signal "fft/m_axis_data_tlast" is sourceless and has been removed.
+The signal "fft/event_frame_started" is sourceless and has been removed.
+The signal "fft/event_tlast_unexpected" is sourceless and has been removed.
+The signal "fft/event_tlast_missing" is sourceless and has been removed.
+The signal "fft/event_data_in_channel_halt" is sourceless and has been removed.
+The signal "fft/event_data_out_channel_halt" is sourceless and has been removed.
+The signal "fft/blk00000001/sig000000c2" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk00000013" (SFF) removed.
+The signal "fft/blk00000001/sig000000d5" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk0000001c" (SFF) removed.
+The signal "fft/blk00000001/sig000000d1" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk0000001d" (SFF) removed.
+The signal "fft/blk00000001/sig000000d2" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk0000001e" (SFF) removed.
+The signal "fft/blk00000001/sig000000f1" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk00000022" (FF) removed.
+ Sourceless block "fft/blk00000001/blk0000002d/blk00000051" (ROM) removed.
+  The signal "fft/blk00000001/blk0000002d/sig000001c3" is sourceless and has been
+removed.
+   Sourceless block "fft/blk00000001/blk0000002d/blk0000002f" (SFF) removed.
+The signal "fft/blk00000001/sig000000ef" is sourceless and has been removed.
+The signal "fft/blk00000001/sig000000fd" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk00000078" (SFF) removed.
+  The signal "fft/blk00000001/sig000000ed" is sourceless and has been removed.
+   Sourceless block "fft/blk00000001/blk00001f8e" (ROM) removed.
+   Sourceless block "fft/blk00000001/blk00001fcc" (ROM) removed.
+The signal "fft/blk00000001/sig00000143" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk00000099" (SFF) removed.
+  The signal "fft/blk00000001/sig00000120" is sourceless and has been removed.
+   Sourceless block "fft/blk00000001/blk00001f95" (ROM) removed.
+The signal "fft/blk00000001/sig00000167" is sourceless and has been removed.
+The signal "fft/blk00000001/sig000000d4" is sourceless and has been removed.
+The signal "fft/blk00000001/sig000000b2" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk00001f8d" (ROM) removed.
+The signal "fft/blk00000001/sig00000198" is sourceless and has been removed.
+ Sourceless block "fft/blk00000001/blk00001fca" (FF) removed.
+The signal "fft/blk00000001/blk0000002d/sig000001d3" is sourceless and has been
+removed.
+The signal "fft/blk00000001/blk000000bd/sig00000242" is sourceless and has been
+removed.
+ Sourceless block "fft/blk00000001/blk000000bd/blk000000c0" (FF) removed.
+The signal "fft/blk00000001/blk0000011a/sig000002b3" is sourceless and has been
+removed.
+ Sourceless block "fft/blk00000001/blk0000011a/blk0000016b" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000075a" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000758" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000759" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000757" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000075e" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000581" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000003cf" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000075f" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000582" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000003d0" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000760" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000583" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000003d1" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000761" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000584" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000003d2" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000762" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk00000585" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000003d3" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000780" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005d5" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000005bc" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000781" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005d6" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000005bb" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000782" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005d7" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000005ba" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000783" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005d8" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000005b9" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000784" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005d9" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000005b8" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000785" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk000005da" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000005b7" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000944" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000942" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000943" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000941" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000af2" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000af1" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000af0" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000aef" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000aee" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000aed" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000aec" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000aeb" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000aea" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ad1" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ad0" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000acf" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ace" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000acd" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000acc" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000acb" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000aca" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ac9" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ac8" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b48" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b47" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b46" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b45" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b44" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b43" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b42" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b9e" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b9d" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b9c" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b9b" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b9a" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b99" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b98" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b97" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b96" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b7d" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b7c" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b7b" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b7a" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b79" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b78" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b77" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b76" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b75" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000b74" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c0b" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c0c" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c0d" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c0e" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c0f" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c10" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c11" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c12" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c13" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c2c" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c2d" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c2e" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c2f" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c30" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c31" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c32" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c33" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c34" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c35" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c61" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c62" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c63" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c64" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c65" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c66" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000c67" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cb7" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cb8" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cb9" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cba" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cbb" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cbc" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cbd" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cbe" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cbf" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cd8" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cd9" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cda" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cdb" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cdc" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cdd" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cde" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000cdf" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ce0" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000ce1" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000f39" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000f37" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000f38" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00000f36" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000128f" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001290" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001291" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001292" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001293" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001294" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001295" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001296" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001297" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b0" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b1" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b2" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b3" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b4" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b5" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b6" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b7" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b8" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012b9" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012e5" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012e6" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012e7" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012e8" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012e9" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012ea" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig000012eb" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000133b" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000133c" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000133d" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000133e" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000133f" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001340" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001341" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001342" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001343" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000135c" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000135d" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000135e" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig0000135f" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001360" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001361" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001362" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001363" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001364" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001365" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bc8" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bed" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bc7" is sourceless
+and has been removed.
+   Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001cf1" (ROM)
+removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bca" is sourceless
+and has been removed.
+ Sourceless block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bef" (SFF)
+removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/sig00001bc9" is sourceless
+and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000432/sig00001ea6" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000432/blk00000444" (XOR) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000432/sig00001ea5" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000432/blk00000457" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000432/sig00001eb8" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000047b/sig00001f13" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000047b/blk0000048d" (XOR) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000047b/sig00001f12" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000047b/blk000004a0" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000047b/sig00001f25" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/sig00001f8d" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/blk000004c6" (MUX) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/sig00001f6f" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/blk000004e3" (XOR) removed.
+    The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/sig00001f8c" is
+sourceless and has been removed.
+     Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/blk000004e8" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/sig00001fa2" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/sig0000200a" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/blk0000051f" (MUX) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/sig00001fec" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/blk0000053c" (XOR) removed.
+    The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/sig00002009" is
+sourceless and has been removed.
+     Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/blk00000541" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/sig0000201f" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000007a4/sig00002192" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk000007a4/blk000007b7" (XOR) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000007a4/sig00002191" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk000007a4/blk000007cb" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000007a4/sig000021a5" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000007f1/sig00002205" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk000007f1/blk00000804" (XOR) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000007f1/sig00002204" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk000007f1/blk00000818" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk000007f1/sig00002218" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/sig00002286" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/blk00000840" (MUX) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/sig00002266" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/blk0000085f" (XOR) removed.
+    The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/sig00002285" is
+sourceless and has been removed.
+     Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/blk00000864" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/sig0000229c" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/sig0000230a" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/blk0000089e" (MUX) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/sig000022ea" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/blk000008bd" (XOR) removed.
+    The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/sig00002309" is
+sourceless and has been removed.
+     Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/blk000008c2" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/sig00002320" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/sig000026bb" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/blk00000c35" (MUX) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/sig0000269d" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/blk00000c52" (XOR) removed.
+    The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/sig000026ba" is
+sourceless and has been removed.
+     Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/blk00000c57" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/sig000026d0" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/sig00002738" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/blk00000c8e" (MUX) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/sig0000271a" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/blk00000cab" (XOR) removed.
+    The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/sig00002737" is
+sourceless and has been removed.
+     Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/blk00000cb0" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/sig0000274d" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000ce5/sig000027a8" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000ce5/blk00000cf7" (XOR) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000ce5/sig000027a7" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000ce5/blk00000d0a" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000ce5/sig000027ba" is
+sourceless and has been removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000d2e/sig00002815" is
+sourceless and has been removed.
+ Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000d2e/blk00000d40" (XOR) removed.
+  The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000d2e/sig00002814" is
+sourceless and has been removed.
+   Sourceless block
+"fft/blk00000001/blk0000017a/blk0000017b/blk00000d2e/blk00000d53" (FF) removed.
+The signal "fft/blk00000001/blk0000017a/blk0000017b/blk00000d2e/sig00002827" is
+sourceless and has been removed.
+The signal "ctrl/fifo/m_axis_tvalid" is sourceless and has been removed.
+The signal
+"ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fif
+o.gl0.rd/gr1.rfwft/going_empty_fwft_leaving_empty_fwft_OR_8_o" is sourceless and
+has been removed.
+ Sourceless block
+"ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fif
+o.gl0.rd/gr1.rfwft/empty_fwft_i" (FF) removed.
+  The signal
+"ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fif
+o.gl0.rd/gr1.rfwft/empty_fwft_i" is sourceless and has been removed.
+   Sourceless block
+"ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.axis_m_axis_tvalid1_INV_0" (BUF)
+removed.
+ Sourceless block
+"ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fif
+o.gl0.rd/gr1.rfwft/empty_fwft_fb" (FF) removed.
+  The signal
+"ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fif
+o.gl0.rd/gr1.rfwft/empty_fwft_fb" is sourceless and has been removed.
+   Sourceless block
+"ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fif
+o.gl0.rd/gr1.rfwft/going_empty_fwft_leaving_empty_fwft_OR_8_o1" (ROM) removed.
+Unused block "fft/blk00000001/blk0000002d/blk00000050" (ROM) removed.
+Unused block "fft/blk00000001/blk000000bc" (FF) removed.
+Unused block "fft/blk00000001/blk000000bd/blk000000e7" (SRLC16E) removed.
+Unused block "fft/blk00000001/blk0000011a/blk00000145" (SRLC16E) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000432/blk00000445"
+(MUX) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000432/blk00000470"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000047b/blk0000048e"
+(MUX) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000047b/blk000004b9"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/blk00000501"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000004c4/blk0000050b"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/blk0000055a"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000051d/blk00000564"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000576" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000577" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000579" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000057a" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000057b" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000057c" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000057d" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005bb" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005bc" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005bd" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005be" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005bf" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c0" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c1" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005c2" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005cd" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005ce" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005cf" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005d0" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005d1" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000005d2" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000006ba" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000006bb" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000006bc" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000006bd" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000006be" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000006bf" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000007a4/blk000007b8"
+(MUX) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000007a4/blk000007e6"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000007f1/blk00000805"
+(MUX) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk000007f1/blk00000833"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/blk0000087f"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000083e/blk00000889"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/blk000008dd"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000089c/blk000008e7"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/blk00000c70"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000c33/blk00000c7a"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/blk00000cc9"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000c8c/blk00000cd3"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ce5/blk00000cf8"
+(MUX) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ce5/blk00000d23"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000d2e/blk00000d41"
+(MUX) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000d2e/blk00000d6c"
+(ROM) removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e46" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e47" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e48" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e49" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000e4a" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ebc" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ebd" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ebe" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ebf" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ec0" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ec1" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000eca" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ecb" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ecc" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00000ecd" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00001527" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00001528" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00001529" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000152a" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00001531" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00001532" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk0000198f" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00001990" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk0000017a/blk0000017b/blk00001bee" (SRL16E)
+removed.
+Unused block "fft/blk00000001/blk00001f8b" (ROM) removed.
+Unused block "fft/blk00000001/blk00001f91" (ROM) removed.
+Unused block "fft/blk00000001/blk00001fb9" (ROM) removed.
+Unused block "fft/blk00000001/blk00001fd8" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND
+		ctrl/fifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fi
+fo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		ctrl/fifo/XST_GND
+VCC 		fft/blk00000001/blk00000002
+GND 		fft/blk00000001/blk00000003
+FD 		fft/blk00000001/blk00000023
+   optimized to 0
+FD 		fft/blk00000001/blk00000024
+   optimized to 0
+FD 		fft/blk00000001/blk00000025
+   optimized to 0
+FD 		fft/blk00000001/blk00000026
+   optimized to 0
+FD 		fft/blk00000001/blk00000027
+   optimized to 0
+FD 		fft/blk00000001/blk00000028
+   optimized to 0
+FD 		fft/blk00000001/blk00000029
+   optimized to 0
+FD 		fft/blk00000001/blk0000002a
+   optimized to 0
+FD 		fft/blk00000001/blk0000002b
+   optimized to 0
+FD 		fft/blk00000001/blk0000002c
+   optimized to 0
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk0000017c
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk0000017d
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk000001da/blk000001db
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk000001da/blk000001dc
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk000001ee/blk000001ef
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk000001ee/blk000001f0
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk00000206/blk00000207
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00000206/blk00000208
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk00000219/blk0000021a
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00000219/blk0000021b
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk00000234/blk00000235
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00000234/blk00000236
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000027a/blk0000027b/blk0000027c
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000027a/blk0000027b/blk0000027d
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000036f/blk00000370/blk00000371
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000036f/blk00000370/blk00000372
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk0000040c/blk0000040d
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk0000040c/blk0000040e
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00000432/blk00000433
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk0000047b/blk0000047c
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000589/blk0000058a/blk0000058b
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000589/blk0000058a/blk0000058c
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000058f/blk00000590/blk00000591
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000058f/blk00000590/blk00000592
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000595/blk00000596/blk00000597
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000595/blk00000596/blk00000598
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk000005dc/blk000005dd/blk000005de
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk000005dc/blk000005dd/blk000005df
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk000006c6/blk000006c7/blk000006c8
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk000006c6/blk000006c7/blk000006c9
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk000007a4/blk000007a5
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk000007f1/blk000007f2
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00000902/blk00000903
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000932/blk00000933/blk00000934
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00000937/blk00000938
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000bbd/blk00000bbe/blk00000bbf
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000bbd/blk00000bbe/blk00000bc0
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00000ce5/blk00000ce6
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00000d2e/blk00000d2f
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000d78/blk00000d79/blk00000d7a
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000d78/blk00000d79/blk00000d7b
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000e50/blk00000e51/blk00000e52
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000e50/blk00000e51/blk00000e53
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000e98/blk00000e99/blk00000e9a
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000e9e/blk00000e9f/blk00000ea0
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000e9e/blk00000e9f/blk00000ea1
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000ea4/blk00000ea5/blk00000ea6
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000ea9/blk00000eaa/blk00000eab
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000ea9/blk00000eaa/blk00000eac
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000eb1/blk00000eb2/blk00000eb3
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000fd3/blk00000fd4/blk00000fd5
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000fd3/blk00000fd4/blk00000fd6
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00000fff/blk00001000/blk00001001
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001004/blk00001005/blk00001006
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00001099/blk0000109a
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk000010e2/blk000010e3
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000112b/blk0000112c/blk0000112d
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000112b/blk0000112c/blk0000112e
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000113b/blk0000113c/blk0000113d
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000113b/blk0000113c/blk0000113e
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001141/blk00001142/blk00001143
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk0000114c/blk0000114d
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00001170/blk000011f1
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk000012ee/blk000012ef/blk000012f0
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk000012ee/blk000012ef/blk000012f1
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001428/blk00001429/blk0000142a
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001428/blk00001429/blk0000142b
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk0000142e/blk0000142f
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk00001473/blk00001474
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk000014fc/blk000014fd/blk000014fe
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk000014fc/blk000014fd/blk000014ff
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001505/blk00001506/blk00001507
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001505/blk00001506/blk00001508
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000150b/blk0000150c/blk0000150d
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000150b/blk0000150c/blk0000150e
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001511/blk00001512/blk00001513
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001511/blk00001512/blk00001514
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001517/blk00001518/blk00001519
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001517/blk00001518/blk0000151a
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000151f/blk00001520/blk00001521
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk0000151f/blk00001520/blk00001522
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk00001537/blk00001538
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00001580/blk00001581
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk000015c9/blk000015ca/blk000015cb
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk000015ce/blk000015cf/blk000015d0
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001762/blk00001763/blk00001764
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001762/blk00001763/blk00001765
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001796/blk00001797/blk00001798
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk0000179f/blk000017a0
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk000017b7/blk000017d5
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk000017da/blk000017db/blk000017dc
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk000017da/blk000017db/blk000017dd
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk000017e1/blk000017e2
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk00001826/blk00001827
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk000018ab/blk000018ac/blk000018ad
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001985/blk00001986/blk00001987
+VCC
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001985/blk00001986/blk00001988
+VCC 		fft/blk00000001/blk0000017a/blk0000017b/blk00001993/blk00001994
+GND 		fft/blk00000001/blk0000017a/blk0000017b/blk000019dc/blk000019dd
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001a25/blk00001a26/blk00001a27
+GND
+		fft/blk00000001/blk0000017a/blk0000017b/blk00001a2a/blk00001a2b/blk00001a2c
+LUT3 		fft/blk00000001/blk00001f93
+   optimized to 0
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| i_clk                              | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<0>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<1>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<2>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<3>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<4>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<5>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<6>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<7>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<8>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<9>                          | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<10>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<11>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<12>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<13>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<14>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<15>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<16>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<17>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<18>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<19>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<20>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<21>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<22>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<23>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<24>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<25>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<26>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<27>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<28>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<29>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<30>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data<31>                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data_ready                       | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_data_valid                       | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| i_rst_n                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| o_data<0>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<1>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<2>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<3>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<4>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<5>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<6>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<7>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<8>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<9>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<10>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<11>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<12>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<13>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<14>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<15>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<16>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<17>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<18>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<19>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<20>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<21>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<22>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<23>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<24>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<25>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<26>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<27>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<28>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<29>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<30>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data<31>                         | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data_ready                       | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| o_data_valid                       | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
