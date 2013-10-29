@@ -27,13 +27,13 @@ module tb_dataCtrl;
 	// Inputs
 	reg i_clk;
 	reg i_rst_n;
-	reg [31:0] i_data;
+	reg [47:0] i_data;
 	reg i_data_valid;
 	reg i_data_ready;
 
 	// Outputs
 	wire o_data_ready;
-	wire [31:0] o_data;
+	wire [47:0] o_data;
 	wire o_data_valid;
 	
 	wire [6:0] index;

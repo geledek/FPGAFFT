@@ -1,0 +1,7 @@
+fft_computer_stx_beh.prj
+ipcore_dir/tmp/
+tb_dataCtrl_stx_beh.prj
+testbench_beh.prj
+testbench_isim_beh.wdb
+testbench_isim_beh1.wdb
+fft_computer_isim_beh.exe

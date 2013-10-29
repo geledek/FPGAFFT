@@ -1,5 +1,4 @@
-verilog work "ipcore_dir/output_fifo.v"
-verilog work "output_ctrl.v"
 verilog work "multiplier.v"
 verilog work "ipcore_dir/fft_core.v"
+verilog work "dataCtrl.v"
 verilog work "fft_computer.v"

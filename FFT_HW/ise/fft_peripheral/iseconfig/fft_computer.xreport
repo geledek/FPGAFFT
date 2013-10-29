@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-10-29T14:17:57</DateModified>
+  <DateModified>2013-10-29T16:53:59</DateModified>
   <ModuleName>fft_computer</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/iseconfig/fft_computer.xreport</SavedFilePath>

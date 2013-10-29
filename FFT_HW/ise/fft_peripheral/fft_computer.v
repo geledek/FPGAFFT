@@ -5,21 +5,21 @@ input        i_data_valid,
 input [31:0] i_data,
 output       o_data_ready,
 output       o_data_valid,
-output [31:0]o_data,
+output [47:0]o_data,
 input        i_data_ready
 ); 
 
-wire [31:0] fft_data;
+wire [47:0] fft_data;
 wire        fft_data_valid;
 wire        fft_data_ready;
-wire [31:0] mult_data;
+wire [47:0] mult_data;
 wire        mult_data_valid;
 wire        mult_data_ready;
 
 fft_core fft (
   .aclk(i_clk), // input aclk
   .aresetn(i_rst_n), // input aclken
-  .s_axis_config_tdata(0), 
+  .s_axis_config_tdata(8'd0), 
   .s_axis_config_tvalid(1'b0), 
   .s_axis_config_tready(), 
   .s_axis_data_tdata(i_data), 
@@ -50,7 +50,7 @@ mulitiplier mult (
     .i_data_ready(mult_data_ready)
 );
 
-output_ctrl ctrl (
+/*output_ctrl ctrl (
     .i_clk(i_clk), 
     .i_rst_n(i_rst_n), 
     .i_data(mult_data), 
@@ -59,7 +59,20 @@ output_ctrl ctrl (
     .o_data(o_data), 
     .o_data_valid(o_data_valid), 
     .i_data_ready(i_data_ready)
-);
+);*/
+	dataCtrl uutCtrl (
+    .i_clk(i_clk), 
+    .i_rst_n(i_rst_n), 
+    .i_data(mult_data), 
+    .i_data_valid(mult_data_valid), 
+    .o_data_ready(mult_data_ready), 
+    .o_data(o_data), 
+    .o_data_valid(o_data_valid), 
+    .i_data_ready(i_data_ready),
+		.index(),
+		.indexNext(),
+		.window()
+	);
 
 
 endmodule

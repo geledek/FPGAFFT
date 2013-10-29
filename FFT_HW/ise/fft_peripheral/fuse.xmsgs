@@ -8,13 +8,100 @@
 <msg type="warning" file="Simulator" num="1010" delta="unknown" >One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 37: Redeclaration of ansi port <arg fmt="%s" index="1">index</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 38: Redeclaration of ansi port <arg fmt="%s" index="1">indexNext</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 46: Redeclaration of ansi port <arg fmt="%s" index="1">window</arg> is not allowed
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft.v" Line 72: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_config_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 968: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft.v" Line 74: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">m_axis_data_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">48</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 972: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 976: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 980: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1047: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1048: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1049: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1050: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1112: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1113: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1114: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1115: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1250: Element index <arg fmt="%d" index="1">39</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1251: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1256: Element index <arg fmt="%d" index="1">47</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1257: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1262: Element index <arg fmt="%d" index="1">55</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1263: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1268: Element index <arg fmt="%d" index="1">63</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1269: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1410: Element index <arg fmt="%d" index="1">39</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1411: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1416: Element index <arg fmt="%d" index="1">47</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1417: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1422: Element index <arg fmt="%d" index="1">55</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1423: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index <arg fmt="%d" index="1">63</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1429: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
 </msg>
 
 </messages>
