@@ -10,3 +10,6 @@ test
 SDK_Export_withAudio/.metadata/
 SDK_Export_withAudio/zynq_audio/Debug/
 FFT_HW/ise/fft_peripheral/isim/
+
+FFT_HW/ise/fft_peripheral/ipcore_dir/_xmsgs/
+FFT_HW/ise/fft_peripheral/testbench_stx_beh.prj

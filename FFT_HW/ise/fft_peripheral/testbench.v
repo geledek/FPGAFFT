@@ -34,9 +34,7 @@ module testbench;
 	// Outputs
 	wire o_data_ready;
 	wire o_data_valid;
-	wire [47:0] o_data;
-	wire signed [23:0] outReal = o_data[23:0];
-	wire signed [23:0] outImage = o_data[47:24];
+	wire [31:0] o_data;
 	reg[15:0] inReal;
 	reg[15:0] inImage;
 	wire [31:0] i_data={inImage,inReal};
@@ -1235,7 +1233,7 @@ module testbench;
 	always #1 i_clk=~i_clk;
 	
 	always@(posedge i_clk)
-		$display("%d \t %d \t + \t%di",$time,outReal,outImage);
+		$display("%d \t %d",$time,o_data);
 	
       
 endmodule

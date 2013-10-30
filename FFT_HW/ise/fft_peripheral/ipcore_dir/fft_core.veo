@@ -68,14 +68,14 @@
 fft_core your_instance_name (
   .aclk(aclk), // input aclk
   .aresetn(aresetn), // input aresetn
-  .s_axis_config_tdata(s_axis_config_tdata), // input [7 : 0] s_axis_config_tdata
+  .s_axis_config_tdata(s_axis_config_tdata), // input [15 : 0] s_axis_config_tdata
   .s_axis_config_tvalid(s_axis_config_tvalid), // input s_axis_config_tvalid
   .s_axis_config_tready(s_axis_config_tready), // output s_axis_config_tready
   .s_axis_data_tdata(s_axis_data_tdata), // input [31 : 0] s_axis_data_tdata
   .s_axis_data_tvalid(s_axis_data_tvalid), // input s_axis_data_tvalid
   .s_axis_data_tready(s_axis_data_tready), // output s_axis_data_tready
   .s_axis_data_tlast(s_axis_data_tlast), // input s_axis_data_tlast
-  .m_axis_data_tdata(m_axis_data_tdata), // output [47 : 0] m_axis_data_tdata
+  .m_axis_data_tdata(m_axis_data_tdata), // output [31 : 0] m_axis_data_tdata
   .m_axis_data_tvalid(m_axis_data_tvalid), // output m_axis_data_tvalid
   .m_axis_data_tready(m_axis_data_tready), // input m_axis_data_tready
   .m_axis_data_tlast(m_axis_data_tlast), // output m_axis_data_tlast

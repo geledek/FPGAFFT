@@ -27,18 +27,17 @@ module tb_dataCtrl;
 	// Inputs
 	reg i_clk;
 	reg i_rst_n;
-	reg [47:0] i_data;
+	reg [32:0] i_data;
 	reg i_data_valid;
 	reg i_data_ready;
 
 	// Outputs
 	wire o_data_ready;
-	wire [47:0] o_data;
+	wire [31:0] o_data;
 	wire o_data_valid;
 	
-	wire [6:0] index;
-	wire [6:0] indexNext;
-	wire [1:0] window;
+	wire [8:0] index;
+	wire [8:0] indexNext;
 
 	// Instantiate the Unit Under Test (UUT)
 	dataCtrl uut (
@@ -51,8 +50,7 @@ module tb_dataCtrl;
 		.o_data_valid(o_data_valid), 
 		.i_data_ready(i_data_ready),
 		.index(index),
-		.indexNext(indexNext),
-		.window(window)
+		.indexNext(indexNext)
 	);
 
 	initial begin
@@ -74,7 +72,7 @@ module tb_dataCtrl;
 	
 	always #1 i_clk = ~ i_clk;
 	always@(posedge i_clk) begin
-		if(i_rst_n) i_data=i_data+1;
+		i_data<=i_data+1;
 	end
 endmodule
 

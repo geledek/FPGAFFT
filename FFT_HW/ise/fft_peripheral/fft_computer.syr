@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 Reading design: fft_computer.prj
@@ -117,9 +117,8 @@ Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-m
 Parsing module <fft_core>.
 Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" into library work
 Parsing module <dataCtrl>.
-WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 37: Redeclaration of ansi port index is not allowed
-WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 38: Redeclaration of ansi port indexNext is not allowed
-WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 46: Redeclaration of ansi port window is not allowed
+WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 36: Redeclaration of ansi port index is not allowed
+WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 37: Redeclaration of ansi port indexNext is not allowed
 Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" into library work
 Parsing module <fft_computer>.
 
@@ -130,16 +129,15 @@ Parsing module <fft_computer>.
 Elaborating module <fft_computer>.
 
 Elaborating module <fft_core>.
+WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" Line 22: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
 
 Elaborating module <mulitiplier>.
 
 Elaborating module <dataCtrl>.
-WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 39: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:1127 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 48: Assignment to valid_input_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 49: Assignment to valid_output_data ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 83: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 84: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 93: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 38: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:1127 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 52: Assignment to valid_input_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 53: Assignment to valid_output_data ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 94: Result of 10-bit expression is truncated to fit in 9-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -157,41 +155,43 @@ INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/z
 INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <event_data_out_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 63: Output port <index> of the instance <uutCtrl> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 63: Output port <indexNext> of the instance <uutCtrl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 63: Output port <window> of the instance <uutCtrl> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <mult_data_valid_r>.
     Summary:
-	no macro.
+	inferred   1 D-type flip-flop(s).
 Unit <fft_computer> synthesized.
 
 Synthesizing Unit <mulitiplier>.
     Related source file is "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/multiplier.v".
-WARNING:Xst:647 - Input <i_data<47:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <i_data_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 48-bit register for signal <o_data>.
+    Found 32-bit register for signal <_image>.
+    Found 32-bit register for signal <_real>.
+    Found 32-bit register for signal <o_data>.
     Found 1-bit register for signal <o_data_valid>.
+    Found 32-bit adder for signal <image[31]__real[31]_add_5_OUT> created at line 34.
+    Found 16x16-bit multiplier for signal <realPart[15]_realPart[15]_MuLt_3_OUT> created at line 32.
+    Found 16x16-bit multiplier for signal <imagePart[15]_imagePart[15]_MuLt_4_OUT> created at line 33.
     Summary:
-	inferred  49 D-type flip-flop(s).
+	inferred   2 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  97 D-type flip-flop(s).
 Unit <mulitiplier> synthesized.
 
 Synthesizing Unit <dataCtrl>.
     Related source file is "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v".
-WARNING:Xst:653 - Signal <o_data_ready> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 6144-bit register for signal <n0426[6143:0]>.
+WARNING:Xst:647 - Input <i_data_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4096-bit register for signal <n0283[4095:0]>.
     Found 1-bit register for signal <o_data_valid>.
-    Found 48-bit register for signal <o_data>.
-    Found 7-bit register for signal <index>.
-    Found 2-bit register for signal <window>.
-    Found 48-bit register for signal <nextValue>.
-    Found 8-bit subtractor for signal <GND_4_o_GND_4_o_sub_11_OUT> created at line 68.
-    Found 48-bit adder for signal <accOut> created at line 44.
-    Found 7-bit adder for signal <indexNext> created at line 84.
-    Found 2-bit adder for signal <window[1]_GND_4_o_add_290_OUT> created at line 93.
-    Found 48-bit 128-to-1 multiplexer for signal <indexNext[6]_data_mem[127][47]_wide_mux_3_OUT> created at line 55.
-    Found 7-bit comparator greater for signal <n0009> created at line 68
-    Found 32-bit comparator lessequal for signal <n0012> created at line 68
+    Found 32-bit register for signal <o_data>.
+    Found 9-bit register for signal <index>.
+    Found 32-bit register for signal <nextValue>.
+    Found 32-bit adder for signal <accOut> created at line 49.
+    Found 9-bit adder for signal <indexNext> created at line 94.
+    Found 32-bit 128-to-1 multiplexer for signal <indexNextShort[6]_data_mem[127][31]_wide_mux_5_OUT> created at line 59.
+    Found 9-bit comparator greater for signal <index[8]_PWR_5_o_LessThan_10_o> created at line 64
     Summary:
-	inferred   4 Adder/Subtractor(s).
-	inferred 6250 D-type flip-flop(s).
-	inferred   2 Comparator(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 4170 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 	inferred 257 Multiplexer(s).
 Unit <dataCtrl> synthesized.
 
@@ -199,23 +199,21 @@ Unit <dataCtrl> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
- 2-bit adder                                           : 1
- 48-bit adder                                          : 1
- 7-bit adder                                           : 1
- 8-bit subtractor                                      : 1
-# Registers                                            : 8
- 1-bit register                                        : 2
- 2-bit register                                        : 1
- 48-bit register                                       : 3
- 6144-bit register                                     : 1
- 7-bit register                                        : 1
-# Comparators                                          : 2
- 32-bit comparator lessequal                           : 1
- 7-bit comparator greater                              : 1
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 9-bit adder                                           : 1
+# Registers                                            : 10
+ 1-bit register                                        : 3
+ 32-bit register                                       : 5
+ 4096-bit register                                     : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 1
+ 9-bit comparator greater                              : 1
 # Multiplexers                                         : 257
- 48-bit 128-to-1 multiplexer                           : 1
- 48-bit 2-to-1 multiplexer                             : 256
+ 32-bit 128-to-1 multiplexer                           : 1
+ 32-bit 2-to-1 multiplexer                             : 256
 
 =========================================================================
 
@@ -226,57 +224,55 @@ Macro Statistics
 Reading core <ipcore_dir/fft_core.ngc>.
 Reading Secure Unit <blk00000001>.
 Loading core <fft_core> for timing and area information for instance <fft>.
-INFO:Xst:1901 - Instance blk00001972 in unit blk00001972 of type RAMB18SDP has been replaced by RAMB18E1
-INFO:Xst:1901 - Instance blk00001973 in unit blk00001973 of type RAMB18SDP has been replaced by RAMB18E1
-INFO:Xst:2261 - The FF/Latch <o_data_24> in Unit <mult> is equivalent to the following 23 FFs/Latches, which will be removed : <o_data_25> <o_data_26> <o_data_27> <o_data_28> <o_data_29> <o_data_30> <o_data_31> <o_data_32> <o_data_33> <o_data_34> <o_data_35> <o_data_36> <o_data_37> <o_data_38> <o_data_39> <o_data_40> <o_data_41> <o_data_42> <o_data_43> <o_data_44> <o_data_45> <o_data_46> <o_data_47> 
-INFO:Xst:2261 - The FF/Latch <o_data_45> in Unit <uutCtrl> is equivalent to the following 2 FFs/Latches, which will be removed : <o_data_46> <o_data_47> 
-WARNING:Xst:1710 - FF/Latch <o_data_24> (without init value) has a constant value of 0 in block <mult>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2404 -  FFs/Latches <o_data<47:24>> (without init value) have a constant value of 0 in block <mulitiplier>.
+INFO:Xst:1901 - Instance blk000018b6 in unit blk000018b6 of type RAMB18SDP has been replaced by RAMB18E1
+INFO:Xst:2261 - The FF/Latch <o_data_29> in Unit <uutCtrl> is equivalent to the following 2 FFs/Latches, which will be removed : <o_data_30> <o_data_31> 
 
 Synthesizing (advanced) Unit <dataCtrl>.
 The following registers are absorbed into counter <index>: 1 register on signal <index>.
-The following registers are absorbed into counter <window>: 1 register on signal <window>.
 Unit <dataCtrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mulitiplier>.
+	Multiplier <Mmult_realPart[15]_realPart[15]_MuLt_3_OUT> in block <mulitiplier> and adder/subtractor <Madd_image[31]__real[31]_add_5_OUT> in block <mulitiplier> are combined into a MAC<Maddsub_realPart[15]_realPart[15]_MuLt_3_OUT>.
+	The following registers are also absorbed by the MAC: <_image> in block <mulitiplier>, <o_data> in block <mulitiplier>.
+	Found pipelined multiplier on signal <imagePart[15]_imagePart[15]_MuLt_4_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_imagePart[15]_imagePart[15]_MuLt_4_OUT by adding 1 register level(s).
+Unit <mulitiplier> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
- 48-bit adder                                          : 1
- 7-bit adder                                           : 1
- 8-bit subtractor                                      : 1
-# Counters                                             : 2
- 2-bit up counter                                      : 1
- 7-bit up counter                                      : 1
-# Registers                                            : 6266
- Flip-Flops                                            : 6266
-# Comparators                                          : 2
- 32-bit comparator lessequal                           : 1
- 7-bit comparator greater                              : 1
+# MACs                                                 : 1
+ 16x16-to-32-bit MAC                                   : 1
+# Multipliers                                          : 1
+ 16x16-bit registered multiplier                       : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 4163
+ Flip-Flops                                            : 4163
+# Comparators                                          : 1
+ 9-bit comparator greater                              : 1
 # Multiplexers                                         : 257
- 48-bit 128-to-1 multiplexer                           : 1
- 48-bit 2-to-1 multiplexer                             : 256
+ 32-bit 128-to-1 multiplexer                           : 1
+ 32-bit 2-to-1 multiplexer                             : 256
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <o_data_45> in Unit <dataCtrl> is equivalent to the following 2 FFs/Latches, which will be removed : <o_data_46> <o_data_47> 
+INFO:Xst:2261 - The FF/Latch <uutCtrl/o_data_29> in Unit <fft_computer> is equivalent to the following 2 FFs/Latches, which will be removed : <uutCtrl/o_data_30> <uutCtrl/o_data_31> 
 
 Optimizing unit <fft_computer> ...
 
-Optimizing unit <mulitiplier> ...
-
-Optimizing unit <dataCtrl> ...
-
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block fft_computer, actual ratio is 22.
-FlipFlop uutCtrl/index_0 has been replicated 1 time(s)
-FlipFlop uutCtrl/index_1 has been replicated 1 time(s)
-FlipFlop uutCtrl/index_4 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block fft_computer, actual ratio is 15.
 
 Final Macro Processing ...
 
@@ -284,8 +280,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 6276
- Flip-Flops                                            : 6276
+# Registers                                            : 4138
+ Flip-Flops                                            : 4138
 
 =========================================================================
 
@@ -308,29 +304,31 @@ Top Level Output File Name         : fft_computer.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 8658
+# BELS                             : 5527
 #      GND                         : 1
-#      INV                         : 3
-#      LUT1                        : 23
-#      LUT2                        : 28
-#      LUT3                        : 16
-#      LUT4                        : 10
-#      LUT5                        : 6252
-#      LUT6                        : 2181
-#      MUXCY                       : 47
-#      MUXF7                       : 48
+#      INV                         : 2
+#      LUT1                        : 8
+#      LUT2                        : 3
+#      LUT3                        : 19
+#      LUT4                        : 1
+#      LUT5                        : 1
+#      LUT6                        : 5442
+#      MUXCY                       : 8
+#      MUXF7                       : 32
 #      VCC                         : 1
-#      XORCY                       : 48
-# FlipFlops/Latches                : 6276
+#      XORCY                       : 9
+# FlipFlops/Latches                : 4138
 #      FD                          : 2
-#      FDE                         : 24
-#      FDRE                        : 6250
+#      FDR                         : 31
+#      FDRE                        : 4105
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 85
-#      IBUF                        : 35
-#      OBUF                        : 50
+# IO Buffers                       : 68
+#      IBUF                        : 34
+#      OBUF                        : 34
+# DSPs                             : 3
+#      DSP48E1                     : 3
 
 Device utilization summary:
 ---------------------------
@@ -339,23 +337,24 @@ Selected Device : 7z020clg484-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            6276  out of  106400     5%  
- Number of Slice LUTs:                 8513  out of  53200    16%  
-    Number used as Logic:              8513  out of  53200    16%  
+ Number of Slice Registers:            4138  out of  106400     3%  
+ Number of Slice LUTs:                 5476  out of  53200    10%  
+    Number used as Logic:              5476  out of  53200    10%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   6545
-   Number with an unused Flip Flop:     269  out of   6545     4%  
-   Number with an unused LUT:         -1968  out of   6545   -30%  
-   Number of fully used LUT-FF pairs:  8244  out of   6545   125% (*) 
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:   3563
+   Number with an unused Flip Flop:    -575  out of   3563   -16%  
+   Number with an unused LUT:         -1913  out of   3563   -53%  
+   Number of fully used LUT-FF pairs:  6051  out of   3563   169% (*) 
+   Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                          86
- Number of bonded IOBs:                  86  out of    200    43%  
+ Number of IOs:                          70
+ Number of bonded IOBs:                  69  out of    200    34%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRL/BUFHCEs:         2  out of    104     1%  
+ Number of DSP48E1s:                      3  out of    220     1%  
 
 WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
@@ -380,7 +379,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-i_clk                              | BUFGP                  | 10361 |
+i_clk                              | BUFGP                  | 8109  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -388,18 +387,16 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                               | Buffer(FF name)                                                                  | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
-fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001972/N0(fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001972/XST_GND:G)| NONE(fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001972/blk00001972)| 6     |
-fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001973/N0(fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001973/XST_GND:G)| NONE(fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001973/blk00001973)| 6     |
-fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001972/N1(fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001972/XST_VCC:P)| NONE(fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001972/blk00001972)| 4     |
-fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001973/N1(fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001973/XST_VCC:P)| NONE(fft/blk00000001/blk00000172/blk00000173/blk00001970/blk00001973/blk00001973)| 4     |
+fft/blk00000001/blk0000016a/blk0000016b/blk000018b4/blk000018b6/N0(fft/blk00000001/blk0000016a/blk0000016b/blk000018b4/blk000018b6/XST_GND:G)| NONE(fft/blk00000001/blk0000016a/blk0000016b/blk000018b4/blk000018b6/blk000018b6)| 6     |
+fft/blk00000001/blk0000016a/blk0000016b/blk000018b4/blk000018b6/N1(fft/blk00000001/blk0000016a/blk0000016b/blk000018b4/blk000018b6/XST_VCC:P)| NONE(fft/blk00000001/blk0000016a/blk0000016b/blk000018b4/blk000018b6/blk000018b6)| 4     |
 ---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.073ns (Maximum Frequency: 325.411MHz)
-   Minimum input arrival time before clock: 2.542ns
+   Minimum period: 4.483ns (Maximum Frequency: 223.065MHz)
+   Minimum input arrival time before clock: 1.434ns
    Maximum output required time after clock: 0.695ns
    Maximum combinational path delay: No path found
 
@@ -409,66 +406,62 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'i_clk'
-  Clock period: 3.073ns (frequency: 325.411MHz)
-  Total number of paths / destination ports: 747105 / 21981
+  Clock period: 4.483ns (frequency: 223.065MHz)
+  Total number of paths / destination ports: 290203 / 17561
 -------------------------------------------------------------------------
-Delay:               3.073ns (Levels of Logic = 4)
-  Source:            uutCtrl/index_3 (FF)
-  Destination:       uutCtrl/data_mem_127_5135 (FF)
+Delay:               4.483ns (Levels of Logic = 2)
+  Source:            sec_inst (FF)
+  Destination:       mult/Mmult_imagePart[15]_imagePart[15]_MuLt_4_OUT (DSP)
   Source Clock:      i_clk rising
   Destination Clock: i_clk rising
 
-  Data Path: uutCtrl/index_3 to uutCtrl/data_mem_127_5135
+  Data Path: sec_inst to mult/Mmult_imagePart[15]_imagePart[15]_MuLt_4_OUT
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            23   0.282   0.865  uutCtrl/index_3 (uutCtrl/index_3)
-     LUT5:I0->O           11   0.053   0.551  uutCtrl/Msub_GND_4_o_GND_4_o_sub_11_OUT_xor<4>11 (uutCtrl/GND_4_o_GND_4_o_sub_11_OUT<4>)
-     LUT6:I4->O           16   0.053   0.583  uutCtrl/GND_4_o_GND_4_o_AND_291_o11 (uutCtrl/GND_4_o_GND_4_o_AND_291_o1)
-     LUT6:I4->O           48   0.053   0.569  uutCtrl/data_mem[0][47]_data_mem[0][47]_mux_273_OUT<4992>11 (uutCtrl/data_mem[0][47]_data_mem[0][47]_mux_273_OUT<4992>1)
-     LUT5:I4->O            1   0.053   0.000  uutCtrl/data_mem[0][47]_data_mem[0][47]_mux_273_OUT<4992>1 (uutCtrl/data_mem[0][47]_data_mem[0][47]_mux_273_OUT<4992>)
-     FDRE:D                    0.011          uutCtrl/data_mem_127_4992
+     SEC:C->out           13   0.282   0.479  sec_inst (sec_net)
+     end scope: 'fft/blk00000001:m_axis_data_tdata<31>'
+     end scope: 'fft:m_axis_data_tdata<31>'
+     DSP48E1:A15               3.722          mult/Mmult_imagePart[15]_imagePart[15]_MuLt_4_OUT
     ----------------------------------------
-    Total                      3.073ns (0.505ns logic, 2.568ns route)
-                                       (16.4% logic, 83.6% route)
+    Total                      4.483ns (4.004ns logic, 0.479ns route)
+                                       (89.3% logic, 10.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
-  Total number of paths / destination ports: 17446 / 12455
+  Total number of paths / destination ports: 45 / 45
 -------------------------------------------------------------------------
-Offset:              2.542ns (Levels of Logic = 4)
-  Source:            i_data_ready (PAD)
-  Destination:       uutCtrl/data_mem_127_5135 (FF)
+Offset:              1.434ns (Levels of Logic = 2)
+  Source:            i_rst_n (PAD)
+  Destination:       uutCtrl/Madd_accOut1 (DSP)
   Destination Clock: i_clk rising
 
-  Data Path: i_data_ready to uutCtrl/data_mem_127_5135
+  Data Path: i_rst_n to uutCtrl/Madd_accOut1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   0.000   0.662  i_data_ready_IBUF (i_data_ready_IBUF)
-     LUT4:I0->O         6240   0.053   1.141  uutCtrl/GND_4_o_i_data_ready_AND_4_o1 (uutCtrl/GND_4_o_i_data_ready_AND_4_o)
-     LUT6:I2->O           48   0.053   0.569  uutCtrl/data_mem[0][47]_data_mem[0][47]_mux_273_OUT<3552>11 (uutCtrl/data_mem[0][47]_data_mem[0][47]_mux_273_OUT<3552>1)
-     LUT5:I4->O            1   0.053   0.000  uutCtrl/data_mem[0][47]_data_mem[0][47]_mux_273_OUT<3552>1 (uutCtrl/data_mem[0][47]_data_mem[0][47]_mux_273_OUT<3552>)
-     FDRE:D                    0.011          uutCtrl/data_mem_127_3552
+     IBUF:I->O             4   0.000   0.419  i_rst_n_IBUF (i_rst_n_IBUF)
+     INV:I->O              2   0.067   0.405  i_rst_n_inv1_INV_0 (i_rst_n_inv)
+     DSP48E1:RSTB              0.543          uutCtrl/Madd_accOut1
     ----------------------------------------
-    Total                      2.542ns (0.170ns logic, 2.372ns route)
-                                       (6.7% logic, 93.3% route)
+    Total                      1.434ns (0.610ns logic, 0.824ns route)
+                                       (42.5% logic, 57.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
-  Total number of paths / destination ports: 50 / 50
+  Total number of paths / destination ports: 34 / 34
 -------------------------------------------------------------------------
 Offset:              0.695ns (Levels of Logic = 1)
-  Source:            uutCtrl/o_data_45 (FF)
-  Destination:       o_data<47> (PAD)
+  Source:            uutCtrl/o_data_29 (FF)
+  Destination:       o_data<31> (PAD)
   Source Clock:      i_clk rising
 
-  Data Path: uutCtrl/o_data_45 to o_data<47>
+  Data Path: uutCtrl/o_data_29 to o_data<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             3   0.282   0.413  uutCtrl/o_data_45 (uutCtrl/o_data_45)
-     OBUF:I->O                 0.000          o_data_47_OBUF (o_data<47>)
+     FDR:C->Q              3   0.282   0.413  uutCtrl/o_data_29 (uutCtrl/o_data_29)
+     OBUF:I->O                 0.000          o_data_31_OBUF (o_data<31>)
     ----------------------------------------
     Total                      0.695ns (0.282ns logic, 0.413ns route)
                                        (40.6% logic, 59.4% route)
@@ -483,21 +476,21 @@ Clock to Setup on destination clock i_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-i_clk          |    3.073|         |         |         |
+i_clk          |    4.483|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 146.00 secs
-Total CPU time to Xst completion: 141.48 secs
+Total REAL time to Xst completion: 50.00 secs
+Total CPU time to Xst completion: 47.11 secs
  
 --> 
 
 
-Total memory usage is 600096 kilobytes
+Total memory usage is 574624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   15 (   0 filtered)
-Number of infos    :   16 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
 

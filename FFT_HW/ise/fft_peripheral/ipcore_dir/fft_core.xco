@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.5
-# Date: Tue Oct 29 09:09:20 2013
+# Date: Wed Oct 30 11:25:17 2013
 #
 ##############################################################
 #
@@ -59,7 +59,7 @@ CSET ovflo=false
 CSET phase_factor_width=16
 CSET rounding_modes=truncation
 CSET run_time_configurable_transform_length=false
-CSET scaling_options=unscaled
+CSET scaling_options=scaled
 CSET target_clock_frequency=100
 CSET target_data_throughput=50
 CSET throttle_scheme=nonrealtime
@@ -70,4 +70,4 @@ CSET xk_index=false
 MISC pkg_timestamp=2012-11-05T14:52:53Z
 # END Extra information
 GENERATE
-# CRC: 1155c13c
+# CRC: 97585e18

@@ -102,7 +102,7 @@ architecture tb of tb_fft_core is
   -- Config slave channel signals
   signal s_axis_config_tvalid        : std_logic := '0';  -- payload is valid
   signal s_axis_config_tready        : std_logic := '1';  -- slave is ready
-  signal s_axis_config_tdata         : std_logic_vector(7 downto 0) := (others => '0');  -- data payload
+  signal s_axis_config_tdata         : std_logic_vector(15 downto 0) := (others => '0');  -- data payload
 
   -- Data slave channel signals
   signal s_axis_data_tvalid          : std_logic := '0';  -- payload is valid
@@ -113,7 +113,7 @@ architecture tb of tb_fft_core is
   -- Data master channel signals
   signal m_axis_data_tvalid          : std_logic := '0';  -- payload is valid
   signal m_axis_data_tready          : std_logic := '1';  -- slave is ready
-  signal m_axis_data_tdata           : std_logic_vector(47 downto 0) := (others => '0');  -- data payload
+  signal m_axis_data_tdata           : std_logic_vector(31 downto 0) := (others => '0');  -- data payload
   signal m_axis_data_tlast           : std_logic := '0';  -- indicates end of packet
 
   -- Event signals
@@ -133,14 +133,15 @@ architecture tb of tb_fft_core is
 
   -- Config slave channel alias signals
   signal s_axis_config_tdata_fwd_inv      : std_logic                    := '0';              -- forward or inverse
+  signal s_axis_config_tdata_scale_sch    : std_logic_vector(7 downto 0) := (others => '0');  -- scaling schedule
 
   -- Data slave channel alias signals
   signal s_axis_data_tdata_re             : std_logic_vector(15 downto 0) := (others => '0');  -- real data
   signal s_axis_data_tdata_im             : std_logic_vector(15 downto 0) := (others => '0');  -- imaginary data
 
   -- Data master channel alias signals
-  signal m_axis_data_tdata_re             : std_logic_vector(23 downto 0) := (others => '0');  -- real data
-  signal m_axis_data_tdata_im             : std_logic_vector(23 downto 0) := (others => '0');  -- imaginary data
+  signal m_axis_data_tdata_re             : std_logic_vector(15 downto 0) := (others => '0');  -- real data
+  signal m_axis_data_tdata_im             : std_logic_vector(15 downto 0) := (others => '0');  -- imaginary data
 
   -----------------------------------------------------------------------
   -- Constants, types and functions to create input data
@@ -197,6 +198,8 @@ architecture tb of tb_fft_core is
   shared variable do_config : T_DO_CONFIG := NONE;  -- instruction for driving config slave channel
   type T_CFG_FWD_INV is (FWD, INV);
   signal cfg_fwd_inv : T_CFG_FWD_INV := FWD;
+  type T_CFG_SCALE_SCH is (ZERO, DEFAULT);
+  signal cfg_scale_sch : T_CFG_SCALE_SCH := DEFAULT;
 
   -- Recording output data, for reuse as input data
   signal op_sample       : integer    := 0;    -- output sample number
@@ -403,6 +406,7 @@ begin
     -- 1st configuration
     ip_frame <= 4;
     cfg_fwd_inv <= FWD;  -- forward transform
+    cfg_scale_sch <= DEFAULT;  -- default scaling schedule
     do_config := IMMEDIATE;
     while do_config /= DONE loop
       wait until rising_edge(aclk) and aresetn = '1';
@@ -412,6 +416,7 @@ begin
     -- 2nd configuration: same as 1st, except:
     ip_frame <= 5;
     cfg_fwd_inv <= INV;  -- inverse transform
+    cfg_scale_sch <= ZERO;  -- no scaling
     do_config := IMMEDIATE;
     while do_config /= DONE loop
       wait until rising_edge(aclk) and aresetn = '1';
@@ -424,6 +429,7 @@ begin
     -- Request a 3rd configuration, to be sent after 2nd data frame starts
     ip_frame <= 6;
     cfg_fwd_inv <= FWD;  -- forward transform
+    cfg_scale_sch <= ZERO;  -- no scaling
     do_config := AFTER_START;
 
     -- Drive the 2nd data frame
@@ -432,6 +438,7 @@ begin
     -- Request a 4th configuration, to be sent after 3rd data frame starts: same as 3rd, except:
     ip_frame <= 7;
     cfg_fwd_inv <= INV;  -- inverse transform
+    cfg_scale_sch <= DEFAULT;  -- default scaling schedule
     do_config := AFTER_START;
 
     -- Drive the 3rd data frame
@@ -455,6 +462,7 @@ begin
   -----------------------------------------------------------------------
 
   config_stimuli : process
+    variable scale_sch : std_logic_vector(7 downto 0);
   begin
 
     -- Drive a configuration when requested by data_stimuli process
@@ -480,6 +488,17 @@ begin
     elsif cfg_fwd_inv = INV then
       s_axis_config_tdata(0) <= '0';  -- inverse
     end if;
+    -- Format the scaling schedule
+    if cfg_scale_sch = ZERO then  -- no scaling
+      scale_sch := (others => '0');
+    elsif cfg_scale_sch = DEFAULT then  -- default scaling, for largest magnitude output with no overflow guaranteed
+      scale_sch(1 downto 0) := "11";  -- largest scaling at first stage
+      for s in 2 to 3 loop
+        scale_sch(s*2-1 downto s*2-2) := "10";  -- less scaling at later stages
+      end loop;
+      scale_sch(7 downto 6) := "01";  -- least scaling at last stage
+    end if;
+    s_axis_config_tdata(8 downto 1) <= scale_sch;
 
     -- Drive the transaction on the config slave channel
     s_axis_config_tvalid <= '1';
@@ -511,9 +530,8 @@ begin
       elsif m_axis_data_tvalid = '1' and m_axis_data_tready = '1' then
         -- Record output data such that it can be used as input data
         index := op_sample;
-        -- Truncate output data to match input data width
-        op_data(index).re <= m_axis_data_tdata(23 downto 8);
-        op_data(index).im <= m_axis_data_tdata(47 downto 32);
+        op_data(index).re <= m_axis_data_tdata(15 downto 0);
+        op_data(index).im <= m_axis_data_tdata(31 downto 16);
         -- Increment output sample counter
         if m_axis_data_tlast = '1' then  -- end of output frame: reset sample counter and increment frame counter
           op_sample <= 0;
@@ -536,7 +554,7 @@ begin
     -- Previous values of data master channel signals
     variable m_data_tvalid_prev : std_logic := '0';
     variable m_data_tready_prev : std_logic := '0';
-    variable m_data_tdata_prev  : std_logic_vector(47 downto 0) := (others => '0');
+    variable m_data_tdata_prev  : std_logic_vector(31 downto 0) := (others => '0');
   begin
 
     -- Check outputs T_STROBE time after rising edge of clock
@@ -582,14 +600,15 @@ begin
 
   -- Config slave channel alias signals
   s_axis_config_tdata_fwd_inv    <= s_axis_config_tdata(0);
+  s_axis_config_tdata_scale_sch  <= s_axis_config_tdata(8 downto 1);
 
   -- Data slave channel alias signals
   s_axis_data_tdata_re           <= s_axis_data_tdata(15 downto 0);
   s_axis_data_tdata_im           <= s_axis_data_tdata(31 downto 16);
 
   -- Data master channel alias signals
-  m_axis_data_tdata_re           <= m_axis_data_tdata(23 downto 0);
-  m_axis_data_tdata_im           <= m_axis_data_tdata(47 downto 24);
+  m_axis_data_tdata_re           <= m_axis_data_tdata(15 downto 0);
+  m_axis_data_tdata_im           <= m_axis_data_tdata(31 downto 16);
 
 end tb;
 

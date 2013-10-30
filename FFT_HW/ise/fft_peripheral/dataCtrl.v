@@ -21,29 +21,33 @@
 module dataCtrl(
 input        i_clk,
 input        i_rst_n,
-input [47:0] i_data,
+input [31:0] i_data,
 input        i_data_valid,
-output reg [47:0]o_data,
+output reg [31:0]o_data,
 output       o_data_ready,
 output  reg  o_data_valid,
 input        i_data_ready,
-output [6:0] index,
-output [6:0] indexNext,
-output [1:0] window
+output [8:0] index,
+output [8:0] indexNext
 );
 
-reg[47:0] data_mem[0:127];
+reg[31:0] data_mem[0:127];
 
-reg[6:0] index;
-wire[6:0] indexNext;
+reg[8:0] index;
+wire[8:0] indexNext;
 assign indexNext = index+1;
 
-reg[47:0] nextValue;
+wire [6:0] indexShort;
+wire [6:0] indexNextShort;
 
-wire[47:0] accOut;
+assign indexShort = index[6:0];
+assign indexNextShort = indexNext[6:0];
+
+reg[31:0] nextValue;
+
+wire[31:0] accOut;
 assign accOut = nextValue + i_data;
-
-reg[1:0] window;
+assign o_data_ready = 1;
 
 assign valid_input_data  = i_data_valid & o_data_ready;
 assign valid_output_data = o_data_valid & i_data_ready;
@@ -52,45 +56,42 @@ always@(posedge i_clk) begin
 	if(!i_rst_n)
 		nextValue<=0;
 	else
-		if(i_data_valid) nextValue<=data_mem[indexNext];
+		if(i_data_valid) nextValue<=data_mem[indexNextShort];
 end
 integer i;
+
+wire accStore;
+assign accStore = (i_data_valid && index<384);
 always@(posedge i_clk) begin
 	if(!i_rst_n)
-		for (i=0;i<128;i=i+1) begin
+		for (i=0;i<128;i=i+1)
+		begin
 			data_mem[i] <= 0;
 		end
+	else
+	begin
+		if(accStore) data_mem[indexShort]<=accOut;
+		else if(i_data_valid) data_mem[indexShort]<=0;
+	end
+end
+
+always@(posedge i_clk) begin
+	if(index>=384) begin
+		o_data_valid<=1;
+		o_data<={{2{accOut[31]}},accOut[31:2]};
+		//o_data<=accOut;
+	end
 	else begin
-		
-		if(window==3 && i_data_valid && i_data_ready) begin
-			o_data_valid<=1;
-			o_data<={{2{accOut[47]}},accOut[47:2]};
-			if (index >=1)data_mem[index-1] <=0;
-		end
-		else begin 
-			if(i_data_valid) data_mem[index]<=accOut;
-			o_data_valid<=0;
-			o_data<=0;
-		end
+		o_data_valid<=0;
+		o_data<=0;
 	end
 end
 
 always@(posedge i_clk) begin
 	if(!i_rst_n)
 		index<=0;
-	else begin
-		if(i_data_valid)begin
-			if(window==3 && i_data_ready) begin index<=index+1; end
-			else begin if(window!=3)index<=index+1; end
-		end
-	end
-end
-
-always@(posedge i_clk) begin
-	if(!i_rst_n)
-		window<=0;
-	else
-		if(index==127) window<=window+1;
+	else 
+		if(i_data_valid) index<=index+1;
 end
 
 endmodule

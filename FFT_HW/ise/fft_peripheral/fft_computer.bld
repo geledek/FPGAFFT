@@ -9,12 +9,11 @@ Reading NGO file
 "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw
 /ise/fft_peripheral/fft_computer.ngc" ...
 Loading design module "ipcore_dir/fft_core.ngc"...
-Loading design module "ipcore_dir/output_fifo.ngc"...
 Gathering constraint information from source properties...
 Done.
 
 WARNING:NgdBuild:931 - The value of SIM_DEVICE on instance
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000040c/blk00000431/RAMB18E1' of
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000018b4/blk000018b6/RAMB18E1' of
    type RAMB18E1 has been changed from 'VIRTEX6' to '7SERIES' to correct
    post-ngdbuild and timing simulation for this primitive.  In order for
    functional simulation to be correct, the value of SIM_DEVICE should be
@@ -28,405 +27,346 @@ Done...
 
 Checking expanded design ...
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000001d4' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000001fc' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000001e7' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000020f' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000001fe' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000226' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000229' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000251' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000023b' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000258' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000057e' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000263' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000057f' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000441' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000005c3' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000442' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000005c4' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000443' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000005c5' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000444' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000005c6' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000445' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000005c7' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000446' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000005c8' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000005fc' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000005c9' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000005fd' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000005ca' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000005ff' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000006c0' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000600' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000006c1' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000601' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000006c2' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000602' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000006c3' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000063d' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000006c4' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000063e' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000006c5' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000063f' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a6c' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000640' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a6d' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000641' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a6e' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000642' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a6f' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000643' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a70' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000738' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a71' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000739' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a72' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000073a' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a73' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000073b' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a84' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000073c' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a85' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000ab6' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000a86' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000ab7' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aa2' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000ab8' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aa3' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000ab9' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aa4' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000aba' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aa5' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000abb' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aa6' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000abc' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aa7' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000abd' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aa8' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000ace' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aa9' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000acf' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000aba' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000ad0' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000abb' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000aec' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000abc' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000aed' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000abd' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000aee' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000abe' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000aef' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000abf' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000af0' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ad0' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000af1' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ad1' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000af2' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ad2' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000af3' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ad3' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b04' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ad4' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b05' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ad5' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b06' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ad6' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b07' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ad7' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b08' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000af3' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b09' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000af4' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b1a' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000af5' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b1b' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000b06' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b1c' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000b07' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b1d' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000b08' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b1e' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000b09' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b1f' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000b0a' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b20' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000b0b' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b21' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000b0c' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b3d' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000b0d' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b3e' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e4b' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b3f' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e4c' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b50' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e4d' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b51' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e4e' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b52' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e4f' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b53' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ec2' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b54' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ec3' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b55' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ec4' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b56' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ec5' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000b57' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ec6' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001154' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ec7' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001155' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ed0' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001156' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ed1' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001167' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ed2' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001168' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000ed3' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001169' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000011f4' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000116a' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000011f5' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000116b' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000011f6' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000116c' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001207' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000116d' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001208' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000116e' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001209' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000118a' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000120a' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000118b' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000120b' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000118c' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000120c' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000119d' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000120d' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000119e' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000120e' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000119f' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000122a' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000011a0' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000122b' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000011a1' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000122c' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000011a2' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000123d' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000011a3' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000123e' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk000011a4' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000123f' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001464' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001240' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001465' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001241' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001466' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001242' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000146c' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001243' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000184c' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001244' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00001857' has unconnected output
    pin
 WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000152b' has unconnected output
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000185a' has unconnected output
    pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000152c' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000152d' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk0000152e' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001535' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001536' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001991' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001992' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001b8e' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001b8f' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001b90' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001ba1' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001ba2' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001bb8' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001bb9' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001bba' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001bcb' has unconnected output
-   pin
-WARNING:NgdBuild:443 - SFF primitive
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00001bcc' has unconnected output
-   pin
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig00000344' has
+WARNING:NgdBuild:478 - clock net i_rst_n_inv_BUFG with clock driver
+   i_rst_n_inv_BUFG drives no clock pins
+WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000016a/sig00000334' has
    no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig00000345' has
-   no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig00000346' has
-   no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig00000347' has
-   no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig00000348' has
-   no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig00000349' has
-   no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig0000034a' has
-   no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig0000034b' has
-   no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig0000034d' has
-   no driver
-WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000017a/sig00000352' has
+WARNING:NgdBuild:452 - logical net 'fft/blk00000001/blk0000016a/sig00000339' has
    no driver
 WARNING:NgdBuild:452 - logical net
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e98/sig00002903' has no
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000e09/sig0000259e' has no
    driver
 WARNING:NgdBuild:452 - logical net
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e98/sig00002904' has no
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000e09/sig0000259f' has no
    driver
 WARNING:NgdBuild:452 - logical net
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e98/sig00002906' has no
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000e09/sig000025a1' has no
    driver
 WARNING:NgdBuild:452 - logical net
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e98/sig00002907' has no
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000e09/sig000025a2' has no
    driver
 WARNING:NgdBuild:452 - logical net
-   'fft/blk00000001/blk0000017a/blk0000017b/blk00000e98/sig00002908' has no
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000e3f/sig00002607' has no
    driver
 WARNING:NgdBuild:452 - logical net
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000014fc/sig00002d83' has no
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000e3f/sig00002608' has no
    driver
 WARNING:NgdBuild:452 - logical net
-   'fft/blk00000001/blk0000017a/blk0000017b/blk000014fc/sig00002d84' has no
+   'fft/blk00000001/blk0000016a/blk0000016b/blk00000e3f/sig00002609' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000143e/sig00002a29' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'fft/blk00000001/blk0000016a/blk0000016b/blk0000143e/sig00002a2a' has no
    driver
 
 Partition Implementation Status
@@ -438,12 +378,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 138
+  Number of warnings: 116
 
-Total memory usage is 494820 kilobytes
+Total memory usage is 516556 kilobytes
 
 Writing NGD file "fft_computer.ngd" ...
-Total REAL time to NGDBUILD completion:  22 sec
-Total CPU time to NGDBUILD completion:   22 sec
+Total REAL time to NGDBUILD completion:  32 sec
+Total CPU time to NGDBUILD completion:   31 sec
 
 Writing NGDBUILD log file "fft_computer.bld"...
