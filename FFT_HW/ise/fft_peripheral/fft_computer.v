@@ -6,7 +6,10 @@ input [31:0] i_data,
 output       o_data_ready,
 output       o_data_valid,
 output [31:0]o_data,
-input        i_data_ready
+input        i_data_ready,
+output o_valid_fft,
+output o_valid_multi,
+output o_valid_dataCtrl
 ); 
 
 wire [31:0] fft_data;
@@ -16,6 +19,10 @@ wire [31:0] mult_data;
 wire        mult_data_valid;
 wire        mult_data_ready;
 reg mult_data_valid_r;
+
+assign o_valid_fft=fft_data_valid;
+assign o_valid_multi=mult_data_ready;
+assign o_valid_dataCtrl=o_data_valid;
 fft_core fft (
   .aclk(i_clk), // input aclk
   .aresetn(i_rst_n), // input aclken

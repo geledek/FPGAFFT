@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   10:05:45 10/27/2013
-// Design Name:   top
-// Module Name:   /home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/FFTHW/tb.v
-// Project Name:  FFTHW
+// Create Date:   10:36:59 10/31/2013
+// Design Name:   mulitiplier
+// Module Name:   /home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_multi.v
+// Project Name:  fft_peripheral
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: top
+// Verilog Test Fixture created by ISE for module: mulitiplier
 //
 // Dependencies:
 // 
@@ -22,29 +22,29 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module tb;
+module tb_multi;
 
 	// Inputs
 	reg i_clk;
 	reg i_rst_n;
-	reg i_data_valid;
 	reg [31:0] i_data;
+	reg i_data_valid;
 	reg i_data_ready;
 
 	// Outputs
 	wire o_data_ready;
-	wire o_data_valid;
 	wire [31:0] o_data;
+	wire o_data_valid;
 
 	// Instantiate the Unit Under Test (UUT)
-	fft_computer uut (
+	mulitiplier uut (
 		.i_clk(i_clk), 
 		.i_rst_n(i_rst_n), 
-		.i_data_valid(i_data_valid), 
 		.i_data(i_data), 
+		.i_data_valid(i_data_valid), 
 		.o_data_ready(o_data_ready), 
-		.o_data_valid(o_data_valid), 
 		.o_data(o_data), 
+		.o_data_valid(o_data_valid), 
 		.i_data_ready(i_data_ready)
 	);
 
@@ -52,26 +52,21 @@ module tb;
 		// Initialize Inputs
 		i_clk = 0;
 		i_rst_n = 0;
-		i_data_valid = 0;
 		i_data = 0;
+		i_data_valid = 0;
 		i_data_ready = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
-		i_rst_n = 1;
-        
+      i_data = {16'd5,16'd6};
+		i_data_valid = 1;
+		i_data_ready = 1;
+		i_rst_n=1;
 		// Add stimulus here
-	end
-	always
-		#2 i_clk = ~i_clk;
-		
-	always @(posedge i_clk)
-	begin
-		i_data<=i_data+1;
-		i_data_valid<=1;
-		i_data_valid<= 1;
-	end
 
+	end
+	
+	always #1 i_clk=~i_clk;
       
 endmodule
 

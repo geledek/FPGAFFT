@@ -13,3 +13,4 @@ FFT_HW/ise/fft_peripheral/isim/
 
 FFT_HW/ise/fft_peripheral/ipcore_dir/_xmsgs/
 FFT_HW/ise/fft_peripheral/testbench_stx_beh.prj
+FFT_HW/ise/fft_peripheral/tb_multi_isim_beh.exe

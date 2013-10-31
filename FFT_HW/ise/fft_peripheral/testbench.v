@@ -38,6 +38,9 @@ module testbench;
 	reg[15:0] inReal;
 	reg[15:0] inImage;
 	wire [31:0] i_data={inImage,inReal};
+	wire o_valid_fft;
+	wire o_valid_multi;
+	wire o_valid_dataCtrl;
 	// Instantiate the Unit Under Test (UUT)
 	fft_computer uut (
 		.i_clk(i_clk), 
@@ -47,7 +50,10 @@ module testbench;
 		.o_data_ready(o_data_ready), 
 		.o_data_valid(o_data_valid), 
 		.o_data(o_data), 
-		.i_data_ready(i_data_ready)
+		.i_data_ready(i_data_ready),
+		.o_valid_fft(o_valid_fft),
+		.o_valid_multi(o_valid_multi),
+		.o_valid_dataCtrl(o_valid_dataCtrl)
 	);
 
 	initial begin

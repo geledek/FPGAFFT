@@ -73,6 +73,7 @@ module tb_dataCtrl;
 	always #1 i_clk = ~ i_clk;
 	always@(posedge i_clk) begin
 		i_data<=i_data+1;
+		$display("%d \t %d",$time, o_data);
 	end
 endmodule
 

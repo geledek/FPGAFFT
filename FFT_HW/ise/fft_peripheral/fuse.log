@@ -14,7 +14,7 @@ Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-m
 Analyzing Verilog file "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
 WARNING:HDLCompiler:687 - "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
 Starting static elaboration
-WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" Line 22: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" Line 29: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 968: Element index 4 into memp is out of bounds
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 972: Element index 5 into memp is out of bounds
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 976: Element index 6 into memp is out of bounds
@@ -44,8 +44,8 @@ WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB3
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index 63 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1429: Element index 7 into memp is out of bounds
 Completed static elaboration
-Fuse Memory Usage: 122532 KB
-Fuse CPU Usage: 1840 ms
+Fuse Memory Usage: 122536 KB
+Fuse CPU Usage: 1830 ms
 Compiling module INV
 Compiling module FDS(INIT=1'b0)
 Compiling module FDR
@@ -77,9 +77,8 @@ Compiling module fft_computer
 Compiling module testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
 Compiled 145 Verilog Units
 Built simulation executable /home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/testbench_isim_beh.exe
 Fuse Memory Usage: 711628 KB
-Fuse CPU Usage: 3560 ms
-GCC CPU Usage: 24030 ms
+Fuse CPU Usage: 3550 ms
+GCC CPU Usage: 23610 ms
