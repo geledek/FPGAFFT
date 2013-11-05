@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          /home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/EDK/pcores/fft_peripheral_v1_00_a/data/fft_peripheral_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Tue Nov  5 14:00:28 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_slave_burst_v1_00_a  all 
+lib fft_peripheral_v1_00_a user_logic verilog
+lib fft_peripheral_v1_00_a fft_peripheral vhdl

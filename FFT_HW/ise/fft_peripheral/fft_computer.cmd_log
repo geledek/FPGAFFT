@@ -23,3 +23,4 @@ map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 xst -intstyle ise -ifn "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.xst" -ofn "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7z020-clg484-1 fft_computer.ngc fft_computer.ngd  
 map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -detail -ir off -pr off -lc off -power off -o fft_computer_map.ncd fft_computer.ngd fft_computer.pcf 
+xst -intstyle ise -ifn "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.xst" -ofn "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.syr" 

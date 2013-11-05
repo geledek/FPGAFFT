@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-10-31T16:38:07</DateModified>
+  <DateModified>2013-11-05T13:36:42</DateModified>
   <ModuleName>fft_computer</ModuleName>
   <SummaryTimeStamp>2013-10-30T22:17:01</SummaryTimeStamp>
-  <SavedFilePath>/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/iseconfig/fft_computer.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/iseconfig/fft_computer.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/</ImplementationReportsDirectory>
   <DateInitialized>2013-10-25T10:43:22</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

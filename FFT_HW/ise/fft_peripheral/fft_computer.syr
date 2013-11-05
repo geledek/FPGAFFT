@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: fft_computer.prj
@@ -111,15 +111,15 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/multiplier.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/multiplier.v" into library work
 Parsing module <mulitiplier>.
-Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/ipcore_dir/fft_core.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/ipcore_dir/fft_core.v" into library work
 Parsing module <fft_core>.
-Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" into library work
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" into library work
 Parsing module <dataCtrl>.
-WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 36: Redeclaration of ansi port index is not allowed
-WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 37: Redeclaration of ansi port indexNext is not allowed
-Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" into library work
+WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" Line 36: Redeclaration of ansi port index is not allowed
+WARNING:HDLCompiler:751 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" Line 37: Redeclaration of ansi port indexNext is not allowed
+Analyzing Verilog file "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" into library work
 Parsing module <fft_computer>.
 
 =========================================================================
@@ -129,39 +129,39 @@ Parsing module <fft_computer>.
 Elaborating module <fft_computer>.
 
 Elaborating module <fft_core>.
-WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" Line 22: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" Line 29: Size mismatch in connection of port <s_axis_config_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
 
 Elaborating module <mulitiplier>.
 
 Elaborating module <dataCtrl>.
-WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 38: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:1127 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 52: Assignment to valid_input_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 53: Assignment to valid_output_data ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v" Line 94: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" Line 38: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:1127 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" Line 52: Assignment to valid_input_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" Line 53: Assignment to valid_output_data ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" Line 94: Result of 10-bit expression is truncated to fit in 9-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <fft_computer>.
-    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v".
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <s_axis_config_tready> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <m_axis_data_tlast> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <event_frame_started> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <event_tlast_unexpected> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <event_tlast_missing> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <event_status_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <event_data_in_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 19: Output port <event_data_out_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 63: Output port <index> of the instance <uutCtrl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" line 63: Output port <indexNext> of the instance <uutCtrl> is unconnected or connected to loadless signal.
+    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v".
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 26: Output port <s_axis_config_tready> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 26: Output port <m_axis_data_tlast> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 26: Output port <event_frame_started> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 26: Output port <event_tlast_unexpected> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 26: Output port <event_tlast_missing> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 26: Output port <event_status_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 26: Output port <event_data_in_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 26: Output port <event_data_out_channel_halt> of the instance <fft> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 70: Output port <index> of the instance <uutCtrl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" line 70: Output port <indexNext> of the instance <uutCtrl> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <mult_data_valid_r>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <fft_computer> synthesized.
 
 Synthesizing Unit <mulitiplier>.
-    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/multiplier.v".
+    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/multiplier.v".
 WARNING:Xst:647 - Input <i_data_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 32-bit register for signal <_image>.
     Found 32-bit register for signal <_real>.
@@ -177,7 +177,7 @@ WARNING:Xst:647 - Input <i_data_ready> is never used. This port will be preserve
 Unit <mulitiplier> synthesized.
 
 Synthesizing Unit <dataCtrl>.
-    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/dataCtrl.v".
+    Related source file is "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v".
 WARNING:Xst:647 - Input <i_data_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4096-bit register for signal <n0283[4095:0]>.
     Found 1-bit register for signal <o_data_valid>.
@@ -324,9 +324,9 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 68
+# IO Buffers                       : 71
 #      IBUF                        : 34
-#      OBUF                        : 34
+#      OBUF                        : 37
 # DSPs                             : 3
 #      DSP48E1                     : 3
 
@@ -349,8 +349,8 @@ Slice Logic Distribution:
    Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                          70
- Number of bonded IOBs:                  69  out of    200    34%  
+ Number of IOs:                          73
+ Number of bonded IOBs:                  72  out of    200    36%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRL/BUFHCEs:         2  out of    104     1%  
@@ -397,7 +397,7 @@ Speed Grade: -1
 
    Minimum period: 4.483ns (Maximum Frequency: 223.065MHz)
    Minimum input arrival time before clock: 1.434ns
-   Maximum output required time after clock: 0.695ns
+   Maximum output required time after clock: 0.753ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -449,22 +449,24 @@ Offset:              1.434ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
-  Total number of paths / destination ports: 34 / 34
+  Total number of paths / destination ports: 36 / 36
 -------------------------------------------------------------------------
-Offset:              0.695ns (Levels of Logic = 1)
-  Source:            uutCtrl/o_data_29 (FF)
-  Destination:       o_data<31> (PAD)
+Offset:              0.753ns (Levels of Logic = 3)
+  Source:            sec_inst (FF)
+  Destination:       o_valid_fft (PAD)
   Source Clock:      i_clk rising
 
-  Data Path: uutCtrl/o_data_29 to o_data<31>
+  Data Path: sec_inst to o_valid_fft
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.282   0.413  uutCtrl/o_data_29 (uutCtrl/o_data_29)
-     OBUF:I->O                 0.000          o_data_31_OBUF (o_data<31>)
+     SEC:C->out           12   0.282   0.471  sec_inst (sec_net)
+     end scope: 'fft/blk00000001:m_axis_data_tvalid'
+     end scope: 'fft:m_axis_data_tvalid'
+     OBUF:I->O                 0.000          o_valid_fft_OBUF (o_valid_fft)
     ----------------------------------------
-    Total                      0.695ns (0.282ns logic, 0.413ns route)
-                                       (40.6% logic, 59.4% route)
+    Total                      0.753ns (0.282ns logic, 0.471ns route)
+                                       (37.5% logic, 62.5% route)
 
 =========================================================================
 
@@ -482,13 +484,13 @@ i_clk          |    4.483|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 50.00 secs
-Total CPU time to Xst completion: 47.11 secs
+Total REAL time to Xst completion: 52.00 secs
+Total CPU time to Xst completion: 49.37 secs
  
 --> 
 
 
-Total memory usage is 574624 kilobytes
+Total memory usage is 574564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   10 (   0 filtered)

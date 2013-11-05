@@ -201,7 +201,8 @@ module testbench;
 #2 inReal=127;
 #2 inReal=127;
 
-
+#2 i_data_valid = 0;
+#200 i_data_valid = 1;
 #2 inReal=128;
 #2 inReal=127;
 #2 inReal=127;
