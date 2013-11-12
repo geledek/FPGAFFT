@@ -9,7 +9,10 @@ output reg        o_data_valid,
 input             i_data_ready
 );
 
-assign o_data_ready   =   1;
+assign o_data_ready   =   i_data_ready;
+
+//Just pipeline the input data valid to make the output data valid since output data is one clock delayed
+//from the input data
 
 reg signed [31:0]  _image;
 reg signed [31:0]  _real;
@@ -25,15 +28,10 @@ begin
         o_data_valid   <=  1'b0;
     else
     begin
-		 if(i_data_valid) begin
-		 
-			//o_data        <=    i_data[15:0]*i_data[15:0] + i_data[32:16]*i_data[32:16];
-			//o_data        <=    i_data[23:0];
-			_image<=realPart*realPart;
-			_real<=imagePart*imagePart;
-			o_data <= _image + _real;
-			o_data_valid  <=    1;
-		  end
+		//_image<=realPart*realPart;
+		//_real<=imagePart*imagePart;
+		o_data <= imagePart*imagePart + realPart*realPart;
+		o_data_valid  <=    i_data_valid;
 	end  
 end
 

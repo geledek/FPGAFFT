@@ -1,5 +1,4 @@
 # Output products list for <fft_core>
-_xmsgs/pn_parser.xmsgs
 demo_tb/tb_fft_core.vhd
 fft_core/cmodel/xfft_v8_0_bitacc_cmodel_lin.zip
 fft_core/cmodel/xfft_v8_0_bitacc_cmodel_lin64.zip

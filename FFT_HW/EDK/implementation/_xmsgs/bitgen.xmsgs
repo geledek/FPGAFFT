@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk00000a96</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk00000a9a</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk00000a8f</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk00000b7e</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk00000b73</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk00000b77</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk000011c0</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk000011c4</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2385" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0000016a/blk0000016b/blk000011cb</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E1_DSP48E1</arg>&gt;.  When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+</msg>
+
+</messages>
+

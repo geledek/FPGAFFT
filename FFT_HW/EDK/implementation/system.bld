@@ -1,0 +1,579 @@
+Release 14.5 ngdbuild P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -p
+xc7z020clg484-1 -nt timestamp -bm system.bmm
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system.n
+gc -uc system.ucf system.ngd
+
+Reading NGO file
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system.
+ngc" ...
+Loading design module
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_
+processing_system7_0_wrapper.ngc"...
+Loading design module
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_
+i2s_ctrl_0_wrapper.ngc"...
+Loading design module
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_
+axi_interconnect_1_wrapper.ngc"...
+Loading design module
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_
+axi_gpio_0_wrapper.ngc"...
+Loading design module
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_
+oled_bypass_ps2pl_0_wrapper.ngc"...
+Loading design module
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_
+fft_peripheral_0_wrapper.ngc"...
+Loading design module
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/fft_cor
+e.ngc"...
+Loading design module
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/output_
+fifo.ngc"...
+Applying constraints in
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_
+processing_system7_0_wrapper.ncf" to module "processing_system7_0"...
+Checking Constraint Associations...
+Applying constraints in
+"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_
+axi_interconnect_1_wrapper.ncf" to module "axi_interconnect_1"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+INFO:NgdBuild:649 - Removing redundant 'IBUF' symbol
+   'processing_system7_0_PS_PORB_IBUF'.  All constraints associated with this
+   symbol will be ignored.
+INFO:NgdBuild:649 - Removing redundant 'IBUF' symbol
+   'processing_system7_0_PS_CLK_IBUF'.  All constraints associated with this
+   symbol will be ignored.
+INFO:NgdBuild:649 - Removing redundant 'IBUF' symbol
+   'processing_system7_0_PS_SRSTB_IBUF'.  All constraints associated with this
+   symbol will be ignored.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+WARNING:NgdBuild:931 - The value of SIM_DEVICE on instance
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000018b4/blk000018b6/RAMB18E1' of type RAMB18E1 has
+   been changed from 'VIRTEX6' to '7SERIES' to correct post-ngdbuild and timing
+   simulation for this primitive.  In order for functional simulation to be
+   correct, the value of SIM_DEVICE should be changed in this same manner in the
+   source netlist or constraint file. For additional information on retargeting
+   this primitive to 7SERIES, please see
+   http://www.xilinx.com/support/documentation/sw_manuals/ug429_7Series_Migratio
+   n.pdf.
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/si_converter_b
+   ank\/gen_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_IN
+   V_0 TNM = FFS:axi_interconnect_1_reset...>: No instances of type FFS were
+   found under block
+   "axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clo
+   ck_conv_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP
+   axi_interconnect_1_reset_source = FFS PADS CPUS;>: CPUS "*" does not match
+   any design objects.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
+   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
+   not actively used by any referencing constraint.
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+WARNING::53 - File 'system.bmm' is empty or has no BMM content.
+
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000001fc' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000020f' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000226' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000251' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000258' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000263' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000441' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000442' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000443' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000444' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000445' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000446' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000005fc' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000005fd' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000005ff' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000600' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000601' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000602' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000063d' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000063e' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000063f' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000640' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000641' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000642' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000643' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000738' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000739' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000073a' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000073b' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000073c' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000ab6' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000ab7' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000ab8' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000ab9' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000aba' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000abb' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000abc' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000abd' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000ace' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000acf' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000ad0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000aec' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000aed' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000aee' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000aef' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000af0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000af1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000af2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000af3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b04' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b05' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b06' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b07' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b08' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b09' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b1a' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b1b' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b1c' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b1d' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b1e' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b1f' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b20' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b21' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b3d' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b3e' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b3f' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b50' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b51' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b52' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b53' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b54' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b55' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b56' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000b57' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001154' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001155' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001156' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001167' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001168' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001169' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000116a' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000116b' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000116c' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000116d' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000116e' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000118a' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000118b' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000118c' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000119d' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000119e' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000119f' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000011a0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000011a1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000011a2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000011a3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk000011a4' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001464' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001465' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001466' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000146c' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000184c' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00001857' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000185a' has unconnected output pin
+WARNING:NgdBuild:452 - logical net 'N133' has no driver
+WARNING:NgdBuild:452 - logical net 'N134' has no driver
+WARNING:NgdBuild:452 - logical net 'N135' has no driver
+WARNING:NgdBuild:452 - logical net 'N136' has no driver
+WARNING:NgdBuild:452 - logical net 'N137' has no driver
+WARNING:NgdBuild:452 - logical net 'N138' has no driver
+WARNING:NgdBuild:452 - logical net 'N139' has no driver
+WARNING:NgdBuild:452 - logical net 'N140' has no driver
+WARNING:NgdBuild:452 - logical net 'N141' has no driver
+WARNING:NgdBuild:452 - logical net 'N142' has no driver
+WARNING:NgdBuild:452 - logical net 'N143' has no driver
+WARNING:NgdBuild:452 - logical net 'N144' has no driver
+WARNING:NgdBuild:452 - logical net 'N145' has no driver
+WARNING:NgdBuild:452 - logical net 'N146' has no driver
+WARNING:NgdBuild:452 - logical net 'N147' has no driver
+WARNING:NgdBuild:452 - logical net 'N148' has no driver
+WARNING:NgdBuild:452 - logical net 'N149' has no driver
+WARNING:NgdBuild:452 - logical net 'N150' has no driver
+WARNING:NgdBuild:452 - logical net 'N151' has no driver
+WARNING:NgdBuild:452 - logical net 'N152' has no driver
+WARNING:NgdBuild:452 - logical net 'N153' has no driver
+WARNING:NgdBuild:452 - logical net 'N154' has no driver
+WARNING:NgdBuild:452 - logical net 'N155' has no driver
+WARNING:NgdBuild:452 - logical net 'N156' has no driver
+WARNING:NgdBuild:452 - logical net 'N157' has no driver
+WARNING:NgdBuild:452 - logical net 'N158' has no driver
+WARNING:NgdBuild:452 - logical net 'N159' has no driver
+WARNING:NgdBuild:452 - logical net 'N160' has no driver
+WARNING:NgdBuild:452 - logical net 'N161' has no driver
+WARNING:NgdBuild:452 - logical net 'N162' has no driver
+WARNING:NgdBuild:452 - logical net 'N163' has no driver
+WARNING:NgdBuild:452 - logical net 'N164' has no driver
+WARNING:NgdBuild:452 - logical net 'N165' has no driver
+WARNING:NgdBuild:452 - logical net 'N166' has no driver
+WARNING:NgdBuild:452 - logical net 'N167' has no driver
+WARNING:NgdBuild:452 - logical net 'N168' has no driver
+WARNING:NgdBuild:452 - logical net 'N169' has no driver
+WARNING:NgdBuild:452 - logical net 'N170' has no driver
+WARNING:NgdBuild:452 - logical net 'N171' has no driver
+WARNING:NgdBuild:452 - logical net 'N172' has no driver
+WARNING:NgdBuild:452 - logical net 'N173' has no driver
+WARNING:NgdBuild:452 - logical net 'N174' has no driver
+WARNING:NgdBuild:452 - logical net 'N175' has no driver
+WARNING:NgdBuild:452 - logical net 'N176' has no driver
+WARNING:NgdBuild:452 - logical net 'N177' has no driver
+WARNING:NgdBuild:452 - logical net 'N178' has no driver
+WARNING:NgdBuild:452 - logical net 'N179' has no driver
+WARNING:NgdBuild:452 - logical net 'N180' has no driver
+WARNING:NgdBuild:452 - logical net 'N181' has no driver
+WARNING:NgdBuild:452 - logical net 'N182' has no driver
+WARNING:NgdBuild:452 - logical net 'N183' has no driver
+WARNING:NgdBuild:452 - logical net 'N184' has no driver
+WARNING:NgdBuild:452 - logical net 'N185' has no driver
+WARNING:NgdBuild:452 - logical net 'N186' has no driver
+WARNING:NgdBuild:452 - logical net 'N187' has no driver
+WARNING:NgdBuild:452 - logical net 'N188' has no driver
+WARNING:NgdBuild:452 - logical net 'N189' has no driver
+WARNING:NgdBuild:452 - logical net 'N190' has no driver
+WARNING:NgdBuild:452 - logical net 'N191' has no driver
+WARNING:NgdBuild:452 - logical net 'N192' has no driver
+WARNING:NgdBuild:452 - logical net 'N193' has no driver
+WARNING:NgdBuild:452 - logical net 'N194' has no driver
+WARNING:NgdBuild:452 - logical net 'N195' has no driver
+WARNING:NgdBuild:452 - logical net 'N196' has no driver
+WARNING:NgdBuild:452 - logical net 'N197' has no driver
+WARNING:NgdBuild:452 - logical net 'N198' has no driver
+WARNING:NgdBuild:452 - logical net 'N199' has no driver
+WARNING:NgdBuild:452 - logical net 'N200' has no driver
+WARNING:NgdBuild:452 - logical net 'N201' has no driver
+WARNING:NgdBuild:452 - logical net 'N202' has no driver
+WARNING:NgdBuild:452 - logical net 'N203' has no driver
+WARNING:NgdBuild:452 - logical net 'N204' has no driver
+WARNING:NgdBuild:452 - logical net 'N205' has no driver
+WARNING:NgdBuild:452 - logical net 'N206' has no driver
+WARNING:NgdBuild:452 - logical net 'N207' has no driver
+WARNING:NgdBuild:452 - logical net 'N208' has no driver
+WARNING:NgdBuild:452 - logical net 'N209' has no driver
+WARNING:NgdBuild:452 - logical net 'N210' has no driver
+WARNING:NgdBuild:452 - logical net 'N211' has no driver
+WARNING:NgdBuild:452 - logical net 'N212' has no driver
+WARNING:NgdBuild:452 - logical net 'N213' has no driver
+WARNING:NgdBuild:452 - logical net 'N214' has no driver
+WARNING:NgdBuild:452 - logical net 'N215' has no driver
+WARNING:NgdBuild:452 - logical net 'N216' has no driver
+WARNING:NgdBuild:452 - logical net 'N217' has no driver
+WARNING:NgdBuild:452 - logical net 'N218' has no driver
+WARNING:NgdBuild:452 - logical net 'N219' has no driver
+WARNING:NgdBuild:452 - logical net 'N220' has no driver
+WARNING:NgdBuild:452 - logical net 'N221' has no driver
+WARNING:NgdBuild:452 - logical net 'N222' has no driver
+WARNING:NgdBuild:452 - logical net 'N223' has no driver
+WARNING:NgdBuild:452 - logical net 'N224' has no driver
+WARNING:NgdBuild:452 - logical net 'N225' has no driver
+WARNING:NgdBuild:452 - logical net 'N226' has no driver
+WARNING:NgdBuild:452 - logical net 'N227' has no driver
+WARNING:NgdBuild:452 - logical net 'N228' has no driver
+WARNING:NgdBuild:452 - logical net 'N229' has no driver
+WARNING:NgdBuild:452 - logical net 'N230' has no driver
+WARNING:NgdBuild:452 - logical net 'N231' has no driver
+WARNING:NgdBuild:452 - logical net 'N232' has no driver
+WARNING:NgdBuild:452 - logical net 'N233' has no driver
+WARNING:NgdBuild:452 - logical net 'N234' has no driver
+WARNING:NgdBuild:452 - logical net 'N235' has no driver
+WARNING:NgdBuild:452 - logical net 'N236' has no driver
+WARNING:NgdBuild:452 - logical net 'N237' has no driver
+WARNING:NgdBuild:452 - logical net 'N238' has no driver
+WARNING:NgdBuild:452 - logical net 'N239' has no driver
+WARNING:NgdBuild:452 - logical net 'N240' has no driver
+WARNING:NgdBuild:452 - logical net 'N241' has no driver
+WARNING:NgdBuild:452 - logical net 'N242' has no driver
+WARNING:NgdBuild:452 - logical net 'N243' has no driver
+WARNING:NgdBuild:452 - logical net 'N244' has no driver
+WARNING:NgdBuild:452 - logical net 'N245' has no driver
+WARNING:NgdBuild:452 - logical net 'N246' has no driver
+WARNING:NgdBuild:452 - logical net 'N247' has no driver
+WARNING:NgdBuild:452 - logical net 'N248' has no driver
+WARNING:NgdBuild:452 - logical net 'N251' has no driver
+WARNING:NgdBuild:452 - logical net 'N252' has no driver
+WARNING:NgdBuild:452 - logical net 'N253' has no driver
+WARNING:NgdBuild:452 - logical net 'N254' has no driver
+WARNING:NgdBuild:452 - logical net 'N255' has no driver
+WARNING:NgdBuild:452 - logical net 'N256' has no driver
+WARNING:NgdBuild:452 - logical net 'N257' has no driver
+WARNING:NgdBuild:452 - logical net 'N258' has no driver
+WARNING:NgdBuild:452 - logical net 'N259' has no driver
+WARNING:NgdBuild:452 - logical net 'N260' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/sig00000334' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/sig00000339' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000e09/sig0000259e' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000e09/sig0000259f' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000e09/sig000025a1' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000e09/sig000025a2' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000e3f/sig00002607' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000e3f/sig00002608' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk00000e3f/sig00002609' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000143e/sig00002a29' has no driver
+WARNING:NgdBuild:452 - logical net
+   'fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk00000001/blk0
+   000016a/blk0000016b/blk0000143e/sig00002a2a' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 244
+
+Total memory usage is 521512 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  33 sec
+Total CPU time to NGDBUILD completion:   32 sec
+
+Writing NGDBUILD log file "system.bld"...

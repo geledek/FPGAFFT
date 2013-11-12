@@ -1,0 +1,6 @@
+verilog isim_temp "ipcore_dir/fft_core.v"
+verilog isim_temp "output_ctrl.v"
+verilog isim_temp "multiplier.v"
+verilog isim_temp "fft_computer.v"
+verilog isim_temp "tb_fft_comp.v"
+verilog isim_temp "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

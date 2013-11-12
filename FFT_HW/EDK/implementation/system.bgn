@@ -1,0 +1,144 @@
+Release 14.5 - Bitgen P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+</opt/Xilinx/14.5/ISE_DS/EDK/zynq/data/zynq.acd> with local file
+</opt/Xilinx/14.5/ISE_DS/ISE/zynq/data/zynq.acd>
+Loading device for application Rf_Device from file '7z020.nph' in environment
+/opt/Xilinx/14.5/ISE_DS/ISE/:/opt/Xilinx/14.5/ISE_DS/EDK.
+   "system" is an NCD, version 3.2, device xc7z020, package clg484, speed -1
+Opened constraints file system.pcf.
+
+Tue Nov 12 21:16:12 2013
+
+/opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -w system.ncd 
+
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Not Specified)*     |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable*              |
++----------------------+----------------------+
+| StartupClk           | Cclk*                |
++----------------------+----------------------+
+| DonePin              | Pullup*              |
++----------------------+----------------------+
+| ProgPin              | Pullup*              |
++----------------------+----------------------+
+| InitPin              | Pullup*              |
++----------------------+----------------------+
+| TckPin               | Pullup*              |
++----------------------+----------------------+
+| TdiPin               | Pullup*              |
++----------------------+----------------------+
+| TdoPin               | Pullup*              |
++----------------------+----------------------+
+| TmsPin               | Pullup*              |
++----------------------+----------------------+
+| UnusedPin            | Pulldown*            |
++----------------------+----------------------+
+| GWE_cycle            | 6*                   |
++----------------------+----------------------+
+| GTS_cycle            | 5*                   |
++----------------------+----------------------+
+| OverTempPowerDown    | Disable*             |
++----------------------+----------------------+
+| LCK_cycle            | NoWait*              |
++----------------------+----------------------+
+| Match_cycle          | NoWait               |
++----------------------+----------------------+
+| DONE_cycle           | 4*                   |
++----------------------+----------------------+
+| DonePipe             | Yes*                 |
++----------------------+----------------------+
+| Security             | None*                |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF*          |
++----------------------+----------------------+
+| ActiveReconfig       | No*                  |
++----------------------+----------------------+
+| DCIUpdateMode        | AsRequired*          |
++----------------------+----------------------+
+| ICAP_Select          | Auto*                |
++----------------------+----------------------+
+| InitSignalsError     | Enable*              |
++----------------------+----------------------+
+| XADCPartialReconfig  | Disable*             |
++----------------------+----------------------+
+| XADCEnhancedLinearity | Off*                 |
++----------------------+----------------------+
+| JTAG_XADC            | Enable*              |
++----------------------+----------------------+
+| Disable_JTAG         | No*                  |
++----------------------+----------------------+
+| XADCPowerDown        | Disable*             |
++----------------------+----------------------+
+| Partial              | (Not Specified)*     |
++----------------------+----------------------+
+| USR_ACCESS           | None*                |
++----------------------+----------------------+
+| TimeStamp            | Default*             |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No*                  |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+There were 0 CONFIG constraint(s) processed from system.pcf.
+
+
+Running DRC.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000a96>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000a9a>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000a8f>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000b7e>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000b73>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000b77>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk000011c0>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk000011c4>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk000011cb>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+DRC detected 0 errors and 0 warnings.
+Creating bit map...
+Saving bit stream in "system.bit".
+Bitstream generation is complete.

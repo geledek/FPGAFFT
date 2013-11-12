@@ -1,7 +1,7 @@
 -batch 
 -create fft_peripheral 
 -ver 1.00.a 
--dir "/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/EDK" 
+-dir "D:\ug_labs\zynq_custom_ip\edk" 
 -lang verilog 
 -bus axi4 s 
 -burst s 32 

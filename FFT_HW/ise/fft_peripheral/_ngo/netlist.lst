@@ -1,3 +1,4 @@
-/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.ngc 1383142354
-ipcore_dir/fft_core.ngc 1383132509
+/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.ngc 1383973958
+ipcore_dir/fft_core.ngc 1383913030
+ipcore_dir/output_fifo.ngc 1383912305
 OK

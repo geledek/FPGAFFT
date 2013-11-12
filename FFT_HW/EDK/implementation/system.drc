@@ -1,0 +1,53 @@
+Release 14.5 Drc P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 12 21:16:12 2013
+
+drc -z system.ncd system.pcf
+
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000a96>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000a9a>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000a8f>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000b7e>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000b73>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk00000b77>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk000011c0>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk000011c4>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+INFO:PhysDesignRules:2385 - Issue with pin connections and/or configuration on
+   block:<fft_peripheral_0/fft_peripheral_0/USER_LOGIC_I/fft_comp/fft/blk0000000
+   1/blk0000016a/blk0000016b/blk000011cb>:<DSP48E1_DSP48E1>.  When the DSP48E1
+   AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND
+   to save power when OPMODE0 and OPMODE1 are 1.
+DRC detected 0 errors and 0 warnings.

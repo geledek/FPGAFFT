@@ -1,0 +1,7 @@
+verilog work "ipcore_dir/fft_core.v"
+verilog work "ipcore_dir/output_fifo.v"
+verilog work "output_ctrl.v"
+verilog work "multiplier.v"
+verilog work "fft_computer.v"
+verilog work "tb_fft_comp.v"
+verilog work "/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

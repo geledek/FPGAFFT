@@ -1,0 +1,14 @@
+set -tmpdir /home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/synthesis/xst_temp_dir/
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc7z020clg484-1
+-top system_oled_bypass_ps2pl_0_wrapper
+-ifmt MIXED
+-ifn system_oled_bypass_ps2pl_0_wrapper_xst.prj
+-ofn ../implementation/system_oled_bypass_ps2pl_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/pcores/" "/opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }

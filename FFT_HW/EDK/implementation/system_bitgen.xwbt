@@ -1,0 +1,7 @@
+INFILE=/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system.ncd
+OUTFILE=/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation
+LICENSE=ISE
+USER_INFO=179624505_206273298_210558848_463

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="output_fifo">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2013-10-28T14:53:46</timestamp>
+    <timestamp>2013-11-8T12:5:12</timestamp>
     <pin polarity="Input" x="0" y="688" name="s_aclk" />
     <pin polarity="Input" x="0" y="720" name="s_aresetn" />
     <pin polarity="Output" x="832" y="784" name="m_axis_tvalid" />

@@ -1,5 +1,4 @@
 # Output products list for <output_fifo>
-_xmsgs/pn_parser.xmsgs
 output_fifo/doc/fifo_generator_v9_3_readme.txt
 output_fifo/doc/fifo_generator_v9_3_vinfo.html
 output_fifo/doc/pg057-fifo-generator.pdf

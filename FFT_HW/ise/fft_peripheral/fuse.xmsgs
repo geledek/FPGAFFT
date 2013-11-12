@@ -8,16 +8,19 @@
 <msg type="warning" file="Simulator" num="1010" delta="unknown" >One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" Line 36: Redeclaration of ansi port <arg fmt="%s" index="1">index</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" Line 16: Redeclaration of ansi port <arg fmt="%s" index="1">fft_data_valid</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/dataCtrl.v" Line 37: Redeclaration of ansi port <arg fmt="%s" index="1">indexNext</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" Line 18: Redeclaration of ansi port <arg fmt="%s" index="1">mult_data</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" Line 19: Redeclaration of ansi port <arg fmt="%s" index="1">mult_data_valid</arg> is not allowed
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"/opt/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/fft_computer.v" Line 29: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_config_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/fft_computer.v" Line 25: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_config_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/build/xfndry10/P.58f/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 968: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds

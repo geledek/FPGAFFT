@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/ise/fft_peripheral/testbench_isim_beh.wdb 
+Running: /home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft_computer_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/bill/workspace/EmbeddedSystemDesign/zynq_project-master/zynq_custom_ip/hw/ise/fft_peripheral/tb_fft_computer_isim_beh.wdb 
 ISim P.58f (signature 0xfbc00daa)
 This is a Full version of ISim.
 WARNING:  For instance uut/fft/, width 16 of formal port s_axis_config_tdata is not equal to width 32 of actual constant.
@@ -9,7 +9,7 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-                   1 	          x
+                   1 	          0
                    3 	          0
                    5 	          0
                    7 	          0
@@ -544,7 +544,7 @@ Finished circuit initialization process.
                 1063 	          0
                 1065 	          0
                 1067 	          0
-                1069 	          0
+                1069 	        992
                 1071 	          0
                 1073 	          0
                 1075 	          0
@@ -670,23 +670,23 @@ Finished circuit initialization process.
                 1315 	          0
                 1317 	          0
                 1319 	          0
-                1321 	          0
+                1321 	       1024
                 1323 	          0
-                1325 	          0
+                1325 	       1985
                 1327 	          0
-                1329 	          0
+                1329 	          1
                 1331 	          0
-                1333 	          0
+                1333 	          1
                 1335 	          0
                 1337 	          0
                 1339 	          0
-                1341 	          0
+                1341 	          1
                 1343 	          0
-                1345 	          0
+                1345 	          1
                 1347 	          0
-                1349 	          0
+                1349 	          1
                 1351 	          0
-                1353 	          0
+                1353 	          1
                 1355 	          0
                 1357 	          0
                 1359 	          0
@@ -700,7 +700,7 @@ Finished circuit initialization process.
                 1375 	          0
                 1377 	          0
                 1379 	          0
-                1381 	          0
+                1381 	          1
                 1383 	          0
                 1385 	          0
                 1387 	          0
@@ -730,7 +730,7 @@ Finished circuit initialization process.
                 1435 	          0
                 1437 	          0
                 1439 	          0
-                1441 	          0
+                1441 	          1
                 1443 	          0
                 1445 	          0
                 1447 	          0
@@ -798,25 +798,25 @@ Finished circuit initialization process.
                 1571 	          0
                 1573 	          0
                 1575 	          0
-                1577 	          0
+                1577 	       2048
                 1579 	          0
-                1581 	          0
+                1581 	       2977
                 1583 	          0
-                1585 	        993
+                1585 	          1
                 1587 	          0
-                1589 	          0
+                1589 	          1
                 1591 	          0
                 1593 	          0
                 1595 	          0
-                1597 	          0
+                1597 	          1
                 1599 	          0
-                1601 	          0
+                1601 	          1
                 1603 	          0
                 1605 	          1
                 1607 	          0
                 1609 	          1
                 1611 	          0
-                1613 	          1
+                1613 	          0
                 1615 	          0
                 1617 	          0
                 1619 	          0
@@ -824,19 +824,19 @@ Finished circuit initialization process.
                 1623 	          0
                 1625 	          0
                 1627 	          0
-                1629 	          1
+                1629 	          0
                 1631 	          0
                 1633 	          0
                 1635 	          0
-                1637 	          0
+                1637 	          1
                 1639 	          0
                 1641 	          0
                 1643 	          0
-                1645 	          1
+                1645 	          0
                 1647 	          0
-                1649 	          1
+                1649 	          0
                 1651 	          0
-                1653 	          1
+                1653 	          0
                 1655 	          0
                 1657 	          0
                 1659 	          0
@@ -858,7 +858,7 @@ Finished circuit initialization process.
                 1691 	          0
                 1693 	          0
                 1695 	          0
-                1697 	          0
+                1697 	          1
                 1699 	          0
                 1701 	          0
                 1703 	          0
@@ -900,63 +900,63 @@ Finished circuit initialization process.
                 1775 	          0
                 1777 	          0
                 1779 	          0
-                1781 	       3013
+                1781 	          0
                 1783 	          0
-                1785 	       2988
+                1785 	          0
                 1787 	          0
-                1789 	          1
+                1789 	          0
                 1791 	          0
-                1793 	          1
-                1795 	          1
-                1797 	          1
+                1793 	          0
+                1795 	          0
+                1797 	          0
                 1799 	          0
-                1801 	          1
-                1803 	          1
-                1805 	          1
+                1801 	          0
+                1803 	          0
+                1805 	          0
                 1807 	          0
-                1809 	          1
-                1811 	          1
-                1813 	          1
+                1809 	          0
+                1811 	          0
+                1813 	          0
                 1815 	          0
                 1817 	          0
-                1819 	          1
+                1819 	          0
                 1821 	          0
                 1823 	          0
                 1825 	          0
                 1827 	          0
                 1829 	          0
                 1831 	          0
-                1833 	          1
+                1833 	       3072
                 1835 	          0
-                1837 	          0
+                1837 	       3970
                 1839 	          0
-                1841 	          0
+                1841 	          2
                 1843 	          0
-                1845 	          0
+                1845 	          2
                 1847 	          0
-                1849 	          0
+                1849 	          1
                 1851 	          0
-                1853 	          0
+                1853 	          2
                 1855 	          0
-                1857 	          0
+                1857 	          2
                 1859 	          0
-                1861 	          0
+                1861 	          2
                 1863 	          0
-                1865 	          0
+                1865 	          2
                 1867 	          0
                 1869 	          0
                 1871 	          0
                 1873 	          0
                 1875 	          0
-                1877 	          0
+                1877 	          1
                 1879 	          0
-                1881 	          0
+                1881 	          1
                 1883 	          0
                 1885 	          0
                 1887 	          0
-                1889 	          0
+                1889 	          1
                 1891 	          0
-                1893 	          0
+                1893 	          2
                 1895 	          0
                 1897 	          0
                 1899 	          0
@@ -964,13 +964,13 @@ Finished circuit initialization process.
                 1903 	          0
                 1905 	          0
                 1907 	          0
-                1909 	          0
+                1909 	          1
                 1911 	          0
                 1913 	          0
                 1915 	          0
                 1917 	          0
                 1919 	          0
-                1921 	          0
+                1921 	          1
                 1923 	          0
                 1925 	          0
                 1927 	          0
@@ -980,17 +980,17 @@ Finished circuit initialization process.
                 1935 	          0
                 1937 	          0
                 1939 	          0
-                1941 	          0
+                1941 	          1
                 1943 	          0
                 1945 	          0
                 1947 	          0
-                1949 	          0
+                1949 	          1
                 1951 	          0
-                1953 	          0
+                1953 	          2
                 1955 	          0
-                1957 	          0
+                1957 	          1
                 1959 	          0
-                1961 	          0
+                1961 	          1
                 1963 	          0
                 1965 	          0
                 1967 	          0
@@ -998,7 +998,7 @@ Finished circuit initialization process.
                 1971 	          0
                 1973 	          0
                 1975 	          0
-                1977 	          0
+                1977 	          1
                 1979 	          0
                 1981 	          0
                 1983 	          0
@@ -1013,15 +1013,15 @@ Finished circuit initialization process.
 # run 1.00us
                 2001 	          0
                 2003 	          0
-                2005 	          0
+                2005 	          1
                 2007 	          0
-                2009 	          0
+                2009 	          1
                 2011 	          0
                 2013 	          0
                 2015 	          0
-                2017 	          0
+                2017 	          1
                 2019 	          0
-                2021 	          0
+                2021 	          1
                 2023 	          0
                 2025 	          0
                 2027 	          0
@@ -1035,7 +1035,7 @@ Finished circuit initialization process.
                 2043 	          0
                 2045 	          0
                 2047 	          0
-                2049 	          0
+                2049 	          1
                 2051 	          0
                 2053 	          0
                 2055 	          0
@@ -1045,7 +1045,7 @@ Finished circuit initialization process.
                 2063 	          0
                 2065 	          0
                 2067 	          0
-                2069 	          0
+                2069 	          1
                 2071 	          0
                 2073 	          0
                 2075 	          0
@@ -1055,8 +1055,8 @@ Finished circuit initialization process.
                 2083 	          0
                 2085 	          0
                 2087 	          0
-                2089 	          0
-                2091 	          0
+                2089 	       4096
+                2091 	       4032
                 2093 	          0
                 2095 	          0
                 2097 	          0
@@ -1184,8 +1184,8 @@ Finished circuit initialization process.
                 2341 	          0
                 2343 	          0
                 2345 	          0
-                2347 	          0
-                2349 	          0
+                2347 	       4032
+                2349 	        992
                 2351 	          0
                 2353 	          0
                 2355 	          0
@@ -1311,57 +1311,57 @@ Finished circuit initialization process.
                 2595 	          0
                 2597 	          0
                 2599 	          0
-                2601 	          0
-                2603 	          0
-                2605 	          0
+                2601 	       1024
+                2603 	       4032
+                2605 	       1985
                 2607 	          0
                 2609 	          1
-                2611 	          1
-                2613 	          0
+                2611 	          0
+                2613 	          1
                 2615 	          0
                 2617 	          0
-                2619 	          1
+                2619 	          0
                 2621 	          1
                 2623 	          0
-                2625 	          0
-                2627 	          1
+                2625 	          1
+                2627 	          0
                 2629 	          1
                 2631 	          0
                 2633 	          1
-                2635 	          1
-                2637 	          1
+                2635 	          0
+                2637 	          0
                 2639 	          0
-                2641 	          1
-                2643 	          1
-                2645 	          1
+                2641 	          0
+                2643 	          0
+                2645 	          0
                 2647 	          0
                 2649 	          0
-                2651 	          1
-                2653 	          2
+                2651 	          0
+                2653 	          0
                 2655 	          0
-                2657 	          1
+                2657 	          0
                 2659 	          0
                 2661 	          1
                 2663 	          0
                 2665 	          0
                 2667 	          0
-                2669 	          2
+                2669 	          0
                 2671 	          0
-                2673 	          2
+                2673 	          0
                 2675 	          0
-                2677 	          2
+                2677 	          0
                 2679 	          0
                 2681 	          0
                 2683 	          0
                 2685 	          0
                 2687 	          0
-                2689 	          1
+                2689 	          0
                 2691 	          0
                 2693 	          0
                 2695 	          0
                 2697 	          0
                 2699 	          0
-                2701 	          1
+                2701 	          0
                 2703 	          0
                 2705 	          0
                 2707 	          0
@@ -1377,7 +1377,7 @@ Finished circuit initialization process.
                 2727 	          0
                 2729 	          0
                 2731 	          0
-                2733 	          1
+                2733 	          0
                 2735 	          0
                 2737 	          0
                 2739 	          0
@@ -1397,65 +1397,65 @@ Finished circuit initialization process.
                 2767 	          0
                 2769 	          0
                 2771 	          0
-                2773 	          1
+                2773 	          0
                 2775 	          0
                 2777 	          0
                 2779 	          0
                 2781 	          0
                 2783 	          0
-                2785 	          1
+                2785 	          0
                 2787 	          0
-                2789 	          1
+                2789 	          0
                 2791 	          0
                 2793 	          0
                 2795 	          0
-                2797 	          1
+                2797 	          0
                 2799 	          0
                 2801 	          0
                 2803 	          0
-                2805 	       3978
+                2805 	          0
                 2807 	          0
-                2809 	       3985
-                2811 	          1
-                2813 	          2
+                2809 	          0
+                2811 	          0
+                2813 	          0
                 2815 	          0
-                2817 	          2
-                2819 	          2
-                2821 	          2
+                2817 	          0
+                2819 	          0
+                2821 	          0
                 2823 	          0
-                2825 	          2
-                2827 	          2
-                2829 	          2
+                2825 	          0
+                2827 	          0
+                2829 	          0
                 2831 	          0
-                2833 	          2
-                2835 	          2
-                2837 	          2
+                2833 	          0
+                2835 	          0
+                2837 	          0
                 2839 	          0
                 2841 	          0
-                2843 	          2
-                2845 	          1
+                2843 	          0
+                2845 	          0
                 2847 	          0
-                2849 	          1
-                2851 	          1
-                2853 	          1
+                2849 	          0
+                2851 	          0
+                2853 	          0
                 2855 	          0
-                2857 	          2
-                2859 	          1
-                2861 	          1
+                2857 	       2048
+                2859 	       4032
+                2861 	       2977
                 2863 	          0
-                2865 	          0
+                2865 	          1
                 2867 	          0
-                2869 	          0
+                2869 	          1
                 2871 	          0
                 2873 	          0
                 2875 	          0
-                2877 	          0
+                2877 	          1
                 2879 	          0
-                2881 	          0
+                2881 	          1
                 2883 	          0
-                2885 	          0
+                2885 	          1
                 2887 	          0
-                2889 	          0
+                2889 	          1
                 2891 	          0
                 2893 	          0
                 2895 	          0
@@ -1469,7 +1469,7 @@ Finished circuit initialization process.
                 2911 	          0
                 2913 	          0
                 2915 	          0
-                2917 	          0
+                2917 	          1
                 2919 	          0
                 2921 	          0
                 2923 	          0
@@ -1499,7 +1499,7 @@ Finished circuit initialization process.
                 2971 	          0
                 2973 	          0
                 2975 	          0
-                2977 	          0
+                2977 	          1
                 2979 	          0
                 2981 	          0
                 2983 	          0

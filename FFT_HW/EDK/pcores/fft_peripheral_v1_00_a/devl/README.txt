@@ -7,7 +7,7 @@ TABLE OF CONTENTS
 ================================================================================
 Peripheral Summary:
 
-  XPS project / EDK repository               : /home/bill/workspace/EmbeddedSystemDesign/FPGAFFT/FFT_HW/EDK
+  XPS project / EDK repository               : D:\ug_labs\zynq_custom_ip\edk
   logical library name                       : fft_peripheral_v1_00_a
   top name                                   : fft_peripheral
   version                                    : 1.00.a
@@ -81,5 +81,5 @@ proc_common_v3_00_a
 	No documentation for this library
 
 axi_slave_burst_v1_00_a
-	/opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_slave_burst_v1_00_a/doc/ds769_axi_slave_burst.pdf
+	D:\ug_labs\zynq_custom_ip\edk\D:\Xilinx\14.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_slave_burst_v1_00_a\doc\ds769_axi_slave_burst.pdf
 

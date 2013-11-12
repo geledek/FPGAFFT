@@ -3,6 +3,7 @@ XmpVersion: 14.5
 VerMgmt: 14.5
 IntStyle: default
 Flow: ise
+ModuleSearchPath: C:/xup/hls/source/lab4/ZedBoard_AXI_BSB_Support/lib
 MHS File: system.mhs
 Architecture: zynq
 Device: xc7z020
@@ -13,7 +14,7 @@ UserCmd1Type: 0
 UserCmd2: 
 UserCmd2Type: 0
 GenSimTB: 0
-SdkExportBmmBit: 1
+SdkExportBmmBit: 0
 SdkExportDir: SDK/SDK_Export
 InsertNoPads: 0
 WarnForEAArch: 1

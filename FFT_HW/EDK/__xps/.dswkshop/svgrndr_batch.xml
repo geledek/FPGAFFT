@@ -1,0 +1,18 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/processing_system7_0.jpg" SVGNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/processing_system7_0.svg" TMPSVGFN="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/__xps/.dswkshop/processing_system7_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/axi_interconnect_1.jpg" SVGNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/axi_interconnect_1.svg" TMPSVGFN="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/__xps/.dswkshop/axi_interconnect_1.svg"/>
+
+  <RENDERIMG RASNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/i2s_ctrl_0.jpg" SVGNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/i2s_ctrl_0.svg" TMPSVGFN="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/__xps/.dswkshop/i2s_ctrl_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/axi_gpio_0.jpg" SVGNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/axi_gpio_0.svg" TMPSVGFN="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/__xps/.dswkshop/axi_gpio_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/oled_bypass_ps2pl_0.jpg" SVGNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/oled_bypass_ps2pl_0.svg" TMPSVGFN="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/__xps/.dswkshop/oled_bypass_ps2pl_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/fft_peripheral_0.jpg" SVGNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/fft_peripheral_0.svg" TMPSVGFN="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/__xps/.dswkshop/fft_peripheral_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/system_blkd.jpg" SVGNAME="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/SDK/SDK_Export/hw/imgs/system_blkd.svg" TMPSVGFN="/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/__xps/.dswkshop/system_blkd.svg"/>
+
+</RENDERBATCH>

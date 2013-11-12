@@ -26,7 +26,7 @@
 // Filename:          user_logic.v
 // Version:           1.00.a
 // Description:       User logic module.
-// Date:              Tue Nov  5 14:00:28 2013 (by Create and Import Peripheral Wizard)
+// Date:              Tue Oct 22 12:54:43 2013 (by Create and Import Peripheral Wizard)
 // Verilog Standard:  Verilog-2001
 //----------------------------------------------------------------------------
 // Naming Conventions:
@@ -69,12 +69,12 @@ module user_logic
   Bus2IP_BurstLength,             // Bus to IP burst length
   Bus2IP_RdReq,                   // Bus to IP read request
   Bus2IP_WrReq,                   // Bus to IP write request
-  Type_of_xfer,                   // Transfer Type
   IP2Bus_AddrAck,                 // IP to Bus address acknowledgement
   IP2Bus_Data,                    // IP to Bus data bus
   IP2Bus_RdAck,                   // IP to Bus read transfer acknowledgement
   IP2Bus_WrAck,                   // IP to Bus write transfer acknowledgement
-  IP2Bus_Error                    // IP to Bus error response
+  IP2Bus_Error,                   // IP to Bus error response
+  Type_of_xfer                    // Transfer Type
   // -- DO NOT EDIT ABOVE THIS LINE ------------------
 ); // user_logic
 
@@ -108,129 +108,53 @@ input                                     Bus2IP_Burst;
 input      [7 : 0]                        Bus2IP_BurstLength;
 input                                     Bus2IP_RdReq;
 input                                     Bus2IP_WrReq;
-input                                     Type_of_xfer;
 output                                    IP2Bus_AddrAck;
-output     [C_SLV_DWIDTH-1 : 0]           IP2Bus_Data;
-output                                    IP2Bus_RdAck;
+output        reg [C_SLV_DWIDTH-1 : 0]    IP2Bus_Data;
+output        reg                         IP2Bus_RdAck;
 output                                    IP2Bus_WrAck;
 output                                    IP2Bus_Error;
+output                                    Type_of_xfer;
 // -- DO NOT EDIT ABOVE THIS LINE --------------------
 
 //----------------------------------------------------------------------------
 // Implementation
 //----------------------------------------------------------------------------
+  
+wire valid_write_data;
+wire valid_read_req;
+wire [31:0] m_axis_data_tdata;
+wire m_axis_data_tvalid;
 
-  // --USER nets declarations added here, as needed for user logic
-
-parameter NUM_BYTE_LANES = (C_SLV_DWIDTH+7)/8;
-reg [C_SLV_DWIDTH-1 : 0] mem_data_out [0 : C_NUM_MEM-1];
-wire [7:0] mem_address;
-wire mem_select;
-wire mem_read_enable;
-reg  [C_SLV_DWIDTH-1 : 0] mem_ip2bus_data;
-reg mem_read_ack_dly1;
-reg mem_read_ack_dly2; 
-wire mem_read_ack; 
-wire mem_write_ack; 
-reg [7 : 0] ram [C_NUM_MEM-1 : 0][NUM_BYTE_LANES-1 : 0][0 :255];
-reg [NUM_BYTE_LANES-1 : 0] write_enable [C_NUM_MEM-1 : 0];
-reg [7 : 0] data_in [C_NUM_MEM-1 : 0][NUM_BYTE_LANES-1 : 0];
-reg [7 : 0] data_out [C_NUM_MEM-1 : 0][NUM_BYTE_LANES-1 : 0];
-reg [7 : 0] read_address;
-
-integer i;
-integer byte_index;
-  // --USER logic implementation added here
-
-// ------------------------------------------------------
-// Example code to read/write user memory space
-assign mem_select = Bus2IP_CS;
-assign mem_read_enable = Bus2IP_RdCE[0];
-assign mem_read_ack = (mem_read_ack_dly1 && (!mem_read_ack_dly2));
-assign mem_write_ack = Bus2IP_WrCE[0];
-assign mem_address = Bus2IP_Addr[9:2];
+assign valid_write_data =   Bus2IP_CS & ~Bus2IP_RNW;
+assign valid_read_req   =   Bus2IP_CS & Bus2IP_RNW;
+assign IP2Bus_AddrAck   =   Bus2IP_RdReq|Bus2IP_WrReq;
+//assign IP2Bus_RdAck     =   valid_read_req & m_axis_data_tvalid;
+assign IP2Bus_Error     =   1'b0;  
 
 
-always @( posedge Bus2IP_Clk)
-  begin
-    if(Bus2IP_Resetn == 0) 
+always @(posedge Bus2IP_Clk)
+begin
+    if(valid_read_req & m_axis_data_tvalid & ~IP2Bus_RdAck)
     begin
-      mem_read_ack_dly1 <= 0;
-      mem_read_ack_dly2 <= 0;
-    end
+        IP2Bus_Data    <= m_axis_data_tdata;
+        IP2Bus_RdAck   <= 1'b1;
+    end  
     else
-    begin
-      mem_read_ack_dly1 <= mem_read_enable;
-      mem_read_ack_dly2 <= mem_read_ack_dly1;
-    end
-  end
-
-
-always @(*) begin
-  for (i=0;i<=C_NUM_MEM-1;i=i+1) begin
-    for (byte_index=0;byte_index<=NUM_BYTE_LANES-1;byte_index=byte_index+1) begin
-      write_enable[i][byte_index] <= Bus2IP_WrCE[i] && Bus2IP_BE[byte_index];
-      data_in[i][byte_index] <= Bus2IP_Data[(byte_index*8) +: 8];
-    end
-  end
+        IP2Bus_RdAck   <= 1'b0;    
 end
 
 
-always @(posedge Bus2IP_Clk) 
-begin
-  for (i=0;i<=C_NUM_MEM-1;i=i+1)
-  begin
-    for (byte_index=0;byte_index<=NUM_BYTE_LANES-1;byte_index=byte_index+1)
-    begin
-      if(write_enable[i][byte_index] == 1)
-      begin
-        ram[i][byte_index][mem_address] <= data_in[i][byte_index];
-      end
-      read_address <= mem_address;
-    end
-  end
-end //always @(posedge Bus2IP_Clk)
+// Instantiate the module
+fft_computer fft_comp (
+    .i_clk(Bus2IP_Clk), 
+    .i_rst_n(Bus2IP_Resetn), 
+    .i_data_valid(valid_write_data), 
+    .i_data(Bus2IP_Data), 
+    .o_data_ready(IP2Bus_WrAck), 
+    .o_data_valid(m_axis_data_tvalid), 
+    .o_data(m_axis_data_tdata), 
+    .i_data_ready(valid_read_req & ~IP2Bus_RdAck)
+    );
 
-always @(*)
-begin
-  for (i=0;i<=C_NUM_MEM-1;i=i+1)
-  begin
-    for (byte_index=0;byte_index<=NUM_BYTE_LANES-1;byte_index=byte_index+1)
-    begin
-      data_out[i][byte_index] <= ram[i][byte_index][read_address];
-    end
-  end
-end //always @(*) begin
-
-always @(*)
-begin
-  for (i=0;i<=C_NUM_MEM-1;i=i+1)
-  begin
-    for (byte_index=0;byte_index<=NUM_BYTE_LANES-1;byte_index=byte_index+1)
-    begin
-      mem_data_out[i][(byte_index*8) +: 8] <= data_out[i][byte_index];
-    end
-  end
-end //always @(*) begin
-
-always @(*)
-begin
-  
-  case (mem_select) 
-    1 : mem_ip2bus_data <= mem_data_out[0];
-    default : mem_ip2bus_data <= 0;
-  endcase
-end
-
-
-  assign IP2Bus_Data  = (mem_read_ack == 1'b1) ? mem_ip2bus_data : 0;
-  assign IP2Bus_AddrAck = (mem_write_ack || (mem_read_enable && mem_read_ack));
-  assign IP2Bus_WrAck = mem_write_ack;
-  assign IP2Bus_RdAck = mem_read_ack;
-  assign IP2Bus_Error = 0;
-  
-  // ------------------------------------------------------------
-  // Example code to drive IP to Bus signals
-  // ------------------------------------------------------------
 
 endmodule

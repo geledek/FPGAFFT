@@ -35,7 +35,7 @@
 -- Filename:          fft_peripheral.vhd
 -- Version:           1.00.a
 -- Description:       Top level design, instantiates library components and user logic.
--- Date:              Tue Nov  5 14:00:28 2013 (by Create and Import Peripheral Wizard)
+-- Date:              Wed Oct 23 10:31:29 2013 (by Create and Import Peripheral Wizard)
 -- VHDL Standard:     VHDL'93
 ------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -270,6 +270,7 @@ architecture IMP of fft_peripheral is
   signal user_IP2Bus_RdAck              : std_logic;
   signal user_IP2Bus_WrAck              : std_logic;
   signal user_IP2Bus_Error              : std_logic;
+  signal user_Type_of_xfer              : std_logic;
 
   ------------------------------------------
   -- Component declaration for verilog user logic
@@ -309,12 +310,12 @@ architecture IMP of fft_peripheral is
       Bus2IP_BurstLength             : in  std_logic_vector(7 downto 0);
       Bus2IP_RdReq                   : in  std_logic;
       Bus2IP_WrReq                   : in  std_logic;
-      Type_of_xfer                   : in  std_logic;
       IP2Bus_AddrAck                 : out std_logic;
       IP2Bus_Data                    : out std_logic_vector(C_SLV_DWIDTH-1 downto 0);
       IP2Bus_RdAck                   : out std_logic;
       IP2Bus_WrAck                   : out std_logic;
-      IP2Bus_Error                   : out std_logic
+      IP2Bus_Error                   : out std_logic;
+      Type_of_xfer                   : out std_logic
       -- DO NOT EDIT ABOVE THIS LINE ---------------------
     );
   end component user_logic;
@@ -433,12 +434,12 @@ begin
       Bus2IP_BurstLength             => user_Bus2IP_BurstLength,
       Bus2IP_RdReq                   => ipif_Bus2IP_RdReq,
       Bus2IP_WrReq                   => ipif_Bus2IP_WrReq,
-      Type_of_xfer                   => ipif_Type_of_xfer,
       IP2Bus_AddrAck                 => user_IP2Bus_AddrAck,
       IP2Bus_Data                    => user_IP2Bus_Data,
       IP2Bus_RdAck                   => user_IP2Bus_RdAck,
       IP2Bus_WrAck                   => user_IP2Bus_WrAck,
-      IP2Bus_Error                   => user_IP2Bus_Error
+      IP2Bus_Error                   => user_IP2Bus_Error,
+      Type_of_xfer                   => user_Type_of_xfer
     );
 
   ------------------------------------------

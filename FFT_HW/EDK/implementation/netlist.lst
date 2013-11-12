@@ -1,0 +1,10 @@
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system.ngc 1384261887
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_processing_system7_0_wrapper.ngc 1384261766
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_i2s_ctrl_0_wrapper.ngc 1384261798
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_axi_interconnect_1_wrapper.ngc 1384261858
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_axi_gpio_0_wrapper.ngc 1384261810
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_oled_bypass_ps2pl_0_wrapper.ngc 1384261822
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/system_fft_peripheral_0_wrapper.ngc 1384261849
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/fft_core.ngc 1383913030
+/home/bill/workspace/EmbeddedSystemDesign/FFT/zynq_audio/implementation/output_fifo.ngc 1383912305
+OK
